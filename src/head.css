@@ -4,9 +4,10 @@ header {
 }
 .header-item{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+   
     
 }
 
@@ -15,23 +16,36 @@ header {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .logo{
     flex:4;
 }
+.heard-bar{
+    flex: 4;
+    list-style-type: none;
+    text-align: right;
+    margin: 20px 20px 0px 20px ;
+    display: block;
+}
 .item{
-    padding: 0px 20px 20px 20px;
     list-style-type: none;
     color: #f7f7f7;
     text-decoration: none;
     font-size: 17px;
+    width: 100%;
+    border-bottom: 1px solid #d6d4d427;
+    padding:20px;
+    display: none;
+
     
    
 }
 
 .header-option .item ,.logo {
     font-size: 15px;
-    margin: 20px 2px 0px 20px ;
+    margin: 0px ;
+    width: 100%;
     
 }
 
@@ -39,11 +53,18 @@ header {
     
     list-style-type: none; 
     color: #f7f7f7;
+    margin: 20px 2px 0px 20px ;
 }
 
 .item:hover{
    color: rgb(228, 215, 41);
    cursor: pointer;
+}
+.hide{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
 }
 
 
@@ -114,6 +135,24 @@ header {
         visibility: hidden;
         
     
+      }
+      .item,.header-option .item{
+          display: block;
+          width: auto;
+          border: none;
+          padding: 0px 20px 20px 20px;
+         
+      }
+      .header-option .item{
+        margin: 20px 2px 0px 20px ;
+       
+    }
+      .header-item,.header-option{
+          flex-wrap: nowrap;
+          
+      }
+      .heard-bar{
+          display: none;
       }
 }
       

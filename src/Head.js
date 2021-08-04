@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './head.css'
+import {BsList } from "react-icons/bs";
 
 export default function Head() {
     return (
@@ -7,10 +8,11 @@ export default function Head() {
         <header>
                 <div>
                 <ul className="header-option">
-                        <li className="logo">Logo</li>
+                        <li className="logo">Logo </li>
                         <li className="item">Contact us</li>
                         <li className="item">Support</li>
                         <li className="item">English</li>
+                        <li className="heard-bar"> <BsList size="1.6em" color="white"/> </li>
                       
                        
                 </ul>
@@ -20,7 +22,7 @@ export default function Head() {
                     <ul className="header-item">
                         <li className="item dropdown">
                         
-                        Services
+                        Services 
                         <div className="Products">
                         <section className="Product-section">
                             <h2><a href="">Shopify</a></h2>
@@ -75,6 +77,8 @@ export default function Head() {
                         <li className="item">Pricing</li>
                         <li className="item">Learn</li>
                         <li className="item">More</li>
+                      
+
                     </ul>
                 </div>
         </header>
