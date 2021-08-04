@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+html{
+    box-sizing: border-box;
+    
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+   padding:0px;
+   margin: 0px;
+   background-color: white;
+}
+.Home-panel{
+    
+   position: relative;
+   text-align: center;
+   background-image: url(./img/home.png);
+   background-size: cover;
+}
+.Home-section,.Home-image{
+    display: inline-block;
+   
+}
+.Home-panel table{
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Home-section a h1{
+   color: white;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+.Home-section a {
+   text-decoration: none;
+    
+ }
+.Home-section a p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+     
   }
+.Home-Second-Panel{
+    text-align: center;
+}
+ section{
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    background: white;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0,0, .5);
+    
+}
+section a{
+   text-decoration: none;
+}
+ section p{
+    color: black
+ }
+ section h3,.Home-Second-Panel section p:last-child{
+    color: rgb(20, 65, 148);
+ }
+
+.Home-Third-Panel{
+    /* background-image:url(img/panel2.png) ; */
+    text-align: center;
+    background-color: rgb(27, 75, 64);
+    margin: 50px 0px;
+    padding: 10px;
+    height: 800px;
+    
+ 
+}
+.Home-Third-Panel section{
+    background: none;
+    box-shadow:none;
+ 
+
+}
+.Home-Third-Panel section p{
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.Home-Third-Panel h1{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ }
+.Home-Third-Panel section h3{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ }
+
+
+ .Services{
+     text-align: center;
+     background-color: white;
+ }
+ .Services table{
+    width: 100%;
+}
+ .Service-image,.Service-section{
+     display: inline-block;
+     margin: 20px;
+ }
+ .Service-image img{
+    width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.new{
+    text-align: center;
 }
+.new ul li{
+   list-style-type: none;
+}
+.new ul{
+    display: flex;
+    justify-content: center;
+ }
+ .new ul li{
+    padding: 0px 20px 20px 20px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+@media all and (min-width:960px){
+    .Home-image img{
+        width: 100%;
+    }
+    .Home-Third-Panel{
+        /* background-image:url(img/panel2.png) ; */
+        height: 350px;
+        
+     
+    }
+    .Service-image img{
+        width: 100%;
+    }
+  
+
+} 
