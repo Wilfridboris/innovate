@@ -41,6 +41,18 @@ header {
     
    
 }
+.select .item{
+    display: grid;
+    grid-template-columns: 16fr 1fr;
+}
+
+.ChevronDown{
+   display: none;
+}
+.Plus{
+    display: inline-block;
+  
+}
 
 .header-option .item ,.logo {
     font-size: 15px;
@@ -149,6 +161,22 @@ header {
       .heard-bar{
           display: none;
       }
+      .ChevronDown:hover{
+        transform: translate(0,5px);
+    
+        
+    } 
+    .ChevronDown{
+        display: inline-block;
+    
+        
+    } 
+    .Plus{
+        display: none;
+    }
+    .header-item .item,.header-option .item{
+       display: block;
+    }
 }
       
       
