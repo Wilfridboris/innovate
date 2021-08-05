@@ -60,12 +60,7 @@ header {
    color: rgb(228, 215, 41);
    cursor: pointer;
 }
-.hide{
-    visibility: hidden;
-}
-.show{
-    visibility: visible;
-}
+
 
 
 
