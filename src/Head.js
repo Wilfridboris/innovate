@@ -8,15 +8,24 @@ export default class Head extends Component {
     constructor(props){
         super(props)
         this.state={
-            iconIsToggle:false
+            iconIsToggle:false,
+            isSubmenuServiceToggle:false,
+            isSubmenuSolutionToggle:false
+            
         }
     }
 
 
+ 
     toggleItemStyle=()=>{
+
+       
         const menu1=$('.header-item')
         const menu2=$('.header-option')
-        $('.heard-bar').on('click',()=>{
+
+
+
+        function ToggleMenu(){
             if(menu1.hasClass('select')){
                 menu1.removeClass('select')
                 menu2.removeClass('select')
@@ -26,12 +35,17 @@ export default class Head extends Component {
                 menu2.addClass('select')
 
             }
+          }
+        $('.heard-bar').on('click',()=>{
+            ToggleMenu()
+       
         })
     }
 
 
     componentDidMount(){
         this.toggleItemStyle()
+       
        
 
       }
@@ -53,9 +67,15 @@ export default class Head extends Component {
             </div>
             <div>
                 <ul className="header-item">
-                    <li className="item dropdown">
+                    <li className={this.state.isSubmenuServiceToggle?"item dropdown submenu-active":"item dropdown "} onClick={()=>this.setState({isSubmenuServiceToggle:!this.state.isSubmenuServiceToggle})} >
                     
-                    Services  <BsChevronDown className="ChevronDown"  color="white"/> <BsPlus className="Plus" size="1.5em" color="white"/>
+                   <a tabIndex="0">Services</a>  <BsChevronDown className="ChevronDown"  color="white"/> <BsPlus className="Plus" size="1.5em" color="white" />
+                    <ul className="submenu">
+                        <li className="subitem"><a href="#">Design</a></li>
+                        <li className="subitem"><a href="#">Development</a></li>
+                        <li className="subitem"><a href="#">SEO</a></li>
+                        <li className="subitem"><a href="#">Copywriting</a></li>
+                    </ul>
                     <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">Shopify</a></h2>
@@ -85,7 +105,13 @@ export default class Head extends Component {
             </div>
                     
                     </li>
-                    <li className="item dropdown">Solution <BsChevronDown className="ChevronDown" color="white"/> <BsPlus className="Plus" size="1.5em" color="white"/>
+                    <li className={this.state.isSubmenuSolutionToggle?"item dropdown submenu-active":"item dropdown "} onClick={()=>this.setState({isSubmenuSolutionToggle:!this.state.isSubmenuSolutionToggle})} ><a className="tabindex">Solution</a> <BsChevronDown className="ChevronDown" color="white"/> <BsPlus className="Plus" size="1.5em" color="white" />
+                    <ul className="submenu">
+                        <li className="subitem"><a href="#">Design</a></li>
+                        <li className="subitem"><a href="#">Development</a></li>
+                        <li className="subitem"><a href="#">SEO</a></li>
+                        <li className="subitem"><a href="#">Copywriting</a></li>
+                    </ul>
                     <div className="Solution">
                     <section className="Product-section">
                         <h2><a href="">Web Management</a></h2>

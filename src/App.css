@@ -44,7 +44,9 @@ body{
   }
 .Home-Second-Panel{
     text-align: center;
+    background-color: #f7f7f7;
 }
+
  section{
     display: inline-block;
     width: 250px;

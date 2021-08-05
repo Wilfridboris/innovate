@@ -53,6 +53,29 @@ header {
     display: inline-block;
   
 }
+/* .submenu {
+    display: none;
+} */
+.submenu {
+    display: none;
+    list-style-type: none;
+    
+
+ }
+.submenu-active .submenu {
+   display: block;
+}
+.subitem a {
+    
+    text-decoration: none;
+    color: #d4d4d4;
+ 
+}
+.subitem{
+   padding: 8px 0px;
+
+}
+
 
 .header-option .item ,.logo {
     font-size: 15px;
@@ -177,6 +200,7 @@ header {
     .header-item .item,.header-option .item{
        display: block;
     }
+    
 }
       
       
