@@ -69,6 +69,7 @@ header {
     
     text-decoration: none;
     color: #d4d4d4;
+    display: block;
  
 }
 .subitem{
@@ -105,7 +106,7 @@ header {
     display: grid;
     grid-template-columns: auto auto auto;
     z-index: 1;
-    top:95px;
+    top:80px;
     left: 0;
     background-color:rgb(21, 68, 58) ;
     width: 90%;
