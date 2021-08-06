@@ -140,7 +140,7 @@ header {
 }
 
 @media (min-width:600px) {
-    .dropdown:hover > .Products {
+    .dropdown a:hover > .Products {
         visibility: visible;
        transition: all 0.3s ease;
        transform: translate(0,0);
@@ -148,24 +148,13 @@ header {
      
       
     }
-     .dropdown > .Products {
+     .dropdown a > .Products {
          visibility: hidden;
      
     }
     
   
-    .dropdown:hover > .Solution {
-             visibility: visible;
-       transition: all 0.3s ease;
-       transform: translate(0,0);
-       transition-delay:0.2s ;
     
-      }
-       .dropdown > .Solution{
-        visibility: hidden;
-        
-    
-      }
       .item,.header-option .item{
           display: block;
           width: auto;
@@ -200,6 +189,8 @@ header {
     .header-item .item,.header-option .item{
        display: block;
     }
+   
+    
     
 }
       
