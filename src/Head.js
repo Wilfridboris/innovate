@@ -11,8 +11,7 @@ export default class Head extends Component {
         super(props)
         this.state={
             iconIsToggle:false,
-            isScroll:false,
-            isInview:false
+            isScroll:false
 
         }
 
@@ -45,11 +44,7 @@ export default class Head extends Component {
        else{
         this.setState({isScroll:false})
        }
-       if(window.pageYOffset>400) {
-        this.setState({isInview:true})
-     }else{
-        this.setState({isInview:false})
-     }
+
        
     }
     componentDidMount(){

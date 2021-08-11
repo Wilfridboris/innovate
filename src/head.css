@@ -9,17 +9,20 @@ header {
     left: 0;
     width: 100%;
     z-index: 2; 
-    /* transform: translate(0,-200px);
+     /* transform: translate(0,-200px);
     opacity: 0;
-    visibility: hidden; */
+    visibility: hidden;  */
 
 }
-.in-view{
+/* .in-view{
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
     transform: translate(0,0);
 
+} */
+.fixed .header-option .item{
+    display: none;
 }
 .header-item{
     display: flex;
