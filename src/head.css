@@ -1,6 +1,25 @@
 header {
     background-color: rgb(68, 21, 50);
+    
   
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; 
+    /* transform: translate(0,-200px);
+    opacity: 0;
+    visibility: hidden; */
+
+}
+.in-view{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    transform: translate(0,0);
+
 }
 .header-item{
     display: flex;

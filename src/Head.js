@@ -10,11 +10,17 @@ export default class Head extends Component {
     constructor(props){
         super(props)
         this.state={
-            iconIsToggle:false
+            iconIsToggle:false,
+            isScroll:false,
+            isInview:false
+
         }
+
+    this.setToggleness=this.setToggleness.bind(this);
     }
 
 
+  
     toggleItemStyle=()=>{
         const menu1=$('.header-item')
         const menu2=$('.header-option')
@@ -32,15 +38,36 @@ export default class Head extends Component {
     }
 
 
+    setToggleness=()=>{
+       if(window.pageYOffset>200) {
+          this.setState({isScroll:true})
+       }
+       else{
+        this.setState({isScroll:false})
+       }
+       if(window.pageYOffset>400) {
+        this.setState({isInview:true})
+     }else{
+        this.setState({isInview:false})
+     }
+       
+    }
     componentDidMount(){
         this.toggleItemStyle()
-       
+    
+       this.setToggleness();
+       window.addEventListener('scroll',()=>this.setToggleness());
 
       }
+    componentWillUnmount(){
+        window.removeEventListener('scroll',()=>this.setToggleness());
+
+    }
     render() {
+        
         return(
-            <header>
-            <div>
+            <header className={this.state.isScroll?"fixed":""}>
+            <div >
             <ul className="header-option">
                     <li className="logo">Logo </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>

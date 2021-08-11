@@ -9,7 +9,7 @@ function App() {
   return (
     <main className="container">
         <Head/>
-        <div className="Home-panel">
+        <div className="Home-panel" id="home">
         <img src={tech} alt="tech"></img>
           <div className="Home-title">
           
