@@ -1,7 +1,7 @@
 // import './App.css';
 import Head from './Head'
 import './App.css'
-import tech from './img/tech.png'
+import tech from './img/hero.jpg'
 import service from './img/service.png'
 
 
@@ -10,27 +10,17 @@ function App() {
     <main className="container">
         <Head/>
         <div className="Home-panel">
-        
-      <table>
-           <tr>
-              <th  className="Home-section ">
-                  <a href="#">
-                    <h1>Getting Started with Us</h1>
-                    <p>Build Amazing Solution that Support your Bussiness</p>
-                    <p>Learn more</p>
-                  </a>
-              
-                  
-              </th>
-              <th className="Home-image">
-            
-                  
-                    <img src={tech} alt="tech"></img>
-                  
-              </th>
-          </tr>
-            
-        </table>
+        <img src={tech} alt="tech"></img>
+          <div className="Home-title">
+          
+            <a href="#">
+            <h1>Getting Started with Us</h1>
+            <p>Build Amazing Solution that Support your Bussiness</p>
+            <p>Learn more</p>
+            </a>
+          </div>
+       
+   
         </div>
 
         <div className="Home-Second-Panel">

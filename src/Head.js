@@ -87,10 +87,10 @@ export default class Head extends Component {
                
             </div>
                     <ul className="submenu">
-                    <li className="subitem"><a href="#">Design</a></li>
-                    <li className="subitem"><a href="#">Development</a></li>
-                    <li className="subitem"><a href="#">SEO</a></li>
-                    <li className="subitem"><a href="#">Copywriting</a></li>
+                    <Subitem>Design</Subitem>
+                    <Subitem>Development</Subitem>
+                    <Subitem>SEO</Subitem>
+                    <Subitem>Copywriting</Subitem>
                 </ul>
                     
                 </Item>
@@ -117,10 +117,10 @@ export default class Head extends Component {
                
                </div>
                 <ul className="submenu">
-                <li className="subitem"><a href="#">Design</a></li>
-                <li className="subitem"><a href="#">Development</a></li>
-                <li className="subitem"><a href="#">SEO</a></li>
-                <li className="subitem"><a href="#">Copywriting</a></li>
+                <Subitem>Design</Subitem>
+                <Subitem>Development</Subitem>
+                <Subitem>SEO</Subitem>
+                <Subitem>Copywriting</Subitem>
                 </ul>
 
             </Item>
