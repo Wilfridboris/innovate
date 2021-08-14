@@ -21,9 +21,7 @@ header {
     transform: translate(0,0);
 
 } */
-.fixed .header-option .item{
-    display: none;
-}
+
 .header-item{
     display: flex;
     flex-wrap: wrap;

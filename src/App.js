@@ -7,6 +7,25 @@ import service from './img/service.png'
 
 
 function App() {
+  const selection=(e)=>{
+    const topicItem=document.querySelectorAll('.new ul li');
+    const topicDiv=document.querySelectorAll('.new div');
+    for(var i=0;i<topicItem.length;i++){
+      topicItem[i].classList.remove('active')
+    }
+    for(var j=0;j< topicDiv.length;j++){
+      topicDiv[j].style.visibility='hidden'
+    }
+    e.target.classList.add('active');
+    if(e.target.textContent==="Manufacturing"){
+     document.getElementById('Manufacturing').style.visibility='visible';
+    }
+    if(e.target.textContent==="Finance"){
+      document.getElementById('Finance').style.visibility='visible';
+    }
+    
+  
+  }
   useEffect(() => {
     
  
@@ -172,16 +191,22 @@ function App() {
         <div className="new">
           <h1>Our Solution everywhere</h1>
           <ul>
-            <li>Manufacturing</li>
-            <li>Finance</li>
-            <li>Gaming</li>
-            <li>Entertainment</li>
-            <li>Onlie Store</li>
+            <li className="active" onClick={selection}>Manufacturing</li>
+            <li onClick={selection}>Finance</li>
+            <li onClick={selection}>Gaming</li>
+            <li onClick={selection}>Entertainment</li>
+            <li onClick={selection}>Onlie Store</li>
           </ul>
 
-          <div className="new-image">
-            
+          <div id='Manufacturing'>
+            manufacturing
+
           </div>
+          <div id='Finance'>
+           Finance
+
+          </div>
+        
         </div>
      
     </main>

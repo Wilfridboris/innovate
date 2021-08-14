@@ -135,6 +135,9 @@ section a{
 .new{
     text-align: center;
 }
+.active{
+    border-bottom: 3px solid rgb(233, 53, 53);
+}
 .new ul li{
    list-style-type: none;
 }
