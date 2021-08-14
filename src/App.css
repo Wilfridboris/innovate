@@ -21,13 +21,14 @@ body{
 }
 .Home-panel img{
     width: 100%;
-    height: 300px;
+    height: 340px;
    
 }
 .Home-title{
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 5%;
+    padding: 10px;
    
 }
 
@@ -158,6 +159,12 @@ section a{
     }
     .Service-image img{
         width: 100%;
+    }
+    .Home-title{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+       
     }
   
 
