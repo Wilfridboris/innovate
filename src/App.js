@@ -1,4 +1,5 @@
 // import './App.css';
+import React,{useEffect} from 'react'
 import Head from './Head'
 import './App.css'
 import tech from './img/hero.jpg'
@@ -6,6 +7,64 @@ import service from './img/service.png'
 
 
 function App() {
+  useEffect(() => {
+    
+ 
+    function lazyloadopcaity(){
+      let id=null;
+      const sections=document.querySelectorAll('.Home-Second-Panel section');
+      let op=0;
+      clearInterval(id);
+      id=setInterval(frame,120); 
+    
+      function frame(){
+        if(op>=1){
+          clearInterval(id)
+
+        }else{
+          
+          op+=0.1;
+          for(var i=0;i<sections.length;i++){
+            sections[i].style.opacity=op;
+           
+           
+          }
+         
+        }
+      }
+   
+    }
+    
+    function lazylaod(){
+      var index=0;
+    var elements=document.querySelectorAll('img[data-src]');
+
+    if( index>=elements.length) return ;
+    var item=elements[index];
+    if((window.scrollY+window.innerHeight)>1300){
+      var src = item.getAttribute("data-src");
+      item.src = src;
+      item.addEventListener('load', function() {
+      item.removeAttribute('data-src');     
+      });
+      // index++;
+
+    }
+  }
+
+    lazylaod();
+    lazyloadopcaity();
+    window.addEventListener('scroll',()=>lazylaod())
+   
+   
+     
+
+    return () => {
+      window.removeEventListener('scroll',()=>lazylaod())
+      
+      
+    }
+  }, [])
   return (
     <main className="container">
         <Head/>
@@ -91,7 +150,7 @@ function App() {
             <table>
             <tr>
                <th  className="Service-image">
-                <img src={service } alt="service"></img>
+                <img data-src={service } alt="service"></img>
                
                    
                </th>
