@@ -130,7 +130,7 @@ section a{
  .Service-image img{
     width: 50%;
 }
-
+/*new style begin*/
 
 .new{
     text-align: center;
@@ -140,6 +140,7 @@ section a{
 }
 .new ul li{
    list-style-type: none;
+   cursor: pointer;
 }
 .new ul{
     display: flex;
@@ -148,7 +149,23 @@ section a{
  .new ul li{
     padding: 0px 20px 20px 20px;
  }
+ #Finance{
+     visibility: hidden;
+ }
+ #Manufacturing img{
+     width:80%;
+    
+ }
+ .new-section{
+     height: 400px;
+ }
+ .new-section {
+    display:grid;
+    
+}
 
+ 
+ /*new style end*/
 
 
 @media all and (min-width:960px){
@@ -169,6 +186,10 @@ section a{
         top: 20%;
         left: 20%;
        
+    }
+    .new-section {
+        display:flex;
+        justify-content: center;
     }
   
 

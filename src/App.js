@@ -4,17 +4,18 @@ import Head from './Head'
 import './App.css'
 import tech from './img/hero.jpg'
 import service from './img/service.png'
+import manufacturing from './img/manufacturing.png'
 
 
 function App() {
   const selection=(e)=>{
     const topicItem=document.querySelectorAll('.new ul li');
-    const topicDiv=document.querySelectorAll('.new div');
+    const topicDiv=document.querySelectorAll('.canbehidde');
     for(var i=0;i<topicItem.length;i++){
       topicItem[i].classList.remove('active')
     }
     for(var j=0;j< topicDiv.length;j++){
-      topicDiv[j].style.visibility='hidden'
+      topicDiv[j].style.visibility='hidden';
     }
     e.target.classList.add('active');
     if(e.target.textContent==="Manufacturing"){
@@ -198,14 +199,23 @@ function App() {
             <li onClick={selection}>Onlie Store</li>
           </ul>
 
-          <div id='Manufacturing'>
-            manufacturing
+          <div id='Manufacturing' className='new-section canbehidde'>
+              <div>
+                <img src={manufacturing} alt="{manufacturing"/>
+              </div>
+              <div>
+                <h1>IA Sofware </h1>
+            </div>
+   
 
           </div>
-          <div id='Finance'>
-           Finance
+          <div id='Finance' className="canbehidde">
+          Finance
 
-          </div>
+         </div>
+
+      
+       
         
         </div>
      

@@ -4,6 +4,7 @@ import {BsGridFill ,BsGrid,BsChevronDown,BsPlus} from "react-icons/bs";
 import $ from 'jquery';
 import Item from './Item'
 import Subitem from './Subitem'
+import logo from './img/logo.png'
 
 
 export default class Head extends Component {
@@ -64,7 +65,7 @@ export default class Head extends Component {
             <header className={this.state.isScroll?"fixed":""}>
             <div >
             <ul className="header-option">
-                    <li className="logo">Logo </li>
+                    <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>
                     <li className="item">Contact us <BsPlus className="Plus" size="1.5em" color="white"/></li>
                     <li className="item">Support <BsPlus className="Plus" size="1.5em" color="white"/></li>
