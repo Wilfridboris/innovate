@@ -35,7 +35,7 @@ function App() {
       const sections=document.querySelectorAll('.Home-Second-Panel section');
       let op=0;
       clearInterval(id);
-      id=setInterval(frame,120); 
+      id=setInterval(frame,160); 
     
       function frame(){
         if(op>=1){
