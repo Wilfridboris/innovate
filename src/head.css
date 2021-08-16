@@ -40,8 +40,7 @@ header {
 }
 .logo{
     flex:4;
-    margin: 0px;
-    padding: 0px;
+  
 }
 .heard-bar{
     flex: 4;
@@ -101,7 +100,7 @@ header {
 }
 
 
-.header-option .item ,.logo {
+.header-option .item {
     font-size: 15px;
     margin: 0px ;
     width: 100%;
@@ -112,7 +111,7 @@ header {
     
     list-style-type: none; 
     color: #f7f7f7;
-    margin: 20px 2px 0px 20px ;
+    margin: 5px 0px;
 }
 
 .item:hover{
