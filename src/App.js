@@ -105,7 +105,7 @@ function App() {
         <div className="Home-Second-Panel">
           <h4>What industry?</h4>
             <section>
-                  <a href="">
+                  <a href="#">
                     <img></img>
                     <h3>E-commerce</h3>
                     <p>Achieve purchase of your product easilty</p>
@@ -113,7 +113,7 @@ function App() {
                   </a>
             </section>
             <section>
-                  <a href="">
+                  <a href="#">
                     <img></img>
                     <h3>Finance</h3>
                     <p>Achieve purchase of your product easilty</p>
@@ -121,7 +121,7 @@ function App() {
                   </a>
             </section>
             <section>
-            <a href="">
+            <a href="#">
               <img></img>
               <h3>Learning Platform</h3>
               <p>Achieve purchase of your product easilty</p>
@@ -129,7 +129,7 @@ function App() {
             </a>
       </section>
       <section>
-      <a href="">
+      <a href="#">
         <img></img>
         <h3>Media & Entertaiment</h3>
         <p>Achieve purchase of your product easilty</p>
@@ -140,7 +140,7 @@ function App() {
         <div className="Home-Third-Panel">
           <h1>Complete  Assistance with shopify Setting & development </h1>
             <section>
-              <a href="">
+              <a href="#">
                 <img></img>
                 <h3>Finance</h3>
                 <p>Achieve purchase of your product easilty</p>
@@ -148,7 +148,7 @@ function App() {
               </a>
           </section>
           <section>
-          <a href="">
+          <a href="#">
             <img></img>
             <h3>Finance</h3>
             <p>Achieve purchase of your product easilty</p>

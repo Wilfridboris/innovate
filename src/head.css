@@ -128,7 +128,7 @@ header {
     display: grid;
     grid-template-columns: auto auto auto;
     z-index: 1;
-    top:12%;
+    top:14%;
     left: 0;
     background-color: rgb(88, 31, 66);
     width: 90%;
@@ -182,8 +182,12 @@ header {
           display: block;
           width: auto;
           border: none;
-          padding: 0px 20px 20px 20px;
+          padding: 0px 20px ;
          
+      }
+      .item a{
+          display: block;
+          height: 45px;
       }
       .header-option .item{
         margin: 20px 2px 0px 20px ;

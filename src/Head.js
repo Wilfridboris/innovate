@@ -67,9 +67,24 @@ export default class Head extends Component {
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>
-                    <li className="item">Contact us <BsPlus className="Plus" size="1.5em" color="white"/></li>
-                    <li className="item">Support <BsPlus className="Plus" size="1.5em" color="white"/></li>
-                    <li className="item">English <BsPlus className="Plus" size="1.5em" color="white"/></li>
+                    <Item>Contact us
+                        <ul className="submenu">
+                            <Subitem>Contact Form</Subitem>
+                            <Subitem>Director</Subitem>
+                        </ul>
+                    </Item>
+                    <Item>Support
+                            <ul className="submenu">
+                                <Subitem>Technical support 647 </Subitem>
+                                <Subitem>Customer service 402</Subitem>
+                            </ul>
+                    </Item>
+                    <Item>English
+                        <ul className="submenu">
+                        <Subitem>French</Subitem>
+                        <Subitem>English</Subitem>
+                        </ul>
+                    </Item>
                    
                   
                    
