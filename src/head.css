@@ -4,7 +4,7 @@ header {
   
 }
 .fixed{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -220,6 +220,10 @@ header {
     .submenu-active .submenu {
         display: none;
      }
+     .fixed{
+        position: fixed; 
+    
+    }
      
     
    

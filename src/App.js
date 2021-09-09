@@ -5,6 +5,8 @@ import './App.css'
 import tech from './img/hero.jpg'
 import service from './img/service.png'
 import manufacturing from './img/manufacturing.png'
+import { IoIosArrowDown } from "react-icons/io"
+import DivItem from './divItem'
 
 
 function App() {
@@ -27,6 +29,18 @@ function App() {
     
   
   }
+  
+  // function openSub(e){
+  //     if(e.target.classList.contains('lb-trigger') && e.target.classList.contains('lb-active')){
+  //         e.target.classList.remove('lb-active')
+  //         e.target.nextElementSibling.classList.add('lb-hide')
+          
+         
+  //     }else if(e.target.classList.contains('lb-trigger')){
+  //       e.target.nextElementSibling.classList.remove('lb-hide')
+  //       e.target.classList.add('lb-active')
+  //     }
+  // }
   useEffect(() => {
     
  
@@ -191,7 +205,41 @@ function App() {
 
         <div className="new">
           <h1>Our Solution everywhere</h1>
-          <ul>
+          <ul className="list-items-mob-view">
+           <DivItem>  Manufacturing
+                <li className="lb-container">
+                <div className="container-wrapper ">
+                                <div>
+                                <img src={manufacturing} alt="{manufacturing"/>
+                              </div>
+                              <div>
+                                <h1>IA Sofware </h1>
+                            </div>
+                </div></li>
+           </DivItem>
+          
+           <DivItem>  Finance
+                <li className="lb-container"><div className="container-wrapper">
+                Finance
+                </div></li>
+           </DivItem>
+            <DivItem>  Entertainment
+            
+                  <li className="lb-container "><div className="container-wrapper">
+                  Entertainment
+                  </div></li>
+            </DivItem>
+            
+            <DivItem>  Online Store
+            
+            
+                <li className="lb-container "><div className="container-wrapper">
+                Onlie Store
+                </div></li>
+            </DivItem>
+            
+          </ul>
+          <ul className="list-items-dek-view">
             <li className="active" onClick={selection}>Manufacturing</li>
             <li onClick={selection}>Finance</li>
             <li onClick={selection}>Gaming</li>
