@@ -5,6 +5,9 @@ import './App.css'
 import tech from './img/hero.jpg'
 import service from './img/service.png'
 import manufacturing from './img/manufacturing.png'
+import ecom from './img/ecommerce.png'
+import kerangka from './img/kerangka.png'
+import sofware from './img/softwareCycle.png'
 import { IoIosArrowDown } from "react-icons/io"
 import DivItem from './divItem'
 
@@ -43,7 +46,7 @@ function App() {
   // }
   useEffect(() => {
     
- 
+  
     function lazyloadopcaity(){
       let id=null;
       const sections=document.querySelectorAll('.Home-Second-Panel section');
@@ -88,6 +91,14 @@ function App() {
 
     lazylaod();
     lazyloadopcaity();
+    var counter=1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked=true;
+      counter++;
+      if(counter>3){
+        counter=1
+      }
+    },5000)
     window.addEventListener('scroll',()=>lazylaod())
    
    
@@ -261,6 +272,52 @@ function App() {
        
         
         </div>
+          <div className="body-slider">
+          <div className="slider">
+
+          <div className="slides">
+                <input type="radio" name="radio-btn" id="radio1"/>
+                <input type="radio" name="radio-btn" id="radio2"/>
+                <input type="radio" name="radio-btn" id="radio3"/>
+              
+
+
+                <div className="slide first">
+                <img src={ecom}  alt="ecommerce"/>
+
+                </div>
+                <div className="slide">
+                <img src={kerangka}  alt="kerangka"/>
+
+                </div>
+                <div className="slide">
+                <img src={sofware}  alt="sofware"/>
+
+                </div>
+
+                <div className="navigation-auto">
+                <div className="auto-btn1"></div>
+                <div className="auto-btn2"></div>
+                <div className="auto-btn3"></div>
+
+          </div>
+
+        </div>
+          
+
+           
+            <div className="navigation-manual">
+              <label for="radio1" className="manual-btn"></label>
+              <label for="radio2" className="manual-btn"></label>
+              <label for="radio3" className="manual-btn"></label>
+            </div>
+
+
+        
+        </div>
+
+          </div>
+       
      
     </main>
   );
