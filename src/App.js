@@ -207,36 +207,31 @@ function App() {
           <h1>Our Solution everywhere</h1>
           <ul className="list-items-mob-view">
            <DivItem>  Manufacturing
-                <li className="lb-container">
-                <div className="container-wrapper ">
-                                <div>
-                                <img src={manufacturing} alt="{manufacturing"/>
-                              </div>
-                              <div>
-                                <h1>IA Sofware </h1>
-                            </div>
-                </div></li>
+             
            </DivItem>
+           <li className="lb-container">
+            <div className="container-wrapper ">
+                          
+                            <h1>IA Sofware </h1>
+                        
+            </div>
+           </li>
           
            <DivItem>  Finance
-                <li className="lb-container"><div className="container-wrapper">
-                Finance
-                </div></li>
            </DivItem>
-            <DivItem>  Entertainment
-            
-                  <li className="lb-container "><div className="container-wrapper">
-                  Entertainment
-                  </div></li>
-            </DivItem>
+           <li className="lb-container"><div className="container-wrapper">
+           Finance
+           </div></li>
+            <DivItem>  Entertainment</DivItem>
+            <li className="lb-container "><div className="container-wrapper">
+            Entertainment
+            </div></li>
             
             <DivItem>  Online Store
-            
-            
-                <li className="lb-container "><div className="container-wrapper">
-                Onlie Store
-                </div></li>
             </DivItem>
+            <li className="lb-container "><div className="container-wrapper">
+            Onlie Store
+            </div></li>
             
           </ul>
           <ul className="list-items-dek-view">

@@ -9,7 +9,7 @@ export default function DivItem({children}) {
               <div>
              {children}
               </div>
-              < IoIosArrowDown className="ArrowDown" size="1.5em" color="white"/>
+              < IoIosArrowDown className={IsSubmenuToggle?"ArrowDown ArrowDown-open":"ArrowDown"} size="1.5em" color="white"/>
         </li>
     )
 }

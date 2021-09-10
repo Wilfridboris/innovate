@@ -138,6 +138,7 @@ section a{
 .active{
     border-bottom: 3px solid rgb(233, 53, 53);
 }
+/*List style begin*/
 .list-items-dek-view li,.list-items-mob-view li{
    list-style-type: none;
    cursor: pointer;
@@ -158,9 +159,7 @@ section a{
      color: white;
      width: 100%;
  }
- .container-wrapper img{
-     width: 100%;
- }
+ 
  .container-wrapper {
     margin: 20px 0px;
 }
@@ -169,14 +168,12 @@ section a{
      flex-wrap: wrap;
      
  }
- .lb-active div .lb-container{
+ .lb-active + .lb-container{
     display: block;
 } .lb-container{
      display: none;
  }
- .lb-container{
-     display: none;
- }
+ 
  .lb-trigger div{
     flex: 1;
     
@@ -194,6 +191,18 @@ section a{
  .list-items-dek-view {
     padding:  0px;
  }
+ /*List style end*/
+
+ /*arrow animation start*/
+.ArrowDown{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+.ArrowDown-open{
+    transition: transform 0.3s ease-in;
+    transform: rotate(180deg)
+}
+ /*arrow animation end*/
  #Finance{
      visibility: hidden;
  }
