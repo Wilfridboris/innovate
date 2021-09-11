@@ -234,6 +234,7 @@ section a{
 .slider{
     width: 100%;
     height: 380px;
+    overflow: hidden;
     /* border-radius: 10px; */
     
 }
@@ -304,6 +305,7 @@ section a{
 #radio3:checked ~ .first{
     margin-left:-68% ;
     transition: margin 1s;
+ 
 }
 .navigation-auto{
     position: absolute;
@@ -368,7 +370,22 @@ section a{
      .list-items-dek-view li{
         padding: 0px 20px 20px 20px;
      }
-     
-  
+   
    
 } 
+
+@media all and (max-width:650px){
+
+    #radio1:checked ~ .first{
+        margin-left:0%;
+        transition: margin 1s;
+    }
+    #radio2:checked ~ .first{
+        margin-left:-33.5% ;
+        transition: margin 1s;
+    }
+    #radio3:checked ~ .first{
+        margin-left:-66.7% ;
+        transition: margin 1s;
+    }
+}

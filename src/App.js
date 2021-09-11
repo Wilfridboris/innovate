@@ -36,6 +36,15 @@ function App() {
       
     }
   }
+  function detectsceen(){
+    var slides=document.querySelectorAll('.slide ');
+    if(window.screen){
+      for(var i=0;i<slides.length;i++){
+        slides[i].style.width=""+window.screen.width+"px";
+        
+      }
+    }
+  }
   
   // function openSub(e){
   //     if(e.target.classList.contains('lb-trigger') && e.target.classList.contains('lb-active')){
@@ -92,7 +101,7 @@ function App() {
 
     }
   }
-    setWith();
+    detectsceen()
     lazylaod();
     lazyloadopcaity();
     // var counter=1;
@@ -111,7 +120,7 @@ function App() {
 
     return () => {
       window.removeEventListener('scroll',()=>lazylaod())
-      window.removeEventListener('resize',()=>setWith())
+
       
       
     }
