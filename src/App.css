@@ -226,35 +226,57 @@ section a{
 /*slider anim begin*/
 .body-slider{
     margin: 0px;
-    padding: 50px;
- 
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 100%;
+    height: 380px;
+    /* border-radius: 10px; */
+    
 }
 .slides{
-   width: 500%;
-   height: 500px;
+   width: 300%;
+   height: 400px;
    display: flex; 
 }
 .slides input{
     display: none;
 }
-.slides img{
-    width: 800px;
+/* .slides img{
+    width: 100%;
     height: 500px;
+} */
+.slide{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.desc-1{
+    background-image: url(img/ecommerce.png);
+    background-position:0 ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+.desc-2{
+    background-image: url(img/kerangka.png);
+    background-position:0 ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+.desc-3{
+    background-image: url(img/softwareCycle.png);
+    background-position:0 ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
 }
 .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 100%;
+    margin-top:-20px;
     display: flex;
     justify-content: center;
 }
@@ -272,23 +294,23 @@ section a{
     background: rgb(177, 243, 243);
 }
 #radio1:checked ~ .first{
-    margin-left:0 ;
-    transition: 1s;
+    margin-left:0%;
+    transition: margin 1s;
 }
 #radio2:checked ~ .first{
-    margin-left:-20% ;
-    transition: 1s;
+    margin-left:-34% ;
+    transition: margin 1s;
 }
 #radio3:checked ~ .first{
-    margin-left:-40% ;
-    transition: 1s;
+    margin-left:-68% ;
+    transition: margin 1s;
 }
 .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 100%;
     justify-content: center;
-    margin-top: 460px;
+    margin-top:380px;
 }
 .navigation-auto div{
     border: 2px solid aqua;
@@ -346,8 +368,7 @@ section a{
      .list-items-dek-view li{
         padding: 0px 20px 20px 20px;
      }
+     
   
-     .body-slider{
-         display: flex;
-     }
+   
 } 

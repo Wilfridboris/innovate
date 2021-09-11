@@ -5,9 +5,6 @@ import './App.css'
 import tech from './img/hero.jpg'
 import service from './img/service.png'
 import manufacturing from './img/manufacturing.png'
-import ecom from './img/ecommerce.png'
-import kerangka from './img/kerangka.png'
-import sofware from './img/softwareCycle.png'
 import { IoIosArrowDown } from "react-icons/io"
 import DivItem from './divItem'
 
@@ -31,6 +28,13 @@ function App() {
     }
     
   
+  }
+  function setWith(){
+    var slides=document.querySelectorAll('.slide ');
+    for(var i=0;i<slides.length;i++){
+      slides[i].style.width=""+window.innerWidth+"px";
+      
+    }
   }
   
   // function openSub(e){
@@ -88,24 +92,26 @@ function App() {
 
     }
   }
-
+    setWith();
     lazylaod();
     lazyloadopcaity();
-    var counter=1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked=true;
-      counter++;
-      if(counter>3){
-        counter=1
-      }
-    },5000)
+    // var counter=1;
+    // setInterval(function(){
+    //   document.getElementById('radio' + counter).checked=true;
+    //   counter++;
+    //   if(counter>3){
+    //     counter=1
+    //   }
+    // },5000)
     window.addEventListener('scroll',()=>lazylaod())
+    window.addEventListener('resize',()=>setWith())
    
    
      
 
     return () => {
       window.removeEventListener('scroll',()=>lazylaod())
+      window.removeEventListener('resize',()=>setWith())
       
       
     }
@@ -113,19 +119,66 @@ function App() {
   return (
     <main className="container">
         <Head/>
-        <div className="Home-panel" id="home">
-        <img src={tech} alt="tech"></img>
-          <div className="Home-title">
-          
-            <a href="#">
-            <h1>Getting Started with Us</h1>
-            <p>Build Amazing Solution that Support your Bussiness</p>
-            <p>Learn more</p>
-            </a>
-          </div>
-       
-   
+        <div className="body-slider">
+        <div className="slider">
+
+        <div className="slides">
+              <input type="radio" name="radio-btn" id="radio1"/>
+              <input type="radio" name="radio-btn" id="radio2"/>
+              <input type="radio" name="radio-btn" id="radio3"/>
+            
+
+
+              <div className="slide first desc-1">
+                  <div className="carossel-item">
+                    <h1>Redefine your businness1</h1>
+                  </div>
+                  <div className="carossel-item">
+                  <h1>Redefine your businness2</h1>
+                  </div>
+              </div>
+              <div className="slide desc-2">
+                      <div className="carossel-item">
+                      <h1>Redefine your businness1</h1>
+                    </div>
+                    <div className="carossel-item">
+                    <h1>Redefine your businness2</h1>
+                    </div>
+
+              </div>
+              <div className="slide desc-3">
+                      <div className="carossel-item">
+                      <h1>Redefine your businness1</h1>
+                    </div>
+                    <div className="carossel-item">
+                    <h1>Redefine your businness2</h1>
+                    </div>
+
+              </div>
+
+              <div className="navigation-auto">
+              <div className="auto-btn1"></div>
+              <div className="auto-btn2"></div>
+              <div className="auto-btn3"></div>
+
         </div>
+
+      </div>
+        
+
+         
+          <div className="navigation-manual">
+            <label for="radio1" className="manual-btn"></label>
+            <label for="radio2" className="manual-btn"></label>
+            <label for="radio3" className="manual-btn"></label>
+          </div>
+
+
+      
+      </div>
+
+        </div>
+       
 
         <div className="Home-Second-Panel">
           <h4>What industry?</h4>
@@ -272,51 +325,7 @@ function App() {
        
         
         </div>
-          <div className="body-slider">
-          <div className="slider">
-
-          <div className="slides">
-                <input type="radio" name="radio-btn" id="radio1"/>
-                <input type="radio" name="radio-btn" id="radio2"/>
-                <input type="radio" name="radio-btn" id="radio3"/>
-              
-
-
-                <div className="slide first">
-                <img src={ecom}  alt="ecommerce"/>
-
-                </div>
-                <div className="slide">
-                <img src={kerangka}  alt="kerangka"/>
-
-                </div>
-                <div className="slide">
-                <img src={sofware}  alt="sofware"/>
-
-                </div>
-
-                <div className="navigation-auto">
-                <div className="auto-btn1"></div>
-                <div className="auto-btn2"></div>
-                <div className="auto-btn3"></div>
-
-          </div>
-
-        </div>
-          
-
-           
-            <div className="navigation-manual">
-              <label for="radio1" className="manual-btn"></label>
-              <label for="radio2" className="manual-btn"></label>
-              <label for="radio3" className="manual-btn"></label>
-            </div>
-
-
-        
-        </div>
-
-          </div>
+         
        
      
     </main>

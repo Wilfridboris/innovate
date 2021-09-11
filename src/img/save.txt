@@ -1,0 +1,13 @@
+ <div className="Home-panel" id="home">
+        <img src={tech} alt="tech"></img>
+          <div className="Home-title">
+          
+            <a href="#">
+            <h1>Getting Started with Us</h1>
+            <p>Build Amazing Solution that Support your Bussiness</p>
+            <p>Learn more</p>
+            </a>
+          </div>
+       
+   
+        </div>
