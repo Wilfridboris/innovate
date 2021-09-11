@@ -230,6 +230,7 @@ section a{
     justify-content: center;
     align-items: center;
     
+    
 }
 .slider{
     width: 100%;
@@ -239,7 +240,7 @@ section a{
     
 }
 .slides{
-   width: 300%;
+   width: fit-content;
    height: 400px;
    display: flex; 
 }
@@ -299,11 +300,11 @@ section a{
     transition: margin 1s;
 }
 #radio2:checked ~ .first{
-    margin-left:-34% ;
+    margin-left:-33.5% ;
     transition: margin 1s;
 }
 #radio3:checked ~ .first{
-    margin-left:-68% ;
+    margin-left:-67% ;
     transition: margin 1s;
  
 }
@@ -370,22 +371,8 @@ section a{
      .list-items-dek-view li{
         padding: 0px 20px 20px 20px;
      }
+    
    
    
 } 
 
-@media all and (max-width:650px){
-
-    #radio1:checked ~ .first{
-        margin-left:0%;
-        transition: margin 1s;
-    }
-    #radio2:checked ~ .first{
-        margin-left:-33.5% ;
-        transition: margin 1s;
-    }
-    #radio3:checked ~ .first{
-        margin-left:-66.7% ;
-        transition: margin 1s;
-    }
-}
