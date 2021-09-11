@@ -258,19 +258,19 @@ section a{
     
 }
 .desc-1{
-    background-image: url(img/ecommerce.png);
+    background-image: url(img/background-stat.png);
     background-position:0 ;
     background-repeat:no-repeat ;
     background-size:cover ;
 }
 .desc-2{
-    background-image: url(img/kerangka.png);
+    background-image: url(img/background-assisance.png);
     background-position:0 ;
     background-repeat:no-repeat ;
     background-size:cover ;
 }
 .desc-3{
-    background-image: url(img/softwareCycle.png);
+    background-image: url(img/background-learning.png);
     background-position:0 ;
     background-repeat:no-repeat ;
     background-size:cover ;

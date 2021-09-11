@@ -7,6 +7,7 @@ import service from './img/service.png'
 import manufacturing from './img/manufacturing.png'
 import { IoIosArrowDown } from "react-icons/io"
 import DivItem from './divItem'
+import kbstatlogo from './img/kb-logo-stat.png'
 
 
 function App() {
@@ -111,7 +112,7 @@ function App() {
       if(counter>3){
         counter=1
       }
-    },5000)
+    },6000)
     window.addEventListener('scroll',()=>lazylaod())
     window.addEventListener('resize',()=>setWith())
    
@@ -143,7 +144,7 @@ function App() {
                     <h1>Redefine your businness1</h1>
                   </div>
                   <div className="carossel-item">
-                  <h1>Redefine your businness2</h1>
+                      <img src={kbstatlogo} alt="logo statistic on screen"></img>
                   </div>
               </div>
               <div className="slide desc-2">
