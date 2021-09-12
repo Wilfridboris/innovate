@@ -140,27 +140,29 @@ function App() {
 
 
               <div className="slide first desc-1">
-                  <div className="carossel-item">
-                    <h1>Redefine your businness1</h1>
+                  <div className="carossel-item-text">
+                    <h1>Increase your business productivity</h1>
+                    <p>We help you build your presence onlie by using 
+                    the latest technolgies of the cloud and applications</p>
                   </div>
-                  <div className="carossel-item">
+                  <div className="carossel-item-img">
                       <img src={kbstatlogo} alt="logo statistic on screen"></img>
                   </div>
               </div>
               <div className="slide desc-2">
-                      <div className="carossel-item">
+                      <div className="carossel-item-text">
                       <h1>Redefine your businness1</h1>
                     </div>
-                    <div className="carossel-item">
+                    <div className="carossel-item-img">
                     <h1>Redefine your businness2</h1>
                     </div>
 
               </div>
               <div className="slide desc-3">
-                      <div className="carossel-item">
+                      <div className="carossel-item-text">
                       <h1>Redefine your businness1</h1>
                     </div>
-                    <div className="carossel-item">
+                    <div className="carossel-item-img">
                     <h1>Redefine your businness2</h1>
                     </div>
 
