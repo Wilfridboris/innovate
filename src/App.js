@@ -85,7 +85,7 @@ function App() {
       }
    
     }
-    
+  
     function lazylaod(){
       var index=0;
     var elements=document.querySelectorAll('img[data-src]');
@@ -102,25 +102,45 @@ function App() {
 
     }
   }
+  function increase(total){
+    counter++;
+    if(counter>total){
+      counter=1
+    }
+    document.getElementById('radio' + counter).checked=true;
+  }
+  function decrease(minim){
+    counter--;
+    if(counter<=minim){
+      counter=1
+    }
+    document.getElementById('radio' + counter).checked=true;
+  }
+  function autonav(){
+    document.getElementById('radio' + counter).checked=true;
+    increase(3)
+  }
+  
     detectsceen()
     lazylaod();
     lazyloadopcaity();
     var counter=1;
+    const arrowleft=document.getElementById('arrow-left');
+    const arrowright=document.getElementById('arrow-right');
     setInterval(function(){
-      document.getElementById('radio' + counter).checked=true;
-      counter++;
-      if(counter>3){
-        counter=1
-      }
-    },6000)
+     autonav()
+    },8000)
     window.addEventListener('scroll',()=>lazylaod())
     window.addEventListener('resize',()=>setWith())
-   
+    arrowright.addEventListener('click',()=>increase(3))
+    arrowleft.addEventListener('click',()=>decrease(1))
    
      
 
     return () => {
       window.removeEventListener('scroll',()=>lazylaod())
+      arrowright.removeEventListener('click',()=>increase(3))
+      arrowleft.removeEventListener('click',()=>decrease(1))
 
       
       
@@ -184,8 +204,13 @@ function App() {
             <label for="radio2" className="manual-btn"></label>
             <label for="radio3" className="manual-btn"></label>
           </div>
-
-
+          <div className="arrow-left-wrapper">
+              <div id="arrow-left"></div>
+          </div>
+          <div className="arrow-right-wrapper">
+              <div id="arrow-right"></div>
+          </div>
+         
       
       </div>
 

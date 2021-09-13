@@ -83,7 +83,7 @@ section a{
     background-color: rgb(88, 31, 66);
     margin: 50px 0px;
     padding: 10px;
-    height: 800px;
+    height: auto;
     
  
 }
@@ -234,7 +234,7 @@ section a{
 }
 .slider{
     width: 100%;
-    height: 300px;
+    height: auto;
     overflow: hidden;
     /* border-radius: 10px; */
     
@@ -307,14 +307,15 @@ section a{
 .navigation-manual{
     position: absolute;
     width: 100%;
-    margin-top:-50px;
+    left: 0;
+    top: 410px;
     display: flex;
     justify-content: center;
 }
 .manual-btn{
-    border: 2px solid aqua;
-   padding: 5px;
-   border-radius: 10px;
+    border: 2px solid #aab7b8;
+   padding: 4px;
+   border-radius: 11px;
    cursor: pointer;
    transition: 0.1s;
 }
@@ -322,7 +323,7 @@ section a{
     margin-right: 40px;
 }
 .manual-btn:hover{
-    background: rgb(177, 243, 243);
+    background: #e4ecec;
 }
 #radio1:checked ~ .first{
     margin-left:0%;
@@ -342,11 +343,12 @@ section a{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top:270px;
+    left: 0;
+    top: 410px;
 }
 .navigation-auto div{
-    border: 2px solid aqua;
-    padding: 5px;
+    border: 2px solid #aab7b8;
+    padding: 4px;
     border-radius: 10px;
     transition: 0.1s;
 }
@@ -354,16 +356,62 @@ section a{
     margin-right: 40px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: rgb(177, 243, 243);
+    background: #e4ecec;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: rgb(177, 243, 243);
+    background: #e4ecec;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: rgb(177, 243, 243);
+    background: #e4ecec;
 }
 /*slider anim end*/
 
+/*arrow style begin*/
+
+#arrow-right{
+    position: absolute;
+    box-sizing: border-box;
+    border-width: 0px 3px 3px 0px;
+    border-color: #d5dbdb;
+    transform: rotate(-40deg) skew(10deg);
+    border-style: solid;
+    right: 27px;
+    height: 2em;
+    width: 2em;
+    top:250px;
+    cursor: pointer;
+   
+}
+#arrow-left{
+    position: absolute;
+    box-sizing: border-box;
+    border-width: 0px 3px 3px 0px;
+    border-color: #d5dbdb;
+    transform: rotate(140deg) skew(10deg);
+    border-style: solid;
+    left: 27px;
+    height: 2em;
+    width: 2em;
+    top:250px;
+    cursor: pointer;
+}
+#arrow-right:hover,#arrow-left:hover{
+    border-color: #ffffff;
+}
+/*arrow style end*/
+    
+   
+   
+
+/* @media all and (min-width: 388px) {
+ 
+    .slider{
+        height: 320px;
+       
+        
+    }
+    
+} */
 @media all and (min-width:960px){
     .list-items-dek-view,.canbehidde {
         display: block;
@@ -374,12 +422,7 @@ section a{
     .Home-image img{
         width: 100%;
     }
-    .Home-Third-Panel{
-        /* background-image:url(img/panel2.png) ; */
-        height: 350px;
-        
-     
-    }
+   
     .Service-image img{
         width: 100%;
     }
@@ -414,9 +457,10 @@ section a{
     .carossel-item-img img{
         width: 400px;
     }
-    
-    
-   
-   
-} 
+    /* .slider{
+        height: 300px;
+       
+        
+    } */
+}
 
