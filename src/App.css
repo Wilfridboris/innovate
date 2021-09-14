@@ -236,6 +236,7 @@ section a{
     width: 100%;
     height: auto;
     overflow: hidden;
+    position: relative;
     /* border-radius: 10px; */
     
 }
@@ -261,7 +262,7 @@ section a{
      
 }
 .carossel-item-text h1{
-   font-weight:500;
+   font-weight:900;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
      
 }
@@ -308,8 +309,8 @@ section a{
     position: absolute;
     width: 100%;
     left: 0;
-    top: 410px;
-    display: flex;
+    top: 290px;
+    display: none;
     justify-content: center;
 }
 .manual-btn{
@@ -340,11 +341,11 @@ section a{
 }
 .navigation-auto{
     position: absolute;
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: center;
     left: 0;
-    top: 410px;
+    top: 290px;
 }
 .navigation-auto div{
     border: 2px solid #aab7b8;
@@ -378,7 +379,7 @@ section a{
     right: 27px;
     height: 2em;
     width: 2em;
-    top:250px;
+    top:180px;
     cursor: pointer;
    
 }
@@ -392,7 +393,7 @@ section a{
     left: 27px;
     height: 2em;
     width: 2em;
-    top:250px;
+    top:180px;
     cursor: pointer;
 }
 #arrow-right:hover,#arrow-left:hover{
@@ -457,6 +458,13 @@ section a{
     .carossel-item-img img{
         width: 400px;
     }
+    #arrow-left,#arrow-right{
+            top: 100px;
+    }   
+    .navigation-auto,.navigation-manual{
+        display: flex;
+    }
+   
     /* .slider{
         height: 300px;
        
