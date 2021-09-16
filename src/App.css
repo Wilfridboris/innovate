@@ -81,6 +81,7 @@ section a{
     /* background-image:url(img/panel2.png) ; */
     text-align: center;
     background-color: rgb(88, 31, 66);
+    background-image: linear-gradient(to right, rgb(129, 31, 92) , rgb(83, 28, 62));
     margin: 50px 0px;
     padding: 10px;
     height: auto;
