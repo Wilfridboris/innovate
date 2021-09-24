@@ -54,7 +54,7 @@ export default class Head extends Component {
     reloadpage(){
         setTimeout(()=>{
             window.location.reload()
-        },0.5)
+        },0.1)
     }
     componentDidMount(){
         this.toggleItemStyle()
