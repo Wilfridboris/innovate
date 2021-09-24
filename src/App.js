@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom'
 import Service from './Service'
 import Home from './Home'
 import Solution from './Solution'
-import solution_web_application from './solution_web_application'
+import Solution_web_application from './solution_web_application'
 
 function App() {
   
@@ -17,7 +17,7 @@ function App() {
               <Route path="/" exact component={Home}/>
               <Route path="/services" component={Service}/>
               <Route path="/solutions" exact component={Solution}/>
-              <Route  path="/solutions/web" component={solution_web_application}/>
+              <Route  path="/solutions/web" component={Solution_web_application}/>
              
           
         
