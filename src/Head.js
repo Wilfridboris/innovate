@@ -5,6 +5,7 @@ import $ from 'jquery';
 import Item from './Item'
 import Subitem from './Subitem'
 import logo from './img/logo.png'
+import {Link} from 'react-router-dom'
 
 
 export default class Head extends Component {
@@ -17,6 +18,8 @@ export default class Head extends Component {
         }
 
     this.setToggleness=this.setToggleness.bind(this);
+    this.reloadpage=this.reloadpage.bind(this);
+    
     }
 
 
@@ -48,6 +51,11 @@ export default class Head extends Component {
 
        
     }
+    reloadpage(){
+        setTimeout(()=>{
+            window.location.reload()
+        },0.5)
+    }
     componentDidMount(){
         this.toggleItemStyle()
     
@@ -59,6 +67,7 @@ export default class Head extends Component {
         window.removeEventListener('scroll',()=>this.setToggleness());
 
     }
+ 
     render() {
         
         return(
@@ -140,7 +149,7 @@ export default class Head extends Component {
                         <p>We assist you for configuring your shoppify site</p>
                     </section>
                     <section className="Product-section">
-                        <h2><a href="">Web application</a></h2>
+                        <h2><Link onClick={this.reloadpage} to="/solutions/web">Web application</Link></h2>
                         <p>Customise web application design for your need</p>
                     </section>
                     <section className="Product-section">
