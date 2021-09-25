@@ -6,6 +6,8 @@ import Service from './Service'
 import Home from './Home'
 import Solution from './Solution'
 import Solution_web_application from './solution_web_application'
+import Learn from './Learn'
+import Learn_spa from './Learn_spa'
 
 function App() {
   
@@ -17,7 +19,11 @@ function App() {
               <Route path="/" exact component={Home}/>
               <Route path="/services" component={Service}/>
               <Route path="/solutions" exact component={Solution}/>
+              <Route  path="/learn" exact component={Learn}/>
+              <Route  path="/learn/spa" exact component={Learn_spa}/>
               <Route  path="/solutions/web" component={Solution_web_application}/>
+             
+              
              
           
         

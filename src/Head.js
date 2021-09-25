@@ -112,7 +112,7 @@ export default class Head extends Component {
                         <p>We assist you for configuring your shoppify site</p>
                     </section>
                     <section className="Product-section">
-                        <h2><a href="">Web application</a></h2>
+                        <h2><Link onClick={this.reloadpage} to="/solutions/web">Web application</Link></h2>
                         <p>Customise web application design for your need</p>
                     </section>
                     <section className="Product-section">
@@ -149,7 +149,7 @@ export default class Head extends Component {
                         <p>We assist you for configuring your shoppify site</p>
                     </section>
                     <section className="Product-section">
-                        <h2><Link onClick={this.reloadpage} to="/solutions/web">Web application</Link></h2>
+                        <h2><a href="">Web Management</a></h2>
                         <p>Customise web application design for your need</p>
                     </section>
                     <section className="Product-section">
@@ -171,8 +171,51 @@ export default class Head extends Component {
                 </ul>
 
             </Item>
-                    <Item>Pricing</Item>
-                    <Item>Learn</Item>
+                    <Item>Pricing
+                        <div className="Products">
+                        <section className="Product-section">
+                            <h2><a href="">Web Management</a></h2>
+                            <p>We assist you for configuring your shoppify site</p>
+                        </section>
+                        <section className="Product-section">
+                            <h2><a href="">Web Management</a></h2>
+                            <p>Customise web application design for your need</p>
+                        </section>
+                        <section className="Product-section">
+                            <h2><a href="">Mobile application</a></h2>
+                            <p>We assist you for configuring your shoppify site</p>
+                    </section>
+                    <section className="Product-section">
+                            <h2><a href="">Wordpress</a></h2>
+                            <p>We assist you for configuring your shoppify site</p>
+                    </section>
+                    
+                
+                </div>
+                    </Item>
+                    <Item>Learn
+                    
+                            <div className="Products">
+                            <section className="Product-section">
+                                <h2><Link onClick={this.reloadpage} to="/learn/spa">Spa application</Link></h2>
+                                <p>Learn how to build simple application with html,javascript and css</p>
+                            </section>
+                            <section className="Product-section">
+                                <h2><a href="">CI/CD</a></h2>
+                                <p>Style your application</p>
+                            </section>
+                            <section className="Product-section">
+                                <h2><a href="">API</a></h2>
+                                <p>We assist you for configuring your shoppify site</p>
+                        </section>
+                        <section className="Product-section">
+                                <h2><a href="">Server</a></h2>
+                                <p>We assist you for configuring your shoppify site</p>
+                        </section>
+                        
+                    
+            </div>
+                    </Item>
                     <Item>More</Item>
                   
 
