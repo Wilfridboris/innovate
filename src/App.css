@@ -80,8 +80,8 @@ section a{
 .Home-Third-Panel{
     /* background-image:url(img/panel2.png) ; */
     text-align: center;
-    background-color: rgb(88, 31, 66);
-    background-image: linear-gradient(to right, rgb(129, 31, 92) , rgb(83, 28, 62));
+    background-color: rgb(30, 85, 131);
+    background-image: linear-gradient(to right, rgb(37, 117, 155) , rgb(20, 100, 110));
     margin: 50px 0px;
     padding: 10px;
     height: auto;
@@ -150,7 +150,7 @@ section a{
  }
  .list-items-mob-view{
     padding: 0px 0px;
-    background-color: rgb(88, 31, 66);
+    background-color: rgb(30, 85, 131);
     
  }
  .list-items-mob-view .lb-trigger {
