@@ -150,7 +150,7 @@ export default function Home() {
       
         detectsceen()
         lazylaod();
-        lazyloadopcaity();
+        // lazyloadopcaity();
         animSlide();
      
         
@@ -246,7 +246,7 @@ export default function Home() {
             <section>
                   <a href="#">
                     <img></img>
-                    <h3>E-commerce</h3>
+                    <h2>E-commerce</h2>
                     <p>Achieve purchase of your product easilty</p>
                     <p>Lear more</p>
                   </a>
@@ -254,7 +254,7 @@ export default function Home() {
             <section>
                   <a href="#">
                     <img></img>
-                    <h3>Finance</h3>
+                    <h2>Finance</h2>
                     <p>Achieve purchase of your product easilty</p>
                     <p>Lear more</p>
                   </a>
@@ -262,7 +262,7 @@ export default function Home() {
             <section>
             <a href="#">
               <img></img>
-              <h3>Learning Platform</h3>
+              <h2>Learning Platform</h2>
               <p>Achieve purchase of your product easilty</p>
               <p>Lear more</p>
             </a>
@@ -270,7 +270,7 @@ export default function Home() {
       <section>
       <a href="#">
         <img></img>
-        <h3>Media & Entertaiment</h3>
+        <h2>Media & Entertaiment</h2>
         <p>Achieve purchase of your product easilty</p>
         <p>Lear more</p>
       </a>
@@ -281,7 +281,7 @@ export default function Home() {
             <section>
               <a href="#">
                 <img></img>
-                <h3>Finance</h3>
+                <h2>Finance</h2>
                 <p>Achieve purchase of your product easilty</p>
                 <p>Lear more</p>
               </a>
@@ -289,7 +289,7 @@ export default function Home() {
           <section>
           <a href="#">
             <img></img>
-            <h3>Finance</h3>
+            <h2>Finance</h2>
             <p>Achieve purchase of your product easilty</p>
             <p>Lear more</p>
           </a>
@@ -297,7 +297,7 @@ export default function Home() {
       <section>
           <a href="">
             <img></img>
-            <h3>Finance</h3>
+            <h2>Finance</h2>
             <p>Achieve purchase of your product easilty</p>
             <p>Lear more</p>
           </a>
