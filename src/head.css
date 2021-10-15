@@ -2,6 +2,7 @@ header {
     background-color: #272727;
   
 }
+
 .fixed{
     position: relative;
     top: 0;
@@ -118,9 +119,14 @@ header {
    cursor: pointer;
 }
 
-
-
-
+/*account theme begin*/
+.account{
+    background-color: rgb(240, 239, 239);
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+    display: none;
+}
 
 .Products,.Solution{
     position: fixed;
@@ -145,7 +151,7 @@ header {
     background: none;
     box-shadow: none;
    
-    
+   
     
 }
 .Product-section h2 a{
@@ -160,8 +166,23 @@ header {
 .Product-section h2 a:hover{
    color: rgb(228, 215, 41);
 }
+.account li a:hover{
+    color: rgb(0, 110, 255);
+ }
+ .account li a{
+     text-decoration: none;
+     color: black;
+ }
 
 @media (min-width:600px) {
+    .dropdown a:hover >.account{
+        display: block;
+      visibility: visible;
+    }
+    .dropdown a >.account{
+        display: block;
+       visibility: hidden;
+    }
     .dropdown a:hover > .Products {
         visibility: visible;
        transition: all 0.3s ease;
@@ -190,7 +211,7 @@ header {
           padding: 0px 10px;
       }
       .header-option .item{
-        margin: 20px 2px 0px 20px ;
+        margin: 20px 2px 0px 0px ;
        
     }
       .header-item,.header-option{

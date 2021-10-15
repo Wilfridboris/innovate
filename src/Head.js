@@ -94,6 +94,16 @@ export default class Head extends Component {
                         <Subitem>English</Subitem>
                         </ul>
                     </Item>
+                    <Item>My Account
+                        <div className="account">
+                            <li> Dashboard </li>
+                            <li> <Link  to="/login">Portail</Link> </li>
+                        </div>
+                        <ul className="submenu">
+                        <Subitem link="/dashboard"> Dashboard </Subitem>
+                        <Subitem link="/login">Portail</Subitem>
+                        </ul>
+                    </Item>
                    
                   
                    
@@ -108,8 +118,8 @@ export default class Head extends Component {
                     
                     <div className="Products">
                     <section className="Product-section">
-                        <h2><a href="">Shopify</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <h2><a href="">Sofware integration</a></h2>
+                        <p>We help you integrate and deploy a wide range of application</p>
                     </section>
                     <section className="Product-section">
                         <h2><Link onClick={this.reloadpage} to="/solutions/web">Web application</Link></h2>
@@ -117,19 +127,19 @@ export default class Head extends Component {
                     </section>
                     <section className="Product-section">
                         <h2><a href="">Mobile application</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <p>deep conception in mobile application to get Real-Time users</p>
                    </section>
                    <section className="Product-section">
                         <h2><a href="">Wordpress</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <p>Create a blog with wordpress in second</p>
                    </section>
                    <section className="Product-section">
                         <h2><a href="">IT support</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <p>Get the asset needed to manage you department</p>
                    </section>
                    <section className="Product-section">
                         <h2><a href="">Cloud</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <p>Help to configure your system to get the most of the cloud</p>
                    </section>
                
             </div>
@@ -145,20 +155,24 @@ export default class Head extends Component {
                <Item>Solution
                     <div className="Products">
                     <section className="Product-section">
-                        <h2><a href="">Web Management</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <h2><a href="">E-commerce API</a></h2>
+                        <p>Standard Api e-commerce site already build and waiting for your data</p>
                     </section>
                     <section className="Product-section">
-                        <h2><a href="">Web Management</a></h2>
-                        <p>Customise web application design for your need</p>
+                        <h2><a href="">2d Game</a></h2>
+                        <p>2D conception for android and ios</p>
                     </section>
                     <section className="Product-section">
-                        <h2><a href="">Mobile application</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <h2><a href="">Learning platform</a></h2>
+                        <p>Get access to our learning platform</p>
+                    </section>
+                    <section className="Product-section">
+                        <h2><a href="">Web template</a></h2>
+                        <p>Dowload our new web template to start building</p>
                    </section>
                    <section className="Product-section">
-                        <h2><a href="">Wordpress</a></h2>
-                        <p>We assist you for configuring your shoppify site</p>
+                        <h2><a href="">Api Template</a></h2>
+                        <p>More infos</p>
                    </section>
                    
                
@@ -174,20 +188,24 @@ export default class Head extends Component {
                     <Item>Pricing
                         <div className="Products">
                         <section className="Product-section">
-                            <h2><a href="">Web Management</a></h2>
-                            <p>We assist you for configuring your shoppify site</p>
+                            <h2><a href="">web package</a></h2>
+                            <p>See our offers</p>
                         </section>
                         <section className="Product-section">
-                            <h2><a href="">Web Management</a></h2>
-                            <p>Customise web application design for your need</p>
+                            <h2><a href="">mobile package</a></h2>
+                            <p>See our offers</p>
                         </section>
                         <section className="Product-section">
-                            <h2><a href="">Mobile application</a></h2>
-                            <p>We assist you for configuring your shoppify site</p>
+                            <h2><a href="">integration package</a></h2>
+                            <p>See our offers</p>
                     </section>
                     <section className="Product-section">
-                            <h2><a href="">Wordpress</a></h2>
-                            <p>We assist you for configuring your shoppify site</p>
+                            <h2><a href="">Wordpress package</a></h2>
+                            <p>See our offers</p>
+                    </section>
+                    <section className="Product-section">
+                            <h2><a href="">formation package</a></h2>
+                            <p>See our offers</p>
                     </section>
                     
                 
@@ -216,7 +234,7 @@ export default class Head extends Component {
                     
             </div>
                     </Item>
-                    <Item>More</Item>
+                    <Item>Opportunity</Item>
                   
 
                 </ul>

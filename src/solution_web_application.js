@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { Helmet } from 'react-helmet';
 import MarkDown from 'markdown-to-jsx'
+import Head from './Head'
 
 export default function Solution_web_application() {
     const file_name='chapter.md';
@@ -33,10 +34,10 @@ export default function Solution_web_application() {
 
     return (
         <div>
-       
+            <Head/>
             <Helmet>
                 <title>KB Studio Solutions | web applications</title>
-                <meta name="description" content="Kb studio web applications support" />
+                <meta name="description" content="legrowtech web applications" />
             </Helmet>
         
             <MarkDown>

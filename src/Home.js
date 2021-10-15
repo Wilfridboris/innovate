@@ -3,6 +3,7 @@ import service from './img/service.png'
 import manufacturing from './img/manufacturing.png'
 import DivItem from './divItem'
 import kbstatlogo from './img/kb-logo-stat.png'
+import Head from './Head'
 
 
 export default function Home() {
@@ -103,11 +104,16 @@ export default function Home() {
         let id=null;
         const arrowleft=document.getElementById('arrow-left');
         const arrowright=document.getElementById('arrow-right');
-        autoplay();
+         autoplay();
         function autoplay(){
           id=setInterval(function(){
-            document.getElementById('radio' + counter).checked=true;
-            counter++;
+            if( document.getElementById('radio' + counter)){
+              document.getElementById('radio' + counter).checked=true;
+              counter++;
+            }else{
+              return
+            }
+          
             if(counter>3){
               counter=1
             }
@@ -157,12 +163,14 @@ export default function Home() {
       
         window.addEventListener('scroll',()=>lazylaod())
         window.addEventListener('resize',()=>setWith())
+      
         
        
          
     
         return () => {
           window.removeEventListener('scroll',()=>lazylaod())
+        
           // arrowright.removeEventListener('click',()=>increase(3))
           // arrowleft.removeEventListener('click',()=>decrease(1))
     
@@ -173,6 +181,7 @@ export default function Home() {
     
     return (
         <div>
+              <Head/>
         <div className="body-slider">
         <div className="slider">
 
