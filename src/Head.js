@@ -234,7 +234,30 @@ export default class Head extends Component {
                     
             </div>
                     </Item>
-                    <Item>Opportunity</Item>
+                    <Item>Opportunity
+
+                    <div className="Products">
+                            <section className="Product-section">
+                                <h2><a href="">Apply for a developer position</a></h2>
+                                <p>Eager to learn?, Join the team to get experience and help us build application</p>
+                            </section>
+                            <section className="Product-section">
+                                <h2><a href="">Apply for a training</a></h2>
+                                <p>Get plenty of training and help of expert to grow in the tech field</p>
+                            </section>
+                            <section className="Product-section">
+                                <h2><a href="">Apply for a intership</a></h2>
+                                <p>we provide a intership programm for student</p>
+                        </section>
+                        <section className="Product-section">
+                                <h2><a href="">Apply for a technician position</a></h2>
+                                <p>We are a growing team and need talent to help us</p>
+                        </section>
+                        
+                    
+            </div>
+                    </Item>
+
                   
 
                 </ul>
