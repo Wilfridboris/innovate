@@ -7,10 +7,11 @@ const useForm =(validator)=>{
     });
 
     const [errors,setErrors]=useState({});
+    const [isSubmitting,setIsSubmitting]=useState(false)
     const handleChange=e=>{
         const {name,value}=e.target;
         setValues({
-            ...value,
+            ...values,
             [name]:value
         });
     
@@ -18,6 +19,7 @@ const useForm =(validator)=>{
     const handleSubmit=e=>{
         e.preventDefault();
         setErrors(validator(values))
+        setIsSubmitting(true)
     }
     return {handleChange,values,handleSubmit,errors};
 };

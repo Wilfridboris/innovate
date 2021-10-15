@@ -36,6 +36,13 @@ body{
     
  
 }
+.form-input-btn{
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    
+   
+}
 
 #overlay{
     position: fixed;
