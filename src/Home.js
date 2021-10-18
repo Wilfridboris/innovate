@@ -204,19 +204,21 @@ export default function Home() {
               </div>
               <div className="slide desc-2">
                       <div className="carossel-item-text">
-                      <h1>Redefine your businness1</h1>
+                      <h1>Integrate popular app to your system to increase your productivity</h1>
+                      <p>we integrate application like Brightspace, wordpress, office, topdesk</p>
                     </div>
                     <div className="carossel-item-img">
-                    <h1>Redefine your businness2</h1>
+                    
                     </div>
 
               </div>
               <div className="slide desc-3">
                       <div className="carossel-item-text">
-                      <h1>Redefine your businness1</h1>
+                      <h1>Learn and pratice</h1>
+                      <p>We want to give you the opportunity have access to plenty of contents and get assist by professional</p>
                     </div>
                     <div className="carossel-item-img">
-                    <h1>Redefine your businness2</h1>
+                    
                     </div>
 
               </div>

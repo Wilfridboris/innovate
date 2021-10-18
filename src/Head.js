@@ -144,10 +144,12 @@ export default class Head extends Component {
                
             </div>
                     <ul className="submenu">
-                    <Subitem>Design</Subitem>
-                    <Subitem>Development</Subitem>
-                    <Subitem>SEO</Subitem>
-                    <Subitem>Copywriting</Subitem>
+                    <Subitem>Sofware integration</Subitem>
+                    <Subitem>Web application</Subitem>
+                    <Subitem>Mobile application</Subitem>
+                    <Subitem>Wordpres</Subitem>
+                    <Subitem>IT suppor</Subitem>
+                    <Subitem>Cloud</Subitem>
                 </ul>
                     
                 </Item>
@@ -178,84 +180,90 @@ export default class Head extends Component {
                
                </div>
                 <ul className="submenu">
-                <Subitem>Design</Subitem>
-                <Subitem>Development</Subitem>
-                <Subitem>SEO</Subitem>
-                <Subitem>Copywriting</Subitem>
+                <Subitem>E-commerce API</Subitem>
+                <Subitem>2d Game</Subitem>
+                <Subitem>Learning platform</Subitem>
+                <Subitem>Web template</Subitem>
+                <Subitem>Api Template</Subitem>
                 </ul>
 
             </Item>
                     <Item>Pricing
                         <div className="Products">
                         <section className="Product-section">
-                            <h2><a href="">web package</a></h2>
+                            <h2><a href="">Web package</a></h2>
                             <p>See our offers</p>
                         </section>
                         <section className="Product-section">
-                            <h2><a href="">mobile package</a></h2>
+                            <h2><a href="">Mobile package</a></h2>
                             <p>See our offers</p>
                         </section>
-                        <section className="Product-section">
-                            <h2><a href="">integration package</a></h2>
-                            <p>See our offers</p>
-                    </section>
                     <section className="Product-section">
-                            <h2><a href="">Wordpress package</a></h2>
-                            <p>See our offers</p>
-                    </section>
-                    <section className="Product-section">
-                            <h2><a href="">formation package</a></h2>
+                            <h2><a href="">Training package</a></h2>
                             <p>See our offers</p>
                     </section>
                     
                 
                 </div>
+                    <ul className="submenu">
+                                            <Subitem>Web package</Subitem>
+                                            <Subitem>Mobile package</Subitem>
+                                            <Subitem>Training package</Subitem>
+                                        
+                                    </ul>
+                
                     </Item>
                     <Item>Learn
                     
                             <div className="Products">
                             <section className="Product-section">
-                                <h2><Link onClick={this.reloadpage} to="/learn/spa">Spa application</Link></h2>
-                                <p>Learn how to build simple application with html,javascript and css</p>
+                                <h2><Link onClick={this.reloadpage} to="/learn/spa">Web developer path</Link></h2>
+                                <p>Learn how to build web application with angular,laravel and node</p>
                             </section>
                             <section className="Product-section">
-                                <h2><a href="">CI/CD</a></h2>
-                                <p>Style your application</p>
-                            </section>
-                            <section className="Product-section">
-                                <h2><a href="">API</a></h2>
-                                <p>We assist you for configuring your shoppify site</p>
+                                <h2><a href="">Mobile developer path</a></h2>
+                                <p>Learn how to build mobile application with android,react native and flutter</p>
                         </section>
                         <section className="Product-section">
-                                <h2><a href="">Server</a></h2>
-                                <p>We assist you for configuring your shoppify site</p>
+                                <h2><a href="">Tech support path</a></h2>
+                                <p>Learn how to manage system and deploy big IT infrastructure</p>
                         </section>
                         
                     
             </div>
+                    <ul className="submenu">
+                                        <Subitem>Web developer path</Subitem>
+                                        <Subitem>Mobile developer path</Subitem>
+                                        <Subitem>Tech support path</Subitem>
+                                    
+                                </ul>
                     </Item>
                     <Item>Opportunity
 
                     <div className="Products">
                             <section className="Product-section">
-                                <h2><a href="">Apply for a developer position</a></h2>
-                                <p>Eager to learn?, Join the team to get experience and help us build application</p>
+                                <h2><Link  to="/jobs">Jobs</Link></h2>
+                                <p>Eager to learn?, Join the team to get experience and help us build application.
+                                    We are a growing team and need talent to help us.
+                                </p>
                             </section>
                             <section className="Product-section">
-                                <h2><a href="">Apply for a training</a></h2>
+                                <h2><a href="">Training</a></h2>
                                 <p>Get plenty of training and help of expert to grow in the tech field</p>
                             </section>
                             <section className="Product-section">
-                                <h2><a href="">Apply for a intership</a></h2>
+                                <h2><a href="">Intership</a></h2>
                                 <p>we provide a intership programm for student</p>
-                        </section>
-                        <section className="Product-section">
-                                <h2><a href="">Apply for a technician position</a></h2>
-                                <p>We are a growing team and need talent to help us</p>
                         </section>
                         
                     
-            </div>
+                         </div>
+                         <ul className="submenu">
+                                <Subitem>Apply</Subitem>
+                                <Subitem>Training</Subitem>
+                                <Subitem>Intership</Subitem>
+                             
+                         </ul>
                     </Item>
 
                   

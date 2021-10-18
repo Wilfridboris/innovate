@@ -8,6 +8,7 @@ import Solution_web_application from './solution_web_application'
 import Learn from './Learn'
 import Learn_spa from './Learn_spa'
 import useForm from './useForm'
+import Jobs from './Jobs'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
               <Route path="/login" exact component={useForm}/>
               <Route path="/services" component={Service}/>
               <Route path="/solutions" exact component={Solution}/>
+              <Route path="/jobs" exact component={Jobs}/>
               <Route  path="/learn" exact component={Learn}/>
               <Route  path="/learn/spa" exact component={Learn_spa}/>
               <Route  path="/solutions/web" component={Solution_web_application}/>
