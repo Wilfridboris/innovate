@@ -1,9 +1,7 @@
 import React from 'react'
 import './signIn.css'
-import useForm from './useForm'
-import validator from './Validator';
-function FormSigIn() {
-    const {handleChange,values,handleSubmit,errors}=useForm(validator);
+function FormSigIn({handleChange,values,handleSubmit,errors}) {
+    
     return (
         <>
         <div className="login-form">
@@ -31,6 +29,7 @@ function FormSigIn() {
                     />
                    
                         {errors.email && <p className="error">{errors.email}</p>}
+                 
                   
             </div>
             <div className="form-inputs">

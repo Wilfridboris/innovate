@@ -7,7 +7,7 @@ import Solution from './Solution'
 import Solution_web_application from './solution_web_application'
 import Learn from './Learn'
 import Learn_spa from './Learn_spa'
-import FormSigIn from './FormSigIn'
+import useForm from './useForm'
 
 function App() {
   
@@ -17,7 +17,7 @@ function App() {
     
         <Switch>
               <Route path="/" exact component={Home}/>
-              <Route path="/login" exact component={FormSigIn}/>
+              <Route path="/login" exact component={useForm}/>
               <Route path="/services" component={Service}/>
               <Route path="/solutions" exact component={Solution}/>
               <Route  path="/learn" exact component={Learn}/>
