@@ -36,8 +36,8 @@ export default function Solution_web_application() {
         <div>
             <Head/>
             <Helmet>
-                <title>KB Studio Solutions | web applications</title>
-                <meta name="description" content="legrowtech web applications" />
+                <title>legrowtech Web application</title>
+                <meta name="description" content="legrowtech help you build web applications" />
             </Helmet>
         
             <MarkDown>

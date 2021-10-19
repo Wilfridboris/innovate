@@ -1,6 +1,6 @@
-import React,{Component,children} from 'react'
+import React,{Component} from 'react'
 import './head.css'
-import {BsGridFill ,BsGrid,BsChevronDown,BsPlus} from "react-icons/bs";
+import {BsGridFill ,BsGrid} from "react-icons/bs";
 import $ from 'jquery';
 import Item from './Item'
 import Subitem from './Subitem'
