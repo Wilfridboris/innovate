@@ -270,6 +270,7 @@ export default class Head extends Component {
 
                 </ul>
             </div>
+           
     </header>
         )
 
