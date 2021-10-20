@@ -1,10 +1,12 @@
 import {React} from 'react'
 import Head from './Head'
 import './jobs.css'
+import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet';
+import { BsCaretRightFill ,BsStopwatch,BsClipboard,BsGeoAlt} from "react-icons/bs";
 
 export default function JobDetails({match}) {
- 
+       
     return (
         
         <div>
@@ -36,10 +38,10 @@ export default function JobDetails({match}) {
                      leviers de la performance digitale dans l’objectif d’améliorer le taux d’E-conversion de nos clients.
                     </p>
                     <h2>Your responsibilities</h2>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p><BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p> <BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p> <BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p> <BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
                     <h2>Ton Profil</h2>
                     <p>
                     Notre objectif est de continuer à faire grandir cette communauté,
@@ -54,17 +56,19 @@ export default function JobDetails({match}) {
 
                     </p>
                     <h2>Skills</h2>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                    <p>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p><BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p><BsCaretRightFill size="0.8em"/>   Déployer et suivre une stratégie d’AB Tests</p>
+                    <p><BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
+                    <p><BsCaretRightFill size="0.8em"/>  Déployer et suivre une stratégie d’AB Tests</p>
                     <div className="l-space-jbd"></div>
                 </div>
                 <div className="l-left-content-jbd">
-                <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                <p>  Déployer et suivre une stratégie d’AB Tests</p>
-                <button  className="l-btn">Apply</button>
+                <p>  <BsStopwatch/> Des que possible</p>
+                <p>  <BsGeoAlt/> Yaounde</p>
+                <p> <BsClipboard/> Salary</p>
+                <Link to="/apply">
+                    <button  className="l-btn" >Apply</button>
+                </Link>
                 </div>
                 
                 

@@ -23,6 +23,7 @@
 .l-content-list-jb,.l-container-flex-jbd{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 100px;
 }
 .l-btn{
     width: 250px;
@@ -42,6 +43,7 @@
     text-align: center;
     
 }
+
 .jb-items a{
     text-decoration: none;
     color: rgb(0, 10, 15);

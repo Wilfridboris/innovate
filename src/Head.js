@@ -101,7 +101,7 @@ export default class Head extends Component {
                         </div>
                         <ul className="submenu">
                         <Subitem link="/dashboard"> Dashboard </Subitem>
-                        <Subitem link="/login">Portail</Subitem>
+                        <Link to="/login"><Subitem >Portail</Subitem></Link>
                         </ul>
                     </Item>
                    
@@ -259,7 +259,7 @@ export default class Head extends Component {
                     
                          </div>
                          <ul className="submenu">
-                                <Subitem>Apply</Subitem>
+                                <Link to="/jobs"><Subitem>Jobs</Subitem></Link>
                                 <Subitem>Training</Subitem>
                                 <Subitem>Intership</Subitem>
                              
