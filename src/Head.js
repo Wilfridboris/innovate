@@ -65,19 +65,19 @@ export default class Head extends Component {
     componentDidMount(){
         this.toggleItemStyle()
     
-       this.setToggleness();
-       window.addEventListener('scroll',()=>this.setToggleness());
+    //    this.setToggleness();
+    //    window.addEventListener('scroll',()=>this.setToggleness());
 
       }
     componentWillUnmount(){
-        window.removeEventListener('scroll',()=>this.setToggleness());
+        // window.removeEventListener('scroll',()=>this.setToggleness());
 
     }
  
     render() {
-        
+            //className={this.state.isScroll?"fixed":""
         return(
-            <header className={this.state.isScroll?"fixed":""}>
+            <header>
             <div >
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>

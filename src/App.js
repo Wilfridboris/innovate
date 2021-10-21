@@ -10,7 +10,7 @@ import Learn_spa from './Learn_spa'
 import useForm from './useForm'
 import Jobs from './Jobs'
 import JobDetails from './JobDetails'
-import FormApply from './FormApply'
+import useFormApply from './useFormApply'
 
 function App() {
   
@@ -25,7 +25,7 @@ function App() {
               <Route path="/solutions" exact component={Solution}/>
               <Route path="/jobs" exact component={Jobs}/>
               <Route path="/jobs/:id" component={JobDetails}/>
-              <Route path="/apply" component={FormApply}/>
+              <Route path="/apply" component={useFormApply}/>
               <Route  path="/learn" exact component={Learn}/>
               <Route  path="/learn/spa"  component={Learn_spa}/>
               <Route  path="/solutions/web" component={Solution_web_application}/>

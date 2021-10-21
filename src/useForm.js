@@ -1,5 +1,4 @@
-import { useState,useEffect, Component } from "react";
-import { IoHandRightSharp, IoTimeSharp } from "react-icons/io5";
+import {  Component } from "react";
 import Auth from "./Auth";
 import FormSigIn from "./FormSigIn";
 import validator from "./Validator";

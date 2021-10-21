@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './formApply.css'
 import './jobs.css'
 
-export default function FormApply() {
+export default function FormApply({handleChange,values,handleSubmit,errors}) {
     return (
         <div>
                 <Head/>
@@ -22,7 +22,7 @@ export default function FormApply() {
                          </div>
                          <div className="l-form-right-content">
                                     <h3>Tes coordonnees</h3>
-                                    <form className="l-form">
+                                    <form className="l-form" onSubmit={handleSubmit}>
                                     <div className="form-inputs">
                                                 <p>
                                                     <label htmlFor='name'
@@ -41,6 +41,8 @@ export default function FormApply() {
                                                     name="name"
                                                     className="l-form-input"
                                                     placeholder="firstname"
+                                                    value={values.name}
+                                                    onChange={handleChange}
                                                     
         
                                                 />
@@ -58,12 +60,16 @@ export default function FormApply() {
                                                 <input
                                                     id="lastname"
                                                     type="text"
-                                                    name="lastanme"
+                                                    name="lastname"
                                                     className="l-form-input"
                                                     placeholder="lastname"
+                                                    value={values.lastname}
+                                                    onChange={handleChange}
                                                     
         
                                                 />
+
+                                             {errors.lastname && <p>{errors.lastname}</p>}
                                     </div>
                                
                                     <div className="form-inputs">
@@ -80,15 +86,17 @@ export default function FormApply() {
 
                                                 
                                                 <input
-                                                    id="name"
+                                                    id="email"
                                                     type="email"
                                                     name="email"
                                                     className="l-form-input"
                                                     placeholder="email"
+                                                    value={values.email}
+                                                    onChange={handleChange}
                                                     
         
                                                 />
-                    
+                                      {errors.email && <p>{errors.email}</p>}
                                     </div>
                                     <div className="form-inputs">
                                                 <p>
@@ -104,11 +112,13 @@ export default function FormApply() {
 
                                                 
                                                 <input
-                                                    id="tel"
+                                                    id="phone"
                                                     type="text"
-                                                    name="tel"
+                                                    name="phone"
                                                     className="l-form-input"
                                                     placeholder="Phone"
+                                                    value={values.phone}
+                                                    onChange={handleChange}
                                                     
         
                                                 />
@@ -116,7 +126,7 @@ export default function FormApply() {
                                     </div>
                                     <div className="form-inputs">
                                                 <p>
-                                                    <label htmlFor='email'
+                                                    <label htmlFor='motivation'
                                                         className='l-form-label'>
                                                             Dis-nous en plus sur ta motivation à rejoindre Legrowtech *
                                             
@@ -132,6 +142,8 @@ export default function FormApply() {
                                                     type="text"
                                                     name="motivation"
                                                     className="l-form-input"
+                                                    value={values.motivation}
+                                                    onChange={handleChange}
                                                     
         
                                                 />
@@ -156,15 +168,17 @@ export default function FormApply() {
                                                     type="file"
                                                     name="file"
                                                     className="l-form-input"
+                                                    value={values.file}
+                                                    onChange={handleChange}
                                                     
                                                     
         
                                                 />
                     
                                     </div>
-                                    <Link to="/apply">
+                                    
                                          <button  className="l-btn" type="submit" >Submit</button>
-                                    </Link>
+                               
 
                                     </form>
                     </div>
