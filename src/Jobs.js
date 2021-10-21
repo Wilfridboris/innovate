@@ -6,6 +6,10 @@ import {BsFillBookmarkFill} from "react-icons/bs"
 import jobs from './img/banner-jobs.png'
 import {Link} from 'react-router-dom'
 export default function Jobs() {
+    function  scrollTop(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     return (
         <div>
             <Head/>
@@ -21,7 +25,7 @@ export default function Jobs() {
                     <h2>Our Jobs</h2>
                     <div className="l-content-list-jb">
                         <div className="jb-items">
-                          <Link to="/jobs/charge-de-communication">
+                          <Link to="/jobs/charge-de-communication" onClick={scrollTop}>
                           <BsFillBookmarkFill size="5em" color="darkcyan"/>
                            <h3>Charge de communication</h3>
                            <p>yaounde</p>
@@ -30,7 +34,7 @@ export default function Jobs() {
                         </div>
 
                         <div className="jb-items">
-                          <Link to="/jobs/web-developer">
+                          <Link to="/jobs/web-developer" onClick={scrollTop}>
                           <BsFillBookmarkFill size="5em" color="darkcyan"/>
                            <h3>Web Developer</h3>
                            <p>yaounde</p>

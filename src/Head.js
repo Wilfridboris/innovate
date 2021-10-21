@@ -19,6 +19,7 @@ export default class Head extends Component {
 
     this.setToggleness=this.setToggleness.bind(this);
     this.reloadpage=this.reloadpage.bind(this);
+    this.scrollTop=this.scrollTop.bind(this)
     
     }
 
@@ -55,6 +56,11 @@ export default class Head extends Component {
         setTimeout(()=>{
             window.location.reload()
         },0)
+      
+    }
+    scrollTop(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
     componentDidMount(){
         this.toggleItemStyle()
@@ -101,7 +107,7 @@ export default class Head extends Component {
                         </div>
                         <ul className="submenu">
                         <Subitem link="/dashboard"> Dashboard </Subitem>
-                        <Link to="/login"><Subitem >Portail</Subitem></Link>
+                       <Subitem ><Link className="link" to="/login" >Portail</Link></Subitem>
                         </ul>
                     </Item>
                    
@@ -242,7 +248,7 @@ export default class Head extends Component {
 
                     <div className="Products">
                             <section className="Product-section">
-                                <h2><Link  to="/jobs">Jobs</Link></h2>
+                                <h2><Link  to="/jobs" onClick={this.scrollTop}>Jobs</Link></h2>
                                 <p>Eager to learn?, Join the team to get experience and help us build application.
                                     We are a growing team and need talent to help us.
                                 </p>
@@ -259,7 +265,7 @@ export default class Head extends Component {
                     
                          </div>
                          <ul className="submenu">
-                                <Link to="/jobs"><Subitem>Jobs</Subitem></Link>
+                         <Subitem><Link className="link" to="/jobs" onClick={this.scrollTop}>Jobs</Link></Subitem> 
                                 <Subitem>Training</Subitem>
                                 <Subitem>Intership</Subitem>
                              

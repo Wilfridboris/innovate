@@ -6,7 +6,11 @@ import { Helmet } from 'react-helmet';
 import { BsCaretRightFill ,BsStopwatch,BsClipboard,BsGeoAlt} from "react-icons/bs";
 
 export default function JobDetails({match}) {
-       
+       function  scrollTop(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    
     return (
         
         <div>
@@ -67,7 +71,7 @@ export default function JobDetails({match}) {
                 <p>  <BsGeoAlt/> Yaounde</p>
                 <p> <BsClipboard/> Salary</p>
                 <Link to="/apply">
-                    <button  className="l-btn" >Apply</button>
+                    <button  className="l-btn" onClick={scrollTop}>Apply</button>
                 </Link>
                 </div>
                 

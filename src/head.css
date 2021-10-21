@@ -89,13 +89,14 @@ header {
 .submenu-active .submenu {
    display: block;
 }
-.subitem  {
+.subitem, .subitem .link {
     
     text-decoration: none;
     color: #d4d4d4;
     display: block;
  
 }
+
 .subitem{
    padding: 8px 0px;
 
