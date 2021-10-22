@@ -6,7 +6,9 @@ import kbstatlogo from './img/kb-logo-stat.png'
 import Head from './Head'
 
 
+
 export default function Home() {
+
     const selection=(e)=>{
         const topicItem=document.querySelectorAll('.new ul li');
         const topicDiv=document.querySelectorAll('.canbehidde');
@@ -397,7 +399,7 @@ export default function Home() {
        
         
         </div>
-        <div className="overlay"></div>
+       
         </div>
     )
 }

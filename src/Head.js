@@ -13,18 +13,39 @@ export default class Head extends Component {
         super(props)
         this.state={
             iconIsToggle:false,
-            isScroll:false
+            isScroll:false,
+            isOver:false
 
         }
 
     this.setToggleness=this.setToggleness.bind(this);
     this.reloadpage=this.reloadpage.bind(this);
     this.scrollTop=this.scrollTop.bind(this)
+    this.setOver=this.setOver.bind(this)
+    this.removeOver=this.removeOver.bind(this)
+    this.toggleScrollBar=this.toggleScrollBar.bind(this)
     
     }
 
 
-  
+    setOver(){
+        this.setState({
+            isOver:true
+        })
+    }
+    removeOver(){
+        this.setState({
+            isOver:false
+        })
+    }
+    toggleScrollBar(){
+   
+        if(this.state.isOver){
+            document.body.style.overflow = 'hidden';
+        }else{
+            document.body.style.overflow = 'visible';
+        }
+    }
     toggleItemStyle=()=>{
         const menu1=$('.header-item')
         const menu2=$('.header-option')
@@ -75,8 +96,11 @@ export default class Head extends Component {
     }
  
     render() {
+            this.toggleScrollBar()
+            
             //className={this.state.isScroll?"fixed":""
         return(
+            <>
             <header>
             <div >
             <ul className="header-option">
@@ -118,11 +142,11 @@ export default class Head extends Component {
             </div>
             <div>
                 <ul className="header-item">
-                <Item>Services
+                <Item >Services
                     
                     
                     
-                    <div className="Products">
+                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                     <section className="Product-section">
                         <h2><a href="">Sofware integration</a></h2>
                         <p>We help you integrate and deploy a wide range of application</p>
@@ -161,7 +185,7 @@ export default class Head extends Component {
                 </Item>
             
                <Item>Solution
-                    <div className="Products">
+                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                     <section className="Product-section">
                         <h2><a href="">E-commerce API</a></h2>
                         <p>Standard Api e-commerce site already build and waiting for your data</p>
@@ -195,7 +219,7 @@ export default class Head extends Component {
 
             </Item>
                     <Item>Pricing
-                        <div className="Products">
+                        <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                         <section className="Product-section">
                             <h2><a href="">Web package</a></h2>
                             <p>See our offers</p>
@@ -221,7 +245,7 @@ export default class Head extends Component {
                     </Item>
                     <Item>Learn
                     
-                            <div className="Products">
+                            <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                             <section className="Product-section">
                                 <h2><Link onClick={this.reloadpage} to="/learn/spa">Web developer path</Link></h2>
                                 <p>Learn how to build web application with angular,laravel and node</p>
@@ -230,7 +254,7 @@ export default class Head extends Component {
                                 <h2><a href="">Mobile developer path</a></h2>
                                 <p>Learn how to build mobile application with android,react native and flutter</p>
                         </section>
-                        <section className="Product-section">
+                        <section className="Product-section" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                                 <h2><a href="">Tech support path</a></h2>
                                 <p>Learn how to manage system and deploy big IT infrastructure</p>
                         </section>
@@ -246,7 +270,7 @@ export default class Head extends Component {
                     </Item>
                     <Item>Opportunity
 
-                    <div className="Products">
+                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                             <section className="Product-section">
                                 <h2><Link  to="/jobs" onClick={this.scrollTop}>Jobs</Link></h2>
                                 <p>Eager to learn?, Join the team to get experience and help us build application.
@@ -278,6 +302,8 @@ export default class Head extends Component {
             </div>
            
     </header>
+     <div className={this.state.isOver?"overlay":""}></div>
+     </>
         )
 
     }
