@@ -1,7 +1,7 @@
 
-.l-banner-jb img{
-    width: 800px;
-  
+  .l-banner-jb img{
+    width: 100%;
+    height: auto;
     
 }
 .l-space-jbd{
@@ -55,11 +55,7 @@
 
 
 @media (min-width:600px) {
-    .l-banner-jb img{
-        width: 100%;
-        height: auto;
-        
-    }
+  
     .l-content-list-jb,.l-container-flex-jbd{
         flex-wrap: nowrap;
     }

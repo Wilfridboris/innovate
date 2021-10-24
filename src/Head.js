@@ -254,7 +254,7 @@ export default class Head extends Component {
                                 <h2><a href="">Mobile developer path</a></h2>
                                 <p>Learn how to build mobile application with android,react native and flutter</p>
                         </section>
-                        <section className="Product-section" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                        <section className="Product-section" >
                                 <h2><a href="">Tech support path</a></h2>
                                 <p>Learn how to manage system and deploy big IT infrastructure</p>
                         </section>
