@@ -20,10 +20,15 @@
     font-size: 17px;
     
 }
-.l-content-list-jb,.l-container-flex-jbd{
+.l-container-flex-jbd{
     display: flex;
     flex-wrap: wrap;
     column-gap: 100px;
+}
+.l-content-list-jb{
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 .l-btn{
     width: 250px;

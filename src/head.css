@@ -12,6 +12,7 @@ header {
     bottom: 0;
     z-index: 9;
     background-color:rgba(0, 0, 0, 0.322);
+    visibility: hidden;
   
 }
 
@@ -201,7 +202,7 @@ header {
         display: block;
        visibility: hidden;
     }
-    .dropdown a:hover > .Products {
+    .dropdown a:hover > .Products  {
         visibility: visible;
        transition: all 0.3s ease;
        transform: translate(0,0);
@@ -209,12 +210,14 @@ header {
      
       
     }
-   
-     .dropdown a > .Products {
-         visibility: hidden;
-     
-    }
+    .dropdown a > .Products {
+        visibility: hidden;
     
+   }
+  
+
+   
+   
   
     
       .item,.header-option .item{

@@ -173,6 +173,8 @@ export default class Head extends Component {
                    </section>
                
             </div>
+            <div className="overlay"></div>
+           
                     <ul className="submenu">
                     <Subitem>Sofware integration</Subitem>
                     <Subitem>Web application</Subitem>
@@ -209,6 +211,7 @@ export default class Head extends Component {
                    
                
                </div>
+           
                 <ul className="submenu">
                 <Subitem>E-commerce API</Subitem>
                 <Subitem>2d Game</Subitem>
@@ -302,7 +305,7 @@ export default class Head extends Component {
             </div>
            
     </header>
-     <div className={this.state.isOver?"overlay":""}></div>
+     
      </>
         )
 
