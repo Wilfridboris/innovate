@@ -1,0 +1,123 @@
+/*Dashboard style begin*/
+body{
+    background: rgb(238, 238, 238);
+}
+.dashboard-header{
+    background-color: black;
+    padding: 12px 0px;
+}
+.dashboard-header-options{
+    display: flex;
+    flex-wrap: nowrap;
+      margin: 0;
+    padding: 0;
+    justify-content: center;
+    
+}
+.dashboard-item{
+    list-style-type: none;
+    padding: 0px 8px ;
+    flex: 2;
+    color: white;
+}
+.logo-item{
+    padding: 0px 8px ;
+}
+.dashboard-logo{
+    flex: 1;
+    color: white;
+}
+.dashboard-header-tasks{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-header-tasks li{
+    list-style-type: none;
+    padding: 0px 8px ;
+    color: white;
+}
+
+
+
+
+/*user header begin*/
+.user-section p{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.user-section{
+    margin-right: 10px;
+}
+.user-cerlce{
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 15px;
+
+
+}
+/*user header end*/
+
+/*main dashboard begin*/
+.dashboard-main{
+    display: grid;
+    grid-template-columns: 5% 20% 85%;
+    gap: 10px;
+
+}
+.dashboard-list-menu .simple-options ul{
+    display: flex;
+}
+
+.simple-options ul li{
+list-style-type: none;
+padding: 0px 5px;
+}
+.main-options .options-link{
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+}
+.options-link.dash-active{
+    border-left: 3px solid cyan;
+    background-color: rgb(247, 247, 247);
+}
+.dash-active[data-tab-content]{
+    display: block;
+}
+[data-tab-content]{
+    display: none;
+}
+
+/*talent style begin*/
+.ecran{
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 50%;
+}
+.talent-lists{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.talent-lists li{
+    list-style-type: none;
+    background-color: rgb(246, 246, 246);
+    padding: 10px;
+    margin :5px 0px 5px 0px ;
+    width:auto;
+ 
+  
+}
+.talent-cerlce{
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 0px 10px;
+ 
+}
+/*talent style end*/
+/*main dashboard end*/
+/*Dashboard style end*/

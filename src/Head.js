@@ -66,9 +66,11 @@ export default class Head extends Component {
     setToggleness=()=>{
        if(window.pageYOffset>200) {
           this.setState({isScroll:true})
+        
        }
        else{
         this.setState({isScroll:false})
+  
        }
 
        
@@ -86,22 +88,24 @@ export default class Head extends Component {
     componentDidMount(){
         this.toggleItemStyle()
     
-    //    this.setToggleness();
-    //    window.addEventListener('scroll',()=>this.setToggleness());
+        //this.setToggleness();
+        //this.toggleScrollBar()
+        window.addEventListener('scroll',()=>this.setToggleness());
 
       }
     componentWillUnmount(){
-        // window.removeEventListener('scroll',()=>this.setToggleness());
+         window.removeEventListener('scroll',()=>this.setToggleness());
+
 
     }
  
     render() {
-            this.toggleScrollBar()
+         
             
-            //className={this.state.isScroll?"fixed":""
+            //className={this.state.isScroll?"fixed":""}
         return(
             <>
-            <header>
+            <header className={this.state.isScroll?"fixed":""}>
             <div >
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>

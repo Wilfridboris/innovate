@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './App.css'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Service from './Service'
@@ -11,37 +11,41 @@ import useForm from './useForm'
 import Jobs from './Jobs'
 import JobDetails from './JobDetails'
 import useFormApply from './useFormApply'
+import Dashboard from './Dashboard'
+import HttpsRedirect from 'react-https-redirect';
 
 function App() {
   
   return (
-    <Router>
-    <main className="container">
-    
-        <Switch>
-              <Route path="/" exact component={Home}/>
-              <Route path="/login"  component={useForm}/>
-              <Route path="/services" component={Service}/>
-              <Route path="/solutions" exact component={Solution}/>
-              <Route path="/jobs" exact component={Jobs}/>
-              <Route path="/jobs/:id" component={JobDetails}/>
-              <Route path="/apply" component={useFormApply}/>
-              <Route  path="/learn" exact component={Learn}/>
-              <Route  path="/learn/spa"  component={Learn_spa}/>
-              <Route  path="/solutions/web" component={Solution_web_application}/>
-   
-             
+    <HttpsRedirect>
+        <Router>
+        <main className="container">
+        
+            <Switch>
+                  <Route path="/" exact component={Home}/>
+                  <Route path="/login"  component={useForm}/>
+                  <Route path="/dashboard"  component={Dashboard}/>
+                  <Route path="/services" component={Service}/>
+                  <Route path="/solutions" exact component={Solution}/>
+                  <Route path="/jobs" exact component={Jobs}/>
+                  <Route path="/jobs/:id" component={JobDetails}/>
+                  <Route path="/apply" component={useFormApply}/>
+                  <Route  path="/learn" exact component={Learn}/>
+                  <Route  path="/learn/spa"  component={Learn_spa}/>
+                  <Route  path="/solutions/web" component={Solution_web_application}/>    
+                
               
-             
+            
+            </Switch>
+            
+            
           
         
-        </Switch>
-        
-         
-       
-     
-    </main>
-    </Router>
+        </main>
+        </Router>
+
+    </HttpsRedirect>
+          
   );
 }
 

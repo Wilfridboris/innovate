@@ -12,17 +12,13 @@ export default function validator(values){
         errors.email='Email address is invalid'
     }
  
-    if(!values.phone){
+    if(!values.tel){
         errors.phone='Phone required'
     }
     if(!values.file){
         errors.file='A File  is required'
     }
  
-    if(!values.password){
-        errors.password='Password is required'
-    }else if(values.password.length<6){
-        errors.password='Password needs to be 6 characters or more'
-    }
+
     return errors;
 }

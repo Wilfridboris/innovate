@@ -1,6 +1,14 @@
-import React from 'react'
-import './signIn.css'
-function FormSigIn({handleChange,values,handleSubmit,errors}) {
+import React from 'react';
+import './signIn.css';
+function FormSigIn({
+    handleChange,
+    values,
+    handleSubmit,
+    errors,
+    loginError}) {
+   
+
+   
     
     return (
         <>
@@ -52,14 +60,15 @@ function FormSigIn({handleChange,values,handleSubmit,errors}) {
             
                         {errors.password && <p className="error">{errors.password}</p>}
          
-               
+               <p></p>
             </div>
-            <p></p>
+           
             <button className="form-input-btn"
                 type="submit"
                 >
                      Connexion
                 </button>
+                {loginError && <p className="error">{loginError}</p>}
             </form>
 
         </div>

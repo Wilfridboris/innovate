@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './formApply.css'
 import './jobs.css'
 
-export default function FormApply({handleChange,values,handleSubmit,errors}) {
+export default function FormApply({handleChange,values,handleSubmit,errors, handleFile}) {
     return (
         <div>
                 <Head/>
@@ -46,6 +46,7 @@ export default function FormApply({handleChange,values,handleSubmit,errors}) {
                                                     
         
                                                 />
+                                                    {errors.name && <p>{errors.name}</p>}
                                     </div>
                                     <div className="form-inputs">
                                                 <p>
@@ -112,37 +113,12 @@ export default function FormApply({handleChange,values,handleSubmit,errors}) {
 
                                                 
                                                 <input
-                                                    id="phone"
+                                                    id="tel"
                                                     type="text"
-                                                    name="phone"
+                                                    name="tel"
                                                     className="l-form-input"
                                                     placeholder="Phone"
-                                                    value={values.phone}
-                                                    onChange={handleChange}
-                                                    
-        
-                                                />
-                    
-                                    </div>
-                                    <div className="form-inputs">
-                                                <p>
-                                                    <label htmlFor='motivation'
-                                                        className='l-form-label'>
-                                                            Dis-nous en plus sur ta motivation à rejoindre Legrowtech *
-                                            
-                                                    </label>
-
-                                            
-
-                                                </p>
-
-                                                
-                                                <input
-                                                    id="motivation"
-                                                    type="text"
-                                                    name="motivation"
-                                                    className="l-form-input"
-                                                    value={values.motivation}
+                                                    value={values.tel}
                                                     onChange={handleChange}
                                                     
         
@@ -168,12 +144,12 @@ export default function FormApply({handleChange,values,handleSubmit,errors}) {
                                                     type="file"
                                                     name="file"
                                                     className="l-form-input"
-                                                    value={values.file}
-                                                    onChange={handleChange}
+                                                    onChange={handleFile}
                                                     
                                                     
         
                                                 />
+                                                    {errors.file && <p>{errors.file}</p>}
                     
                                     </div>
                                     
