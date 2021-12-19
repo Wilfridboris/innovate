@@ -144,7 +144,7 @@ text-transform: uppercase;
 
 }
 .hand-services {
-    margin: 100px;
+    margin: 5px;
     }
 .cards_services{
     display: flex;
@@ -162,7 +162,7 @@ text-transform: uppercase;
     padding: 20px;
     position: relative;
     text-align: center;
-    resize: both;
+
 }
 .cards_services .text-cards a{
    
@@ -583,6 +583,9 @@ text-transform: uppercase;
     .legrowtech-text-postion.center h3{
         font-size:initial;
     }
+    .hand-services {
+        margin: 100px;
+        }
 
     /*style end*/
    

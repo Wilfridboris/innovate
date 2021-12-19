@@ -393,7 +393,7 @@ export default function Home() {
                   <a href="/services">
                       <img src={item_service_courses} alt="get legrowtech courses"></img>
                       <div className="legrowtech-text-postion center">
-                          <h3>Get real expert that feed you need</h3>
+                          <h3>Real expert </h3>
                       </div>
                       <div className="paragraph-text">
                         <h3>The most professional tech exprert </h3>
