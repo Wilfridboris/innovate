@@ -528,14 +528,16 @@ export default function Home() {
 
          </div>
          <div id='entertaiment' data-tab-content className="item-solution-noflex">
+         <img src={entertainment} alt="legrowtech entertainment"></img>
         <a href="/service">
             <div>
               <h3>Are youn an Artist ? need of Visual and audio integration?</h3>
               <p>Learn more</p>
             </div>
-          <img src={entertainment} alt="legrowtech entertainment"></img>
-
         </a>
+         
+
+        
 
           
          </div>
