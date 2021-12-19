@@ -444,7 +444,13 @@ export default function Home() {
            <li className="lb-container">
             <div className="container-wrapper ">
                           
-                            <h1>IA Sofware </h1>
+                <div>
+                        <img src={manufacture} alt="legrowtech manufacture "></img>
+                  </div>
+                  <div>
+                        <h3>Manufacture </h3>
+                        <p>sdsd</p>
+                </div>
                         
             </div>
            </li>
@@ -452,17 +458,33 @@ export default function Home() {
            <DivItem>  Finance
            </DivItem>
            <li className="lb-container"><div className="container-wrapper">
-           Finance
+            <div>
+                       <img src={fincance} alt="legrowtech finance"></img>
+                </div>
+                <div>
+                    <h3>Finance </h3>
+                      <p>sdsd</p>
+                </div>
            </div></li>
             <DivItem>  Entertainment</DivItem>
-            <li className="lb-container "><div className="container-wrapper">
-            Entertainment
-            </div></li>
+            <li className="lb-container ">
+              <div className="container-wrapper-noflex">
+                <img src={entertainment} alt="legrowtech entertainment"></img>
+                <h3>Passionate about create game and learn? get the tool you need</h3>
+                <p>Learn more</p>
+            </div>
+            </li>
             
             <DivItem>  Online Store
             </DivItem>
             <li className="lb-container "><div className="container-wrapper">
-            Onlie Store
+            <div>
+                <img src={store} alt="legrowtech store"></img>
+              </div>
+              <div>
+                  <h3>Finance </h3>
+                    <p>sdsd</p>
+              </div>
             </div></li>
             
           </ul>
@@ -496,11 +518,26 @@ export default function Home() {
 
          </div>
          <div id='gaming' data-tab-content className="item-solution-noflex">
-         <img src={game} alt="legrowtech video game"></img>
+            <img src={game} alt="legrowtech video game"></img>
+          <a href="/services">  
+         <div>
+             <h3>Passionate about create game and learn? get the tool you need</h3>
+             <p>Learn more</p>
+         </div>
+          </a>
 
          </div>
          <div id='entertaiment' data-tab-content className="item-solution-noflex">
-         <img src={entertainment} alt="legrowtech entertainment"></img>
+        <a href="/service">
+            <div>
+              <h3>Are youn an Artist ? need of Visual and audio integration?</h3>
+              <p>Learn more</p>
+            </div>
+          <img src={entertainment} alt="legrowtech entertainment"></img>
+
+        </a>
+
+          
          </div>
          <div id='store' data-tab-content className="item-solution">
               <div>

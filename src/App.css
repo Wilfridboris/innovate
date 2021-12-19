@@ -265,6 +265,15 @@ text-transform: uppercase;
  
  .container-wrapper {
     margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.container-wrapper-noflex{
+    margin: 20px 0px;
+}
+.container-wrapper img,.container-wrapper-noflex img{
+    width: 100%;
+    height: auto;
 }
  .lb-trigger{
      display: flex;
@@ -323,6 +332,33 @@ text-transform: uppercase;
 
  
 }
+.item-solution-noflex{
+    position: relative;
+    text-align: center;
+}
+.item-solution-noflex div{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  
+}
+.item-solution-noflex div h3{
+  
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.item-solution-noflex div p{
+  
+    color: white;
+    font-size: 20px;
+    
+}
+.item-solution-noflex a{
+   text-decoration: none;
+}
+
 .item-solution div{
     margin: 0px 100px auto 0px;
   
