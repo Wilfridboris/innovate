@@ -1,14 +1,55 @@
-import React,{useEffect} from 'react'
-import service from './img/service.png'
-import manufacturing from './img/manufacturing.png'
-import DivItem from './divItem'
-import kbstatlogo from './img/kb-logo-stat.png'
-import Head from './Head'
+import React,{useEffect} from 'react';
+import service from './img/service.png';
+import DivItem from './divItem';
+import kbstatlogo from './img/kb-logo-stat.png';
+import item_service_courses from './img/item_service_courses.png';
+import item_service_team from './img/team-work.png';
+import item_service_game from './img/game.png';
+import Head from './Head';
+import Footer from './Footer';
+import manufacture from './img/manufacture.png';
+import entertainment from './img/entertainment.png'
+import fincance from './img/finances.png'
+import game from './img/gaming.png'
+import store from './img/store.png'
 
 
 
 export default function Home() {
 
+
+    function reveal(){
+      var reveals=document.querySelectorAll('.reveal');
+      for(var i=0;i<reveals.length;i++){
+        var windowheight=window.innerHeight;
+        var revealtop=reveals[i].getBoundingClientRect().top;
+        var revealpoint=150;
+
+        if(revealtop < windowheight-revealpoint){
+          reveals[i].classList.add('isactive');
+        }else{
+          reveals[i].classList.remove('isactive');
+        }
+      }
+
+    }
+    function tabSelection(){
+      const tags=document.querySelectorAll('[data-tab-target]');
+      const tabContents=document.querySelectorAll('[data-tab-content]');
+      tags.forEach(tab=>{
+        tab.addEventListener('click',()=>{
+            const target=document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent=>{
+                tabContent.classList.remove('tab-active')
+            })
+            tags.forEach(tab=>{
+                tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('tab-active')
+        })
+    })
+    }
     const selection=(e)=>{
         const topicItem=document.querySelectorAll('.new ul li');
         const topicDiv=document.querySelectorAll('.canbehidde');
@@ -155,8 +196,8 @@ export default function Home() {
      
      
      
-      
-        detectsceen()
+        tabSelection();
+        detectsceen();
         lazylaod();
         // lazyloadopcaity();
         animSlide();
@@ -164,6 +205,7 @@ export default function Home() {
         
       
         window.addEventListener('scroll',()=>lazylaod())
+        window.addEventListener('scroll',()=>reveal())
         window.addEventListener('resize',()=>setWith())
       
         
@@ -172,6 +214,7 @@ export default function Home() {
     
         return () => {
           window.removeEventListener('scroll',()=>lazylaod())
+          window.removeEventListener('scroll',()=>reveal())
         
           // arrowright.removeEventListener('click',()=>increase(3))
           // arrowleft.removeEventListener('click',()=>decrease(1))
@@ -182,8 +225,9 @@ export default function Home() {
       }, [])
     
     return (
-        <div>
-              <Head/>
+      <>
+        <Head/>
+        <div className="main-body">
         <div className="body-slider">
         <div className="slider">
 
@@ -341,6 +385,56 @@ export default function Home() {
          </table>
         </div>
 
+        <div className="hand-services">
+          <h2>Work with us now</h2>
+            <div className="cards_services reveal">
+          
+                  <div className="service-item text-cards">
+                  <a href="/services">
+                      <img src={item_service_courses} alt="get legrowtech courses"></img>
+                      <div className="legrowtech-text-postion center">
+                          <h3>Get real expert that feed you need</h3>
+                      </div>
+                      <div className="paragraph-text">
+                        <h3>The most professional tech exprert </h3>
+                        <p>personlaise your website</p>
+                        
+                      </div>
+                    </a>
+                  </div>
+       
+                  <div className="service-item text-cards">
+                  <a href="/services">
+                      <img src={item_service_team} alt=" legrowtech work togethers"></img>
+                      <div className="legrowtech-text-postion center">
+                          <h3>Enhance your skills</h3>
+                      </div>
+                      <div className="paragraph-text">
+                        <h3>Personlise</h3>
+                        <p>personlaise your website</p>
+                        
+                      </div>
+                    </a>
+                  </div>
+                  <div className="service-item text-cards">
+                  <a href="/services">
+                      <img src={item_service_game} alt=" legrowtech game"></img>
+                      <div className="legrowtech-text-postion center">
+                          <h3>Game studio</h3>
+                      </div>
+                      <div className="paragraph-text">
+                        <h3>2d/3d game in vision</h3>
+                        <p>personlaise your website</p>
+                        
+                      </div>
+                    </a>
+                  </div>
+             
+
+            </div>
+
+        </div>
+
         <div className="new">
           <h1>Our Solution everywhere</h1>
           <ul className="list-items-mob-view">
@@ -373,33 +467,57 @@ export default function Home() {
             
           </ul>
           <ul className="list-items-dek-view">
-            <li className="active" onClick={selection}>Manufacturing</li>
-            <li onClick={selection}>Finance</li>
-            <li onClick={selection}>Gaming</li>
-            <li onClick={selection}>Entertainment</li>
-            <li onClick={selection}>Onlie Store</li>
+            <li className="active" data-tab-target="#manufacture">Manufacturing</li>
+            <li data-tab-target="#finance" >Finance</li>
+            <li  data-tab-target="#gaming">Gaming</li>
+            <li data-tab-target="#entertaiment">Entertainment</li>
+            <li data-tab-target="#store">Onlie Store</li>
           </ul>
 
-          <div id='Manufacturing' className='new-section canbehidde'>
+          <div id='manufacture' className='item-solution tab-active'  data-tab-content>
               <div>
-                <img src={manufacturing} alt="{manufacturing"/>
+                    <img src={manufacture} alt="legrowtech manufacture "></img>
               </div>
               <div>
-                <h1>IA Sofware </h1>
+                <h3>Manufacture </h3>
+                <p>sdsd</p>
             </div>
    
 
           </div>
-          <div id='Finance' className="canbehidde">
-          Finance
+          <div id='finance' data-tab-content className="item-solution">
+              <div>
+                <img src={fincance} alt="legrowtech finance"></img>
+              </div>
+              <div>
+                  <h3>Finance </h3>
+                    <p>sdsd</p>
+              </div>
 
          </div>
+         <div id='gaming' data-tab-content className="item-solution-noflex">
+         <img src={game} alt="legrowtech video game"></img>
 
+         </div>
+         <div id='entertaiment' data-tab-content className="item-solution-noflex">
+         <img src={entertainment} alt="legrowtech entertainment"></img>
+         </div>
+         <div id='store' data-tab-content className="item-solution">
+              <div>
+                <img src={store} alt="legrowtech store"></img>
+              </div>
+              <div>
+                  <h3>Finance </h3>
+                    <p>sdsd</p>
+              </div>
+         </div>
       
        
         
         </div>
        
         </div>
+        <Footer/>
+        </>
     )
 }

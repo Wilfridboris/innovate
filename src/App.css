@@ -8,7 +8,10 @@ html{
 body{
    padding:0px;
    margin: 0px;
-   background-color: white;
+
+}
+.main-body{
+    background-color: white;
 }
 .Home-panel{
     
@@ -122,12 +125,100 @@ section a{
  
  }
 
+/* services style begin*/
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.isactive{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.hand-services h2{
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+
+}
+.hand-services {
+    margin: 100px;
+    }
+.cards_services{
+    display: flex;
+    flex-direction: column;
+}
+/* .cards_services .text-cards h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+} */
+.cards_services .text-cards{
+   
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    resize: both;
+}
+.cards_services .text-cards a{
+   
+  text-decoration: none;
+}
+.paragraph-text{
+   
+    text-decoration: none;
+    text-align: left;
+}
+.paragraph-text h3{
+   
+   font-size: 20px;
+   text-transform: uppercase;
+   color: rgb(22, 87, 112);
+   margin: 10px;
+   
+   
+
+}
+.paragraph-text p{
+   
+    color: black;
+    margin: 10px;
+
+   
+ 
+ }
+.legrowtech-text-postion.center{
+    position: absolute;
+    top:35%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.legrowtech-text-postion.center h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left:30px ;
+    color: white;
+    font-size:28px;
+}
+.text-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    
+
+
+}
  .Services{
      text-align: center;
      background-color: white;
 
  }
+
  .Services table{
     width: 100%;
 }
@@ -138,14 +229,18 @@ section a{
  .Service-image img{
     width: 50%;
 }
+
+/* services style end*/
 /*new style begin*/
 
 .new{
     text-align: center;
+    padding-bottom: 50px;
 }
 .active{
     border-bottom: 3px solid rgb(233, 53, 53);
 }
+
 /*List style begin*/
 .list-items-dek-view li,.list-items-mob-view li{
    list-style-type: none;
@@ -211,20 +306,27 @@ section a{
     transform: rotate(180deg)
 }
  /*arrow animation end*/
- #Finance{
-     visibility: hidden;
+
+
+ .item-solution{
+     height:auto;
+
  }
- #Manufacturing img{
-     width:80%;
-    
- }
- .new-section{
-     height: 400px;
- }
- .new-section {
-    display:grid;
-    
+ .item-solution {
+    flex-direction: column;
+   
 }
+.item-solution img,.item-solution-noflex img{
+   border-radius: 10px;
+   width: 100%;
+   height: auto;
+
+ 
+}
+.item-solution div{
+    margin: 0px 100px auto 0px;
+  
+ }
 .list-items-dek-view,.canbehidde {
     display: none;
 }
@@ -441,8 +543,9 @@ section a{
         left: 20%;
        
     }
-    .new-section {
+    .item-solution{
         display:flex;
+        flex-direction: row;
         justify-content: center;
     }
     .list-items-dek-view{
@@ -472,11 +575,30 @@ section a{
     .navigation-auto,.navigation-manual{
         display: flex;
     }
+    /*style start*/
+
+    .cards_services{
+        flex-direction:row;
+    }
+    .legrowtech-text-postion.center h3{
+        font-size:initial;
+    }
+
+    /*style end*/
    
     /* .slider{
         height: 300px;
        
         
     } */
+    /*new style begin*/
+    [data-tab-content]{
+        display: none;
+    }
+    .tab-active[data-tab-content]{
+        display: flex;
+    }
+
+        /*new style end*/
 }
 
