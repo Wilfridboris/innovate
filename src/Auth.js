@@ -20,7 +20,7 @@ import axios from "axios";
             data:data,
     
             withCredentials: true,
-            url: "https://legrowtechapi.herokuapp.com/login",
+            url: "https://api.legrowtech.com/login",
           });
           console.log(response);
           if (response.data.connexion){
@@ -36,7 +36,7 @@ import axios from "axios";
             const response= await axios({
                 method: "POST",
                 withCredentials: true,
-                url: "https://legrowtechapi.herokuapp.com/login",
+                url: "https://api.legrowtech.com/login",
               });
               console.log(response);
               if (response.data.connexion){
@@ -52,7 +52,7 @@ import axios from "axios";
             const response= await axios({
                 method: "POST",
                 withCredentials: true,
-                url: "https://legrowtechapi.herokuapp.com/login",
+                url: "https://api.legrowtech.com/login",
               }); 
               console.log(response);
               if (response.data.connexion){
