@@ -10,7 +10,7 @@ return {
       
               const response= await axios({
                   method: "GET",
-                  url: "http://localhost:8000/postulants",
+                  url: "https://legrowtechapi.herokuapp.com/postulants",
                 });
                 res(response.data)
       

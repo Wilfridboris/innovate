@@ -9,7 +9,7 @@ export default function job(id) {
       
               const response= await axios({
                   method: "GET",
-                  url: "http://localhost:8000/v1/jobs",
+                  url: "https://legrowtechapi.herokuapp.com/v1/jobs",
                 });
                 res(response.data)
                

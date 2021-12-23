@@ -17,7 +17,7 @@ export default function apply(values) {
       
                 const response= await axios({
                     method: "POST",
-                    url: "http://localhost:8000/postulants",
+                    url: "https://legrowtechapi.herokuapp.com/postulants",
                     data:bodyFormData,
                     headers:header
                   });
