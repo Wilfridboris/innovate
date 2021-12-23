@@ -2,7 +2,6 @@ import React from 'react'
 import Auth from './Auth'
 import './styles/dashboard.css'
 import Postulant from './postulant/Postulant';
-import {Redirect} from 'react-router-dom';
  class Dashboard extends React.Component {
      constructor(props){
          super(props);
@@ -10,7 +9,7 @@ import {Redirect} from 'react-router-dom';
              user:{},
              userSub:'',
              talent:[],
-             url:"http://localhost:8000/postulants/resume/",
+             url:"https://api.legrowtech.com/postulants/resume/",
              authed:false
          }
          this.getPostulant=this.getPostulant.bind(this)
