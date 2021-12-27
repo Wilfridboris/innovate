@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './formApply.css'
 import './jobs.css'
 
-export default function FormApply({handleChange,values,handleSubmit,errors, handleFile}) {
+export default function FormApply({handleChange,values,handleSubmit,errors, handleFile,jb}) {
     return (
         <div>
                 <Head/>
@@ -14,8 +14,8 @@ export default function FormApply({handleChange,values,handleSubmit,errors, hand
                                 <div className="jb-items">
                                 <Link to="/jobs/charge-de-communication">
                                 <BsFillBookmarkFill size="5em" color="darkcyan"/>
-                                <h3>Charge de communication</h3>
-                                <p>yaounde</p>
+                                <h3>{jb.title}</h3>
+                                <p>{jb.location}</p>
 
                                 </Link>
                                 </div>

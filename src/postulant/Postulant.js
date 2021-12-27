@@ -10,9 +10,11 @@ return {
       
               const response= await axios({
                   method: "GET",
-                  url: "https://api.legrowtech.com/postulants",
+                  withCredentials: true,
+                  url: "http://localhost:8080/postulants",
                 });
                 res(response.data)
+                console.log(response)
       
             }catch(err){
               reject(err.message)

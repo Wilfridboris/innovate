@@ -156,7 +156,7 @@ export default class Head extends Component {
                         <p>We help you integrate and deploy a wide range of application</p>
                     </section>
                     <section className="Product-section">
-                        <h2><Link onClick={this.reloadpage} to="/solutions/web">Web application</Link></h2>
+                        <h2><Link onClick={this.scrollTop}  to="/services/web">Web application</Link></h2>
                         <p>Customise web application design for your need</p>
                     </section>
                     <section className="Product-section">

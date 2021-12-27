@@ -6,6 +6,7 @@ import {BsFillBookmarkFill} from "react-icons/bs"
 import jobBanner from './img/banner-jobs.png'
 import {Link} from 'react-router-dom'
 import job from './jobs/job';
+import Footer from './Footer';
 
 export default function Jobs() {
     const [jobs,setJobs]=useState([]);
@@ -29,6 +30,7 @@ export default function Jobs() {
         }
     }, [])
     return (
+        <>
         <div>
             <Head/>
             <Helmet>
@@ -63,6 +65,10 @@ export default function Jobs() {
                 </div>
 
             </div>
+
         </div>
+        <Footer/>
+
+        </>
     )
 }

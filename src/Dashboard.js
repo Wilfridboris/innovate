@@ -2,6 +2,7 @@ import React from 'react'
 import Auth from './Auth'
 import './styles/dashboard.css'
 import Postulant from './postulant/Postulant';
+import { Redirect } from 'react-router-dom';
  class Dashboard extends React.Component {
      constructor(props){
          super(props);
@@ -14,6 +15,7 @@ import Postulant from './postulant/Postulant';
          }
          this.getPostulant=this.getPostulant.bind(this)
          this.checkLog=this.checkLog.bind(this)
+         this.logout=this.logOut.bind(this)
      }
 
  ;
@@ -54,6 +56,13 @@ import Postulant from './postulant/Postulant';
             })
 
         }
+        loginClickSystem(){
+            const loginsec= document.getElementById('user-link')
+          
+            loginsec.addEventListener('click',()=>{
+                loginsec.classList.toggle('loginsec-active')
+            })
+        }
         checkLog(){
             const {checkIfLog}=Auth();
             checkIfLog().then(()=>{
@@ -65,12 +74,24 @@ import Postulant from './postulant/Postulant';
                 this.props.history.push('/login');
             });
         }
+        logOut(){
+            const {logout}=Auth();
+            logout().then(()=>{
+
+              window.location.href='/login' ; 
+                }
+            ,(err)=>{
+                console.log(err)
+            })
+
+        }
     
      
 
         componentDidMount(){
             this.checkLog();
             this.clickSystem();
+            this.loginClickSystem()
         
 
             const {getUserInfos}=Auth();
@@ -94,7 +115,7 @@ import Postulant from './postulant/Postulant';
     
 
   render(){
-      
+   
       return(
           <>
         <div >
@@ -112,10 +133,17 @@ import Postulant from './postulant/Postulant';
                         </ul>
                     </li>
                   
-                    <li className="user-section ">
+                    <li  className="user-section ">
                     
-                      <p>  {this.state.user.name} <span className="user-cerlce">{this.state.userSub}</span></p>
+                      <p id="user-link">  {this.state.user.name} <span className="user-cerlce">{this.state.userSub}</span></p>
+                      <ul  className="user-unroll user-unroll-display">
+                           <li>{this.state.user.email}</li>
+                           <li className="legrowtech-link" onClick={this.logOut}>se deconnecter</li>
+                      </ul>
+                   
                     </li>
+                  
+                  
         </ul>
         </div>
         <div className="dashboard-blank">
@@ -154,8 +182,11 @@ import Postulant from './postulant/Postulant';
                                             return (
                                             
                                                 <li key={talent.postulant_id}>
-                                                    <p><span className="talent-cerlce">{talent.name.substring(0,2).toUpperCase()}</span>{talent.name}</p>
-                                                    <p><a href={this.state.url+talent.resume}>{talent.resume}</a>  </p>
+                                                    <p><span className="talent-cerlce">{talent.name.substring(0,2).toUpperCase()}</span>{talent.name} {talent.lastname}</p>
+                                                    <p><span className="legrowtech-gras"> Location: </span>{talent.city} {talent.street}  </p>
+                                                    <p><span className="legrowtech-gras"> Email: </span> {talent.email}  </p>
+                                                    <p><span className="legrowtech-gras"> Tel: </span>{talent.tel}  </p>
+                                                    <p><span className="legrowtech-gras"> Link CV: </span> <a href={this.state.url+talent.resume}>{talent.resume}</a>  </p>
                                                 </li>
                                             
                         

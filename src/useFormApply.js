@@ -2,6 +2,7 @@ import { Component } from "react";
 import validator from "./ValidatorApply";
 import FormApply from "./FormApply";
 import apply from "./functions/apply";
+import job from './jobs/job'
 export default class useFormApply extends Component{
     constructor(props){
         super(props)
@@ -15,12 +16,16 @@ export default class useFormApply extends Component{
             },
            
             errors:{},
-            isSubmit:false
+            isSubmit:false,
+            jb:{},
+            error:false,
+            id:props.match.params.id
         }
 
         this.handleChange=this.handleChange.bind(this)
         this.handleSubmit=this.handleSubmit.bind(this)
         this.handleFile=this.handleFile.bind(this)
+        this.getJobDetail=this.getJobDetail.bind(this)
     };
 
     handleChange(e){
@@ -34,6 +39,7 @@ export default class useFormApply extends Component{
 
         
     };
+
     handleFile(e){
         let file=e.target.files[0]
         this.setState({
@@ -41,6 +47,23 @@ export default class useFormApply extends Component{
             ...this.state.values,
             file:file
           }
+        })
+    }
+  getJobDetail(){
+        const {getJObDetails}=job(this.state.id);
+        getJObDetails().then((res)=>{
+         
+            this.setState({
+                jb:res[0]
+            })
+          
+
+        },(err)=>{
+            console.log(err);
+           this.setState({
+               error:true
+           })
+           
         })
     }
 
@@ -65,8 +88,12 @@ export default class useFormApply extends Component{
       
 
     }
+    componentDidMount(){
+        this.getJobDetail();
+    }
  
     render(){
+       
         return(
             <>
                   {
@@ -83,6 +110,7 @@ export default class useFormApply extends Component{
                         handleSubmit={this.handleSubmit}
                         errors={this.state.errors}
                         handleFile={this.handleFile}
+                        jb={this.state.jb}
                       
                       />
                       )

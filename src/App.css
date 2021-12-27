@@ -546,7 +546,56 @@ text-transform: uppercase;
     border-color: #ffffff;
 }
 
+/*----------------------------- services header style begin  -------------------*/
+.legrowtech-services-web{
+    padding: 0 8%;
+}
+.services-header{
+    text-align: center;
+}
+.services-header h1{
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+.services-header h3{
+    font-size: 25px;
+   
+    color: rgb(73, 73, 73);
+}
 
+.services-web-section{
+    display: flex;
+    flex-direction: column;    
+   
+}
+.web-section{
+    
+}
+.web-section:last-child{
+    margin-left: 0px;
+}
+.web-section-inside{
+    display: inline-grid;
+    grid-template-columns: auto auto ;
+    column-gap: 50px;
+  
+}
+.web-title{
+    font-size: 30px;
+}
+.web-bottom-title{
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+}
+/*-------------legrowtech btn style start and general style --------------------------*/
+
+
+
+
+/*-------------legrowtech btn style end --------------------------*/
+
+
+/*----------------------------- services header style end -------------------*/
 
    
 
@@ -624,6 +673,17 @@ text-transform: uppercase;
         }
 
     /*style end*/
+
+    /* services web style begin */
+    .services-web-section{
+       
+        flex-direction: row;    
+       
+    }
+    .web-section:last-child{
+        margin-left: 80px;
+    }
+    /*services web style end*/
    
     /* .slider{
         height: 300px;

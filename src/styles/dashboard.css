@@ -41,7 +41,30 @@ body{
 
 
 
+
 /*user header begin*/
+.user-unroll{
+    background-color: white;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 18px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    list-style-type: none;
+    
+}
+.legrowtech-link{
+    cursor: pointer;
+    color: rgb(81, 172, 247);
+}
+
+.loginsec-active + .user-unroll-display{
+    display: block;
+}
+.user-unroll-display{
+    display: none;
+}
 .user-section p{
     padding: 0;
     margin: 0;
@@ -50,6 +73,11 @@ body{
 .user-section{
     margin-right: 10px;
 }
+#user-link:hover{
+    cursor: pointer;
+  
+}
+
 .user-cerlce{
     border: 1px solid white;
     padding: 6px;
@@ -91,6 +119,9 @@ padding: 0px 5px;
 }
 
 /*talent style begin*/
+.legrowtech-gras{
+    font-weight: bolder;
+}
 .ecran{
     width: 300px;
     overflow-x: hidden;

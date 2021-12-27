@@ -5,7 +5,7 @@ export default function Service() {
     return (
         <div>
               <Head/>
-            service
+              
         </div>
     )
 }

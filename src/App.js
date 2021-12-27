@@ -25,14 +25,14 @@ function App() {
                   <Route path="/" exact component={Home}/>
                   <Route path="/login"  component={useForm}/>
                   <Route path="/dashboard"  component={Dashboard}/>
-                  <Route path="/services" component={Service}/>
+                  <Route path="/services" exact component={Service}/>
                   <Route path="/solutions" exact component={Solution}/>
                   <Route path="/jobs" exact component={Jobs}/>
                   <Route path="/jobs/:id" component={JobDetails}/>
-                  <Route path="/apply" component={useFormApply}/>
+                  <Route path="/apply/:id" component={useFormApply}/>
                   <Route  path="/learn" exact component={Learn}/>
                   <Route  path="/learn/spa"  component={Learn_spa}/>
-                  <Route  path="/solutions/web" component={Solution_web_application}/>    
+                  <Route  path="/services/web" component={Solution_web_application}/>    
                 
               
             

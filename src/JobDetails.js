@@ -41,7 +41,7 @@ export default function JobDetails({match}) {
        error?
        
        (
-       <div>No job found sorry</div>
+       <div>No job found with this id sorry!</div>
        
        ):(
             <div>
@@ -84,7 +84,7 @@ export default function JobDetails({match}) {
                     <p> <BsClipboard/> {jb.salary}</p>
 
                
-                <Link to="/apply">
+                <Link to={"/apply/"+match.params.id}>
                     <button  className="l-btn" onClick={scrollTop}>Apply</button>
                 </Link>
                 </div>

@@ -50,7 +50,6 @@ export  default class useForm extends Component{
          if(Object.keys(this.state.errors).length === 0){
             const {log,val}=Auth(this.state.values);
             log().then(()=>{
-                console.log('test');
                 this.setState({
                     authed:true
                 })

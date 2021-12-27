@@ -9,7 +9,7 @@ export default function job(id) {
       
               const response= await axios({
                   method: "GET",
-                  url: "https://api.legrowtech.com/v1/jobs",
+                  url: "http://localhost:8080/v1/jobs",
                 });
                 res(response.data)
                
@@ -29,7 +29,7 @@ export default function job(id) {
       
               const response= await axios({
                   method: "GET",
-                  url: "https://api.legrowtech.com/v1/jobs/"+id,
+                  url: "http://localhost:8080/v1/jobs/"+id,
                 });
        
                    
