@@ -554,7 +554,7 @@ text-transform: uppercase;
     text-align: center;
 }
 .services-header h1{
-    font-size: 75px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 .services-header h3{
@@ -562,15 +562,16 @@ text-transform: uppercase;
    
     color: rgb(73, 73, 73);
 }
-
+.web-section img{
+    width: 100%;
+    height: auto;
+}
 .services-web-section{
     display: flex;
     flex-direction: column;    
    
 }
-.web-section{
-    
-}
+
 .web-section:last-child{
     margin-left: 0px;
 }
@@ -679,6 +680,12 @@ text-transform: uppercase;
        
         flex-direction: row;    
        
+    }
+    .services-header h1{
+        font-size: 75px;
+    }
+    .web-section img{
+        width:initial;
     }
     .web-section:last-child{
         margin-left: 80px;

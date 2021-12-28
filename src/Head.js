@@ -181,7 +181,7 @@ export default class Head extends Component {
            
                     <ul className="submenu">
                     <Subitem>Sofware integration</Subitem>
-                    <Subitem>Web application</Subitem>
+                    <Subitem ><Link className="link" to="/services/web" onClick={this.scrollTop}>Web application</Link></Subitem>
                     <Subitem>Mobile application</Subitem>
                     <Subitem>Wordpres</Subitem>
                     <Subitem>IT suppor</Subitem>

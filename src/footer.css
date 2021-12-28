@@ -1,11 +1,10 @@
 .footer{
    
-    background-color: rgb(30, 85, 131);
-    background-image: linear-gradient(to right, rgb(37, 117, 155) , rgb(20, 100, 110));
+    background-color: #272727;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
   
 
 }
