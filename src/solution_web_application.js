@@ -38,7 +38,7 @@ export default function Solution_web_application() {
     return (
         <>
     
-            <div>
+            <div className="web">
             <Head/>
         
             <Helmet>

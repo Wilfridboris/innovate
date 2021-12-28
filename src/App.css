@@ -549,6 +549,11 @@ text-transform: uppercase;
 /*----------------------------- services header style begin  -------------------*/
 .legrowtech-services-web{
     padding: 0 8%;
+   
+}
+.web{
+   
+    background-color: white;
 }
 .services-header{
     text-align: center;
@@ -574,7 +579,9 @@ text-transform: uppercase;
 
 .web-section:last-child{
     margin-left: 0px;
+  
 }
+
 .web-section-inside{
     display: inline-grid;
     grid-template-columns: auto auto ;
@@ -593,11 +600,20 @@ text-transform: uppercase;
 
 
 
+
 /*-------------legrowtech btn style end --------------------------*/
 
 
 /*----------------------------- services header style end -------------------*/
+.legrowtech_services{
+    background-color: white;
+}
 
+
+/*------------services style begin*-----------------------/
+
+
+/*--------------services style end*------------------------/
    
 
 /* @media all and (min-width: 388px) {
