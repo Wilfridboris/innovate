@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import MarkDown from 'markdown-to-jsx'
 import Head from './Head'
 import ServiceHeader from './components/ServiceHeader';
-import services_web from './img/services_web.png'
 import Footer from './Footer';
 
 export default function Solution_web_application() {
@@ -56,9 +55,7 @@ export default function Solution_web_application() {
                                    />
                                    
         <div className="services-web-section">
-                <div className="web-section" >
-                 <img src={services_web} alt="legrowtech web services"/>
-                </div>
+        
                 <div className="web-section" >
                     <h3 className="web-title">Web</h3>
                     <p className="web-bottom-title">Core keys to your Success</p>

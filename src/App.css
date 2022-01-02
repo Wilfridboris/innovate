@@ -567,15 +567,14 @@ text-transform: uppercase;
    
     color: rgb(73, 73, 73);
 }
+.web-section{
+    padding-bottom: 50px;
+}
 .web-section img{
     width: 100%;
     height: auto;
 }
-.services-web-section{
-    display: flex;
-    flex-direction: column;    
-   
-}
+
 
 .web-section:last-child{
     margin-left: 0px;
@@ -585,7 +584,7 @@ text-transform: uppercase;
 .web-section-inside{
     display: inline-grid;
     grid-template-columns: auto auto ;
-    column-gap: 50px;
+    column-gap: 30px;
   
 }
 .web-title{
@@ -605,9 +604,7 @@ text-transform: uppercase;
 
 
 /*----------------------------- services header style end -------------------*/
-.legrowtech_services{
-    background-color: white;
-}
+
 
 
 /*------------services style begin*-----------------------/
@@ -692,11 +689,7 @@ text-transform: uppercase;
     /*style end*/
 
     /* services web style begin */
-    .services-web-section{
-       
-        flex-direction: row;    
-       
-    }
+
     .services-header h1{
         font-size: 75px;
     }
