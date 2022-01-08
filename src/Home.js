@@ -577,6 +577,7 @@ export default function Home() {
         </div>
        
         </div>
+        <div className="overlay"></div>
         <Footer/>
         </>
     )

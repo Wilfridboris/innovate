@@ -13,38 +13,41 @@ export default class Head extends Component {
         super(props)
         this.state={
             iconIsToggle:false,
-            isScroll:false,
-            isOver:false
+            isScroll:false
 
         }
 
     this.setToggleness=this.setToggleness.bind(this);
     this.reloadpage=this.reloadpage.bind(this);
     this.scrollTop=this.scrollTop.bind(this)
-    this.setOver=this.setOver.bind(this)
-    this.removeOver=this.removeOver.bind(this)
     this.toggleScrollBar=this.toggleScrollBar.bind(this)
     
     }
 
 
-    setOver(){
-        this.setState({
-            isOver:true
-        })
-    }
-    removeOver(){
-        this.setState({
-            isOver:false
-        })
-    }
-    toggleScrollBar(){
    
-        if(this.state.isOver){
-            document.body.style.overflow = 'hidden';
-        }else{
-            document.body.style.overflow = 'visible';
-        }
+    
+    toggleScrollBar(){
+            const tags=document.querySelectorAll('.Products')
+            const item=document.querySelectorAll('.item')
+            const overlay=document.querySelector('.overlay')
+            const ftags=[...tags,...item]
+            ftags.forEach(tag=>{
+                tag.addEventListener('mouseover',()=>{
+                    document.body.style.overflow = 'hidden';
+                    overlay.classList.add('x-active')
+                })
+                tag.addEventListener('mouseout',()=>{
+                    document.body.style.overflow = 'visible';
+                    overlay.classList.remove('x-active')
+                })
+            })
+
+      
+          
+   
+         
+      
     }
     toggleItemStyle=()=>{
         const menu1=$('.header-item')
@@ -107,19 +110,19 @@ export default class Head extends Component {
     componentDidMount(){
         this.toggleItemStyle()
     
-        //this.setToggleness();
-        //this.toggleScrollBar()
-        window.addEventListener('scroll',()=>this.setToggleness());
+       // this.setToggleness();
+        this.toggleScrollBar()
+       // window.addEventListener('scroll',()=>this.setToggleness());
 
       }
     componentWillUnmount(){
-         window.removeEventListener('scroll',()=>this.setToggleness());
+        // window.removeEventListener('scroll',()=>this.setToggleness());
 
 
     }
  
     render() {
-         
+    
             
             //className={this.state.isScroll?"fixed":""}
         return(
@@ -169,7 +172,7 @@ export default class Head extends Component {
                     
                     
                     
-                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                    <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">Sofware integration</a></h2>
                         <p>We help you integrate and deploy a wide range of application</p>
@@ -210,7 +213,7 @@ export default class Head extends Component {
                 </Item>
             
                <Item>Solution
-                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                    <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">E-commerce API</a></h2>
                         <p>Standard Api e-commerce site already build and waiting for your data</p>
@@ -245,7 +248,7 @@ export default class Head extends Component {
 
             </Item>
                     <Item>Pricing
-                        <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                        <div className="Products" >
                         <section className="Product-section">
                             <h2><a href="">Web package</a></h2>
                             <p>See our offers</p>
@@ -271,7 +274,7 @@ export default class Head extends Component {
                     </Item>
                     <Item>Learn
                     
-                            <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                            <div className="Products">
                             <section className="Product-section">
                                 <h2><Link onClick={this.reloadpage} to="/learn/spa">Web developer path</Link></h2>
                                 <p>Learn how to build web application with angular,laravel and node</p>
@@ -296,7 +299,7 @@ export default class Head extends Component {
                     </Item>
                     <Item>Opportunity
 
-                    <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
+                    <div className="Products" >
                             <section className="Product-section">
                                 <h2><a  href="https://legrowtech.com/jobs" onClick={this.scrollTop}>Jobs</a></h2>
                                 <p>Eager to learn?, Join the team to get experience and help us build application.

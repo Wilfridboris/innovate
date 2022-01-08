@@ -1,20 +1,25 @@
 header {
     background-color: #272727;
-    z-index: 10;
     position: relative;
   
 }
-.overlay{
-    position: fixed;
+/* .overlay{
+    position:absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 9;
-    background-color:rgba(0, 0, 0, 0.322);
+    width: 800px;
+    height: 600px;
+    background-color:rgba(0, 0, 0, 0.507);
     visibility: hidden;
   
 }
+.overlay.x-active{
+    visibility:visible;
+  
+} */
 
 .fixed{
     position: fixed;
