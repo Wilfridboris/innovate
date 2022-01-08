@@ -372,7 +372,7 @@ export default function Home() {
                   <h2 className="legrowtech-title">Why Legrowtech?</h2>
                   <p className="legrowtech-text">At Legrowtech, Legrowtech platform connects you with experienced talent from around the world, so you can focus on building your product and scaling your business.</p>
               </div>
-            <div className="services-grid">
+            <div className="services-grid reveal">
                   <div className="service-grid-item">
                       <div className="grid-img">
                         <img src={icon1} alt ="legrowtech icon deploy"/>
