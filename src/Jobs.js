@@ -42,6 +42,33 @@ export default function Jobs() {
                     <img src={jobBanner} alt='legrowtech banner jobs' title="legrowtech banner jobs"></img>
                 </div>
                 <div className="l-content-jb">
+                    <div className="l-content-why">
+                            <div className="services-title-section">
+                                <h2 className='legrowtech-title'>Why join Legrowtech?</h2>
+                                <p className='legrowtech-description'>At legrowtech we have a great work culture , we support knowledge and expansion and appreciates hard work.</p>
+                                <p className='legrowtech-description'>We surveyed engineers around the globe to better gauge the impact that working at Legrowtech has had on their lives. Here is what they had to say..</p>
+                            </div>
+                            <div className="jb-grid-items">
+                                            <div className="jb-item">
+                                                <h4 className='text-teal'>89%</h4>
+                                                <p>of placed engineers report an improved quality of life</p>
+                                            </div>
+                                            
+                                            <div className="jb-item">
+                                                <h4 className='text-pink'>85%</h4>
+                                                <p>report improved confidence in self and abilities</p>
+                                            </div>
+                           
+                       
+                                            <div className="jb-item">
+                                                <h4 className='text-blue'>88%</h4>
+                                                <p>of legrowtech join for career growth opportunities </p>
+                                            </div>
+                            </div>
+                         
+                           
+
+                    </div>
                     <h2>Our Jobs</h2>
                     <div className="l-content-list-jb">
                       {jobs.map(job=>{

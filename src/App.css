@@ -220,7 +220,7 @@ text-transform: uppercase;
 
  }
  .services-title-section{
-    margin: 0px 20%;
+    margin: 0px 10%;
 }
 .legrowtech-title{
     font-size: 42px;
@@ -235,6 +235,7 @@ text-transform: uppercase;
     font-weight: 300;
     text-align: left;
 }
+
 .grid-img{
 text-align: left;
 }
@@ -739,6 +740,12 @@ text-align: left;
     }
     /*services web style end*/
    
+    /*service home begin*/
+    .services-title-section{
+        margin: 0px 20%;
+    }
+
+    /*service home end*/
     /* .slider{
         height: 300px;
        
