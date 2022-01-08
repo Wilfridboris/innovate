@@ -16,7 +16,7 @@ function FormSigIn({
         <>
            <Helmet>
                 <title>legrowtech Login</title>
-                <meta name="description" content="Login to your Dashboard legrowtech" />
+                <meta name="description" content="Login to your Dashboard" />
             </Helmet>
         <div className="login-form">
             <div className="login-header">
