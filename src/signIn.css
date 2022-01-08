@@ -8,56 +8,80 @@ html{
 body{
    padding:0px;
    margin: 0px;
-   background-color: white;
+ 
+}
+.login-header h3:last-child{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.login-header img{
+   width: 100px;
 }
 .login-form{
+   
     position: absolute;
-    top: 10%;
     left: 50%;
     transform: translate(-50%,20%);
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    z-index: 10;
+    text-align: center;
+   
     
 }
 .error{
     color: red;
 }
 
-.form-label{
-    color: rgb(83, 83, 83);
-    font-size: 18px;
-}
 .form-input{
-    width: 250px;
-    height: 40px;
+    min-width: 280px;
+    width: 100%;
+    height: 45px;
     outline-color: rgb(77, 190, 255);
+    resize: none;
+    display: block;
+    color: inherit;
+    line-height: 1.43;
+  
     
  
 }
+.form{
+    text-align: left;
+    padding: auto;
+    margin: auto;
+    
+    
+  
+}
+.form-label-text{
+    color: rgb(83, 83, 83);
+    font-size: 16px;
+}
 .form-input-btn{
-    height: 30px;
-    width: 200px;
+    height: 45px;
+    background-color: rgb(75, 159, 207);
+    border: none;
+    width: 100%;
     cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
     
    
 }
 
-#overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-/* @media all and (min-width:960px){
-    .login-form{
-        width: 400px;
-        transform: translate(-50%,50%);
-    }
+
+ @media all and (min-width:960px){
     .form-input{
-        width: 300px;
+        width: 350px;       
+     
     }
-} */
+    .form-input-btn{
+        width: 350px;
+    }
+    .form{
+        padding: 10px;
+        
+      
+    }
+    
+   
+} 

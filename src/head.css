@@ -17,14 +17,27 @@ header {
 }
 
 .fixed{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0,-200px);
+   
+ 
      /* transform: translate(0,-200px);
     opacity: 0;
     visibility: hidden;  */
+
+}
+.in-view{
+    transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    transform: translate(0,0);
 
 }
 /* .in-view{

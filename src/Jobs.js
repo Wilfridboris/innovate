@@ -35,7 +35,7 @@ export default function Jobs() {
             <Head/>
             <Helmet>
                 <title>legrowtech Jobs</title>
-                <meta name="description" content="legrowtech help you find your next jobs, canada and cameroon jobs" />
+                <meta name="description" content=" At legrowtech, we recognize that our strength lies in the persons who drive our missions" />
             </Helmet>
             <div className="legrowtech-container-jobs">
                 <div className="l-banner-jb">

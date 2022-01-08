@@ -213,22 +213,60 @@ text-transform: uppercase;
 
 
 }
+/* services style begin*/
  .Services{
-     text-align: center;
      background-color: white;
+    
 
  }
+ .services-title-section{
+    margin: 0px 20%;
+}
+.legrowtech-title{
+    font-size: 42px;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+    
+}
+.legrowtech-description{
+    font-size: 18px;
+    color: #363947;
+    font-weight: 300;
+    text-align: left;
+}
+.grid-img{
+text-align: left;
+}
+.service-grid-item .grid-img img{
+    width: 100px;
+    
+}
+.service-grid-item h3{
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 21px;
+    vertical-align: baseline;
+}
+.legrowtech-text{
+    font-size: 18px;
+    color: #565B73;
+    font-weight: 300;
+    text-align: center;
+}
+.service-grid-item{
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+    padding: 25px;
+    margin: 10px 15px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+    background: #ffffff;
+}
+.services-grid{
+   text-align: center;
+}
 
- .Services table{
-    width: 100%;
-}
- .Service-image,.Service-section{
-     display: inline-block;
-     margin: 20px;
- }
- .Service-image img{
-    width: 50%;
-}
 
 /* services style end*/
 /*new style begin*/

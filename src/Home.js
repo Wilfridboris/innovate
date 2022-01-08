@@ -12,6 +12,9 @@ import entertainment from './img/entertainment.png'
 import fincance from './img/finances.png'
 import game from './img/gaming.png'
 import store from './img/store.png'
+import icon1 from './img/icons/icon_deploy.png'
+import icon2 from './img/icons/icon_ideas.png'
+import icon3 from './img/icons/icon_prototype.png'
 
 
 
@@ -362,27 +365,45 @@ export default function Home() {
         </div>
 
         <div className="Services">
-            <h1>services</h1>
-            <table>
-            <tr>
-               <th  className="Service-image">
-                <img data-src={service } alt="service"></img>
-               
-                   
-               </th>
-               <th className="Service-section">
+              <div className="services-title-section">
+                    <div className="legrowtech-logo">
+                  
+                 </div>
+                  <h2 className="legrowtech-title">Why Legrowtech?</h2>
+                  <p className="legrowtech-text">At Legrowtech, Legrowtech platform connects you with experienced talent from around the world, so you can focus on building your product and scaling your business.</p>
+              </div>
+            <div className="services-grid">
+                  <div className="service-grid-item">
+                      <div className="grid-img">
+                        <img src={icon1} alt ="legrowtech icon deploy"/>
+                      </div>
+                      <h3>Extensive list of Technical Services</h3>
+                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
+                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                  </div>
+
+                  <div className="service-grid-item">
+                      <div className="grid-img">
+                        <img src={icon2} alt ="legrowtech icon ideas"/>
+                      </div>
+                      <h3>Extensive list of Technical Services</h3>
+                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
+                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                  </div>
+
+                  <div className="service-grid-item">
+                      <div className="grid-img">
+                       <img src={icon3} alt ="legrowtech icon protytpe"/>
+                      </div>
+                      <h3>Extensive list of Technical Services</h3>
+                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
+                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                  </div>
+            </div>
+
+          
              
-                
-               <h1>Our Approach</h1>
-               <p>Build Amazing Solution that Support your Bussiness</p>
-               <p>Learn more</p>
-             
-                     
-                   
-               </th>
-           </tr>
-             
-         </table>
+            
         </div>
 
         <div className="hand-services">

@@ -64,14 +64,33 @@ export default class Head extends Component {
 
 
     setToggleness=()=>{
-       if(window.pageYOffset>200) {
-          this.setState({isScroll:true})
+
+        var header=document.documentElement.scrollTop||document.body.scrollTop
+        var headerHeight=document.querySelector('header').offsetHeight
+        const head=document.querySelector('header')
+
+        if(header>headerHeight){    
+            head.classList.add('fixed')
+            if(header>headerHeight+50){
+                head.classList.add('in-view')
+            }else{
+                head.classList.remove('in-view')
+            }
+            
+        }else{
+            head.classList.remove('fixed')
+        }
+        console.log("header top"+header)
+        console.log("header height"+headerHeight)
+      
+    //    if(window.pageYOffset>200) {
+    //       this.setState({isScroll:true})
         
-       }
-       else{
-        this.setState({isScroll:false})
+    //    }
+    //    else{
+    //     this.setState({isScroll:false})
   
-       }
+    //    }
 
        
     }
@@ -105,7 +124,7 @@ export default class Head extends Component {
             //className={this.state.isScroll?"fixed":""}
         return(
             <>
-            <header className={this.state.isScroll?"fixed":""}>
+            <header >
             <div >
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
@@ -131,7 +150,7 @@ export default class Head extends Component {
                     <Item>My Account
                         <div className="account">
                             <li> Dashboard </li>
-                            <li> <Link  to="/login">Portail</Link> </li>
+                            <li> <a href="https://legrowtech.com/login">Portail</a> </li>
                         </div>
                         <ul className="submenu">
                         <Subitem link="/dashboard"> Dashboard </Subitem>
@@ -279,7 +298,7 @@ export default class Head extends Component {
 
                     <div className="Products" onMouseOver={this.setOver} onMouseLeave={this.removeOver}>
                             <section className="Product-section">
-                                <h2><Link  to="/jobs" onClick={this.scrollTop}>Jobs</Link></h2>
+                                <h2><a  href="https://legrowtech.com/jobs" onClick={this.scrollTop}>Jobs</a></h2>
                                 <p>Eager to learn?, Join the team to get experience and help us build application.
                                     We are a growing team and need talent to help us.
                                 </p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './signIn.css';
+import logo from './img/apox.png'
 function FormSigIn({
     handleChange,
     values,
@@ -14,14 +15,15 @@ function FormSigIn({
         <>
         <div className="login-form">
             <div className="login-header">
-                <h2>Portail Legrowtech</h2>
+              <img src={logo} alt="logo"></img>
+                <h3>Login to your dashboard</h3>
             </div>
             <form className="form" onSubmit={handleSubmit}>
             <div className="form-inputs">
-                    <p>
+                    <p className="form-label-text">
                         <label htmlFor='email'
-                             className='form-label'>
-                                Username:
+                           >
+                                Email address
                 
                         </label>
 
@@ -36,15 +38,15 @@ function FormSigIn({
                         onChange={handleChange}
                     />
                    
-                        {errors.email && <p className="error">{errors.email}</p>}
+                        
                  
                   
             </div>
             <div className="form-inputs">
-                <p>
+                <p className="form-label-text">
                         <label htmlFor='password'
-                        className='form-label'>
-                            Password:
+                       >
+                            Password
                         
                         </label>
                 </p>
@@ -58,7 +60,7 @@ function FormSigIn({
                         onChange={handleChange}
                     />
             
-                        {errors.password && <p className="error">{errors.password}</p>}
+                       
          
                <p></p>
             </div>
@@ -69,10 +71,12 @@ function FormSigIn({
                      Connexion
                 </button>
                 {loginError && <p className="error">{loginError}</p>}
+                {errors.password && <p className="error">{errors.password}</p>}
+                {errors.email && <p className="error">{errors.email}</p>}
             </form>
 
         </div>
-        <div id="overlay"></div>
+       
         </>
     )
 }
