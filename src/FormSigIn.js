@@ -1,6 +1,7 @@
 import React from 'react';
 import './signIn.css';
 import logo from './img/apox.png'
+import { Helmet } from 'react-helmet';
 function FormSigIn({
     handleChange,
     values,
@@ -13,6 +14,10 @@ function FormSigIn({
     
     return (
         <>
+           <Helmet>
+                <title>legrowtech Login</title>
+                <meta name="description" content="Login to your Dashboard legrowtech" />
+            </Helmet>
         <div className="login-form">
             <div className="login-header">
               <img src={logo} alt="logo"></img>
