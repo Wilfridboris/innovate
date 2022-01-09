@@ -29,17 +29,19 @@ export default class Head extends Component {
     
     toggleScrollBar(){
             const tags=document.querySelectorAll('.Products')
-            const item=document.querySelectorAll('.item')
+            const items=document.querySelectorAll('.item')
+            const itemstoArray=[...items]
+            const itemSlice=itemstoArray.slice(4,itemstoArray.length)
             const overlay=document.querySelector('.overlay')
-            const ftags=[...tags,...item]
+            const ftags=[...tags,...itemSlice]
             ftags.forEach(tag=>{
                 tag.addEventListener('mouseover',()=>{
                     document.body.style.overflow = 'hidden';
-                    overlay.classList.add('x-active')
+                    //overlay.classList.add('x-active')
                 })
                 tag.addEventListener('mouseout',()=>{
                     document.body.style.overflow = 'visible';
-                    overlay.classList.remove('x-active')
+                    //overlay.classList.remove('x-active')
                 })
             })
 
@@ -112,11 +114,11 @@ export default class Head extends Component {
     
        // this.setToggleness();
         this.toggleScrollBar()
-       // window.addEventListener('scroll',()=>this.setToggleness());
+        window.addEventListener('scroll',()=>this.setToggleness());
 
       }
     componentWillUnmount(){
-        // window.removeEventListener('scroll',()=>this.setToggleness());
+         window.removeEventListener('scroll',()=>this.setToggleness());
 
 
     }

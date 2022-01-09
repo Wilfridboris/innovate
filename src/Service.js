@@ -14,7 +14,7 @@ export default function Service() {
                               description="Team of experts just waiting to work for you"
                               />
                         </div>
-                        <div className="services-first-section">
+                        {/* <div className="services-first-section">
                                 <div className="services-first-section-items">
                                     <h3>Frontend / backend </h3>
                                     <div className="sfsi-image"></div>
@@ -31,7 +31,7 @@ export default function Service() {
                                     <p>Make you website flexible and robust</p>
                                 </div>
 
-                        </div>
+                        </div> */}
                         <div className="services-second-section">
 
 
