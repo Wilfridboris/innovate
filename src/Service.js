@@ -5,35 +5,102 @@ import ServiceHeader from './components/ServiceHeader'
 
 export default function Service() {
     return (
-        <div >
+        <div className="services">
               <Head/>
-              <div className="services">
+              <div >
                         <div className="services-banner">
                               <ServiceHeader
                               title="explore Our Services"
                               description="Team of experts just waiting to work for you"
                               />
                         </div>
-                        {/* <div className="services-first-section">
+                        <div className="services-first-section">
+                                <div className="sfsi-image">
+
+                                </div>
                                 <div className="services-first-section-items">
                                     <h3>Frontend / backend </h3>
-                                    <div className="sfsi-image"></div>
-                                    <p>Make you website flexible and robust</p>
+                                  
+                                    <p className="legrowtech-description">Make you website flexible and robust</p>
                                 </div>
                                 <div className="services-first-section-items">
-                                    <h3>Cloud </h3>
-                                    <div className="sfsi-image"></div>
-                                    <p>Make you website flexible and robust</p>
+                                <div className="sfsi-image">
+
+                                </div>
+                                    <h3>Cloud Services </h3>
+                                
+                                    <p className="legrowtech-description">Make you website flexible and robust</p>
                                 </div>
                                 <div className="services-first-section-items">
+                                <div className="sfsi-image">
+
+                                </div>
                                     <h3>IT Solutions </h3>
-                                    <div className="sfsi-image"></div>
-                                    <p>Make you website flexible and robust</p>
+        
+                                    <p className="legrowtech-description">Make you website flexible and robust</p>
                                 </div>
 
-                        </div> */}
+                        </div>
                         <div className="services-second-section">
+                        <ServiceHeader
+                              title="Legrowtech"
+                              description="what to expects"
+                              />
 
+                        <div>
+                            <div className="services-second-section-flex">
+                                
+                                    <div className="ssecond-section-flex-item">
+                                            <div className="ss-grid-items">
+                                                <div className="ss-inline-item">
+                                                    nike
+                                                </div>
+                                                <div className="ss-inline-item">
+                                                    <h3> 10x</h3>
+                                                    <p>faster web project devliveries</p>
+                                                </div>
+                                            </div>
+                                            <div className="ss-grid-items">
+                                                <div className="ss-inline-item">
+                                                    cornestore
+                                                </div>
+                                                <div className="ss-inline-item">
+                                                <h3> 90%</h3>
+                                                    <p> better performance</p>
+                                               
+                                                </div>
+                                            </div>
+                                            <div className="ss-grid-items">
+                                                <div className="ss-inline-item">
+                                                    loblaws
+                                                </div>
+                                                <div className="ss-inline-item">
+                                                <h3> 90%</h3>
+                                                    <p> better performance</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div className="ssecond-section-flex-item">
+                                        <div className="ss-flex-item-title">
+                                                      <h3>Delivered at the Edge.Rooted in the Enterprise.</h3>  
+                                                      <p>powers mission-critical web properties for major enterprises
+                                                           like Nike, Citrix, RBI, Verizon, and Trinet. Our Enterprise offerings include:</p>
+
+                                                     <ul>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                         <li>99.99% uptime SLA</li>
+                                                     </ul>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                        </div>
 
                         </div>
 

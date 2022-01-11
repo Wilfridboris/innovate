@@ -6,6 +6,7 @@ import Item from './Item'
 import Subitem from './Subitem'
 import logo from './img/logo.png'
 import {Link} from 'react-router-dom'
+import {BsChevronDown} from "react-icons/bs";
 
 
 export default class Head extends Component {
@@ -170,7 +171,7 @@ export default class Head extends Component {
             </div>
             <div>
                 <ul className="header-item">
-                <Item >Services
+                <Item >Services  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
                     
                     
                     
@@ -214,7 +215,7 @@ export default class Head extends Component {
                     
                 </Item>
             
-               <Item>Solution
+               <Item>Solution  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
                     <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">E-commerce API</a></h2>
@@ -249,7 +250,7 @@ export default class Head extends Component {
                 </ul>
 
             </Item>
-                    <Item>Pricing
+                    <Item>Pricing  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
                         <div className="Products" >
                         <section className="Product-section">
                             <h2><a href="">Web package</a></h2>
@@ -274,7 +275,7 @@ export default class Head extends Component {
                                     </ul>
                 
                     </Item>
-                    <Item>Learn
+                    <Item>Learn  < BsChevronDown className="bschevrondown"  size="0.6em" color="white"/>
                     
                             <div className="Products">
                             <section className="Product-section">
@@ -299,7 +300,7 @@ export default class Head extends Component {
                                     
                                 </ul>
                     </Item>
-                    <Item>Opportunity
+                    <Item>Opportunity  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
 
                     <div className="Products" >
                             <section className="Product-section">

@@ -3,6 +3,66 @@ header {
     position: relative;
   
 }
+/**---------------------------Services pages begin---------------*/
+.services-first-section{
+    text-align: center;
+}
+.services{
+    background: #ffffff;
+}
+.services-first-section-items{
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    padding: 25px;
+    margin: 10px 15px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+    background: #ffffff;
+    border-radius: 10px;
+}
+.services-first-section-items h3{
+    font-weight: 400;
+    line-height: 42px;
+    color: #1F2C46;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+    margin:10px ;
+    font-size:28px;
+}
+.legrowtech-description{
+    font-size: 18px;
+    color: #363947;
+    font-weight: 300;
+    text-align: left;
+}
+.services-second-section-flex{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ss-grid-items{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+    background: #ffffff;
+    width: 280px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 10px;
+}
+.ss-inline-item{
+    display: inline-block;
+    margin: 10px;
+}
+.ss-flex-item-title{
+    margin-left: 50px;
+}
+
+
+/*----------------service pages end*/
 /* .overlay{
     position:absolute;
     top: 0;
@@ -107,6 +167,9 @@ header {
     display: inline-block;
   
 }
+.bschevrondown{
+    display: none;
+}
 /* .submenu {
     display: none;
 } */
@@ -170,7 +233,7 @@ header {
     left: 0;
     background-color: #252525;
     width: 90%;
-   
+   border-radius: 30px;
     margin: 0px 50px;
     transform: translate(0,-80px);
     visibility: hidden;
@@ -273,6 +336,9 @@ header {
     } 
     .Plus{
         display: none;
+    }
+    .bschevrondown{
+        display: inline-block;
     }
     .header-item .item,.header-option .item{
        display: block;

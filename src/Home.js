@@ -163,7 +163,7 @@ export default function Home() {
             if(counter>3){
               counter=1
             }
-           },8000)
+           },10000)
         }
         function stopplay(){
           clearInterval(id);
