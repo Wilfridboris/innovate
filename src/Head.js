@@ -31,7 +31,7 @@ export default class Head extends Component {
    
     
     toggleScrollBar(){
-       
+        
             const tags=document.querySelectorAll('.Products')
             const items=document.querySelectorAll('.item')
             const itemstoArray=[...items]
@@ -41,7 +41,7 @@ export default class Head extends Component {
             ftags.forEach(tag=>{
                 
                     tag.addEventListener('mouseover',()=>{
-                        if(!this.state.ismoibleView){
+                        if(window.innerWidth>600){
                             document.body.style.overflow = 'hidden';
                         }
                         
@@ -62,7 +62,7 @@ export default class Head extends Component {
       
     }
     setResponsiveness(){
-      
+    
         return window.innerWidth<600?this.setState({ismoibleView:true}):this.setState({ismoibleView:false})
         
     }
@@ -88,17 +88,29 @@ export default class Head extends Component {
         var header=document.documentElement.scrollTop||document.body.scrollTop
         var headerHeight=document.querySelector('header').offsetHeight
         const head=document.querySelector('header')
-
-        if(header>headerHeight){    
-            head.classList.add('fixed')
-            if(header>headerHeight+50){
-                head.classList.add('in-view')
+        if(window.innerWidth>600){
+            if(header>headerHeight){   
+              
+                head.classList.add('fixed')
+                if(header>headerHeight+50){
+                    head.classList.add('in-view')
+                }else{
+                    head.classList.remove('in-view')
+                }
+                
             }else{
-                head.classList.remove('in-view')
+                head.classList.remove('fixed')
             }
-            
-        }else{
-            head.classList.remove('fixed')
+        }
+        if(window.innerWidth<600){
+            if(header>headerHeight+30){
+                console.log('true')
+                const menu1=document.querySelector('.header-item')
+                const menu2=document.querySelector('.header-option')
+                menu1.classList.remove('select')
+                menu2.classList.remove('select')  
+            } 
+         
         }
       
       

@@ -8,6 +8,7 @@ html{
 body{
    padding:0px;
    margin: 0px;
+   
 
 }
 .main-body{
@@ -724,6 +725,7 @@ text-align: left;
     
 } */
 @media all and (min-width:960px){
+ 
     .list-items-dek-view,.canbehidde {
         display: block;
     }
