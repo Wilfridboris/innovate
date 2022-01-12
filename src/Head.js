@@ -136,6 +136,7 @@ export default class Head extends Component {
         document.documentElement.scrollTop = 0;
     }
     componentDidMount(){
+        document.body.style.overflow = 'visible';
         this.setResponsiveness()
         this.toggleItemStyle()
     
