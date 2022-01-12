@@ -58,7 +58,69 @@ body{
     text-align: center;
     background-color: #f7f7f7;
 }
+/**---------------------------Services pages begin---------------*/
+.services-first-section{
+    text-align: center;
+}
 
+.services-first-section-items{
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    padding: 25px;
+    margin: 10px 15px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+    background: #ffffff;
+    border-radius: 10px;
+}
+.services-first-section-items h3{
+    font-weight: 400;
+    line-height: 42px;
+    color: #1F2C46;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size:28px;
+}
+.legrowtech-description{
+    font-size: 18px;
+    color: #363947;
+    font-weight: 300;
+    text-align: left;
+}
+.sfsi-image img{
+    width: 100px;
+}
+.sfsi-image{
+    text-align: left;
+}
+.services-second-section-flex{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ss-grid-items{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+    background: #ffffff;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+.ss-inline-item{
+    display: inline-block;
+    margin: 10px;
+}
+.ss-flex-item-title{
+    margin-left: 50px;
+}
+
+
+/*----------------service pages end*/
  section{
     display: inline-block;
     width: 250px;

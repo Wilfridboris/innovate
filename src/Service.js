@@ -2,6 +2,9 @@ import React from 'react'
 import Head from './Head'
 import './styles/services.css'
 import ServiceHeader from './components/ServiceHeader'
+import icon4 from './img/icons/icon_planet.png'
+import icon5 from './img/icons/icon_cloud.png'
+import icon6 from './img/icons/icon_it.png'
 
 export default function Service() {
     return (
@@ -15,17 +18,18 @@ export default function Service() {
                               />
                         </div>
                         <div className="services-first-section">
-                                <div className="sfsi-image">
-
-                                </div>
+                              
                                 <div className="services-first-section-items">
+                                <div className="sfsi-image">
+                                        <img src={icon4} alt="icon planet"></img>
+                                </div>
                                     <h3>Frontend / backend </h3>
                                   
                                     <p className="legrowtech-description">Make you website flexible and robust</p>
                                 </div>
                                 <div className="services-first-section-items">
                                 <div className="sfsi-image">
-
+                                        <img src={icon5} alt="icon cloud"></img>
                                 </div>
                                     <h3>Cloud Services </h3>
                                 
@@ -33,7 +37,7 @@ export default function Service() {
                                 </div>
                                 <div className="services-first-section-items">
                                 <div className="sfsi-image">
-
+                                        <img src={icon6} alt="icon IT"></img>
                                 </div>
                                     <h3>IT Solutions </h3>
         

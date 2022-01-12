@@ -14,7 +14,8 @@ export default class Head extends Component {
         super(props)
         this.state={
             iconIsToggle:false,
-            isScroll:false
+            isScroll:false,
+            ismoibleView:false
 
         }
 
@@ -22,6 +23,7 @@ export default class Head extends Component {
     this.reloadpage=this.reloadpage.bind(this);
     this.scrollTop=this.scrollTop.bind(this)
     this.toggleScrollBar=this.toggleScrollBar.bind(this)
+    this.setResponsiveness=this.setResponsiveness.bind(this)
     
     }
 
@@ -29,6 +31,7 @@ export default class Head extends Component {
    
     
     toggleScrollBar(){
+       
             const tags=document.querySelectorAll('.Products')
             const items=document.querySelectorAll('.item')
             const itemstoArray=[...items]
@@ -36,14 +39,20 @@ export default class Head extends Component {
             const overlay=document.querySelector('.overlay')
             const ftags=[...tags,...itemSlice]
             ftags.forEach(tag=>{
-                tag.addEventListener('mouseover',()=>{
-                    document.body.style.overflow = 'hidden';
-                    //overlay.classList.add('x-active')
-                })
-                tag.addEventListener('mouseout',()=>{
-                    document.body.style.overflow = 'visible';
-                    //overlay.classList.remove('x-active')
-                })
+                
+                    tag.addEventListener('mouseover',()=>{
+                        if(!this.state.ismoibleView){
+                            document.body.style.overflow = 'hidden';
+                        }
+                        
+                        //overlay.classList.add('x-active')
+                    })
+                    tag.addEventListener('mouseout',()=>{
+                        document.body.style.overflow = 'visible';
+                        //overlay.classList.remove('x-active')
+                    })
+                
+           
             })
 
       
@@ -51,6 +60,11 @@ export default class Head extends Component {
    
          
       
+    }
+    setResponsiveness(){
+      
+        return window.innerWidth<600?this.setState({ismoibleView:true}):this.setState({ismoibleView:false})
+        
     }
     toggleItemStyle=()=>{
         const menu1=$('.header-item')
@@ -86,8 +100,7 @@ export default class Head extends Component {
         }else{
             head.classList.remove('fixed')
         }
-        console.log("header top"+header)
-        console.log("header height"+headerHeight)
+      
       
     //    if(window.pageYOffset>200) {
     //       this.setState({isScroll:true})
@@ -111,15 +124,18 @@ export default class Head extends Component {
         document.documentElement.scrollTop = 0;
     }
     componentDidMount(){
+        this.setResponsiveness()
         this.toggleItemStyle()
     
        // this.setToggleness();
         this.toggleScrollBar()
         window.addEventListener('scroll',()=>this.setToggleness());
+        window.addEventListener('resize',()=>this.setResponsiveness());
 
       }
     componentWillUnmount(){
          window.removeEventListener('scroll',()=>this.setToggleness());
+         window.addEventListener('resize',()=>this.setResponsiveness());
 
 
     }
