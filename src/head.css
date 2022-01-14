@@ -73,8 +73,12 @@ header {
     overflow-x: hidden;
     z-index: 4;
     height: 600px;
+    padding-bottom: 30px;
+    
+    
 
 }
+
 
 .select .item{
     display: grid;
@@ -157,7 +161,7 @@ header {
     position: fixed;
     display: grid;
     grid-template-columns: auto auto auto;
-    z-index: 4;
+    z-index:5;
     top:109px;
     left: 0;
     background-color: #252525;
@@ -279,7 +283,7 @@ header {
         position: fixed; 
     
     }
-     
+  
     
    
     

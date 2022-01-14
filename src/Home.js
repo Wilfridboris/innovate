@@ -230,7 +230,7 @@ export default function Home() {
     return (
       <>
         <Head/>
-        <div className="main-body relative">
+        <div className="relative main-body">
         <div className="overlay"></div>
         <div className="body-slider">
         <div className="slider">
@@ -578,7 +578,7 @@ export default function Home() {
         </div>
        
         </div>
-        <div className="overlay"></div>
+        
         <Footer/>
         </>
     )

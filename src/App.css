@@ -37,19 +37,22 @@ body{
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color:rgba(0, 0, 0, 0.507);
+    background-color:rgba(0, 0, 0, 0.198);
     visibility: hidden;
  
   
 }
 .overlay.x-active{
-    visibility:visible;
+    visibility: visible;
     
 
   
 }
+
+
 .main-body{
     background-color: white;
+
     
    
    
@@ -771,10 +774,11 @@ text-align: left;
     
 } */
 @media all and (min-width:960px){
- 
+   
     .list-items-dek-view,.canbehidde {
         display: block;
     }
+  
     .list-items-mob-view{
         display: none;
     }

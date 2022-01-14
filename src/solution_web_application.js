@@ -46,7 +46,7 @@ export default function Solution_web_application() {
             </Helmet>
           
                     <div className="relative">
-                        <div className="overlay"></div>
+                    <div className="overlay"></div>
                     <div className="legrowtech-services-web">
 
 <ServiceHeader

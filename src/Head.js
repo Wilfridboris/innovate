@@ -15,7 +15,8 @@ export default class Head extends Component {
         this.state={
             iconIsToggle:false,
             isScroll:false,
-            ismoibleView:false
+            ismoibleView:false,
+            tabisClick:false
 
         }
 
@@ -25,25 +26,26 @@ export default class Head extends Component {
     this.toggleScrollBar=this.toggleScrollBar.bind(this)
     this.setResponsiveness=this.setResponsiveness.bind(this)
     
+    
     }
 
 
    
-    
+   
     toggleScrollBar(){
-        
+           
             const tags=document.querySelectorAll('.Products')
             const items=document.querySelectorAll('.item')
             const itemstoArray=[...items]
             const itemSlice=itemstoArray.slice(4,itemstoArray.length)
-            const overlay=document.querySelector('.overlay')
+            //const overlay=document.querySelector('.overlay')
             const ftags=[...tags,...itemSlice]
             ftags.forEach(tag=>{
                 
                     tag.addEventListener('mouseover',()=>{
                         if(window.innerWidth>600){
                             document.body.style.overflow = 'hidden';
-                            overlay.classList.add('x-active')
+                           
                         }
                         
                        
@@ -51,7 +53,7 @@ export default class Head extends Component {
                     tag.addEventListener('mouseout',()=>{
                         if(window.innerWidth>600){
                             document.body.style.overflow = 'visible';
-                                overlay.classList.remove('x-active')
+                               
                         }
           
                     
@@ -68,16 +70,31 @@ export default class Head extends Component {
     }
     setResponsiveness(){
     
-        return window.innerWidth<600?this.setState({ismoibleView:true}):this.setState({ismoibleView:false})
+        // return window.innerWidth<600?this.setState({ismoibleView:true}):this.setState({ismoibleView:false})
+        const header=document.querySelector('.header-container')
+        const overlay=document.querySelector('.overlay')
+        if(window.innerWidth>600){
+            header.classList.remove('select');
+            overlay.classList.remove('x-active');
+            document.body.style.overflow = 'visible';
+
+        }
         
     }
     toggleItemStyle=()=>{
+      
+      
+      
+       
         // const menu1=$('.header-item')
         // const menu2=$('.header-option')
         const header=$('.header-container')
         const overlay=$('.overlay')
+     
+        
         $('.heard-bar').on('click',()=>{
            
+          
         
             if(header.hasClass('select')){
                 header.removeClass('select')
@@ -150,7 +167,7 @@ export default class Head extends Component {
         document.documentElement.scrollTop = 0;
     }
     componentDidMount(){
-        document.body.style.overflow = 'visible';
+        
         this.setResponsiveness()
         this.toggleItemStyle()
     
@@ -169,6 +186,7 @@ export default class Head extends Component {
  
     render() {
     
+        
             
             //className={this.state.isScroll?"fixed":""}
         return(
