@@ -31,13 +31,15 @@ export default function Jobs() {
     }, [])
     return (
         <>
-        <div>
+        
             <Head/>
             <Helmet>
                 <title>legrowtech Jobs</title>
                 <meta name="description" content=" At legrowtech, we recognize that our strength lies in the persons who drive our missions" />
             </Helmet>
-            <div className="legrowtech-container-jobs">
+                <div className="relative">
+                    <div className="overlay"></div>
+                    <div className="legrowtech-container-jobs">
                 <div className="l-banner-jb">
                     <img src={jobBanner} alt='legrowtech banner jobs' title="legrowtech banner jobs"></img>
                 </div>
@@ -92,8 +94,9 @@ export default function Jobs() {
                 </div>
 
             </div>
+                </div>
 
-        </div>
+        
         <Footer/>
 
         </>

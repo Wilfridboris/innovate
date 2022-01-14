@@ -8,12 +8,54 @@ html{
 body{
    padding:0px;
    margin: 0px;
+  
+
    
    
 
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    transform: translate(0,-200px);
+   
+ 
+     /* transform: translate(0,-200px);
+    opacity: 0;
+    visibility: hidden;  */
+
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.507);
+    visibility: hidden;
+ 
+  
+}
+.overlay.x-active{
+    visibility:visible;
+    
+
+  
+}
 .main-body{
     background-color: white;
+    
+   
+   
+}
+.relative{
+    position: relative;
 }
 .Home-panel{
     
@@ -67,10 +109,10 @@ body{
 
 .services-first-section-items{
     display: inline-block;
-    height: 300px;
-    width: 400px;
-    padding: 25px;
-    margin: 10px 15px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
     background: #ffffff;
     border-radius: 10px;
@@ -97,20 +139,21 @@ body{
     text-align: left;
 }
 .services-second-section-flex{
-    padding-left: 20%;
-    padding-right: 20%;
+   padding: auto;
     display: flex;
+    
     justify-content: center;
+    flex-direction: column;
     
 }
 
 .ss-grid-items{
     box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
     background: #ffffff;
-    width: 300px;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
     padding: 10px;
-    margin: 5px 0px;
+    margin: 10px;
     border-radius: 10px;
 }
 .ss-inline-item{
@@ -652,6 +695,7 @@ text-align: left;
 /*----------------------------- services header style begin  -------------------*/
 .legrowtech-services-web{
     padding: 0 8%;
+    padding-top: 50px;
    
 }
 .web{
@@ -664,6 +708,7 @@ text-align: left;
 .services-header h1{
     font-size: 50px;
     margin-bottom: 5px;
+    margin: 0;
 }
 .services-header h3{
     font-size: 25px;
@@ -825,5 +870,31 @@ text-align: left;
     }
 
         /*new style end*/
+
+        /*------------------services page begin desktop----------*/
+
+        .services-first-section-items{
+            height: 300px;
+            width: 400px;
+            margin: 10px 15px;
+            padding: 25px;
+          
+         
+        }
+        .services-second-section-flex{
+            padding-left: 20%;
+            padding-right: 20%;
+            flex-direction: row;
+            
+        }
+        .ss-grid-items{
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 5px 0px;
+       
+        }
+
+            /*------------------services page begin end----------*/
 }
 

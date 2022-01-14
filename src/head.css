@@ -1,43 +1,12 @@
 header {
     background-color: #272727;
-    position: relative;
+  
   
 }
 
-/* .overlay{
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9;
-    width: 800px;
-    height: 600px;
-    background-color:rgba(0, 0, 0, 0.507);
-    visibility: hidden;
-  
-}
-.overlay.x-active{
-    visibility:visible;
-  
-} */
 
-.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2; 
-    opacity: 0;
-    visibility: hidden;
-    transform: translate(0,-200px);
-   
- 
-     /* transform: translate(0,-200px);
-    opacity: 0;
-    visibility: hidden;  */
 
-}
+
 .in-view{
     transform: translate(0,0);
     opacity: 1;
@@ -81,6 +50,7 @@ header {
     margin: 20px 20px 0px 20px ;
     padding-top: 6px;
     display: block;
+    cursor: pointer;
 }
 
 .item{
@@ -96,10 +66,24 @@ header {
     
    
 }
+.header-container.select{
+    position: relative;
+    display: block;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 4;
+    height: 600px;
+
+}
+
 .select .item{
     display: grid;
     grid-template-columns: 16fr 1fr;
+   
 }
+
+
+
 
 .ChevronDown{
    display: none;
@@ -119,6 +103,10 @@ header {
     list-style-type: none;
     
 
+ }
+ .subitem:hover{
+    color: rgb(228, 215, 41);
+   cursor: pointer;
  }
 .submenu-active .submenu {
    display: block;
@@ -169,7 +157,7 @@ header {
     position: fixed;
     display: grid;
     grid-template-columns: auto auto auto;
-    z-index: 10;
+    z-index: 4;
     top:109px;
     left: 0;
     background-color: #252525;

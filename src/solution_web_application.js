@@ -37,7 +37,7 @@ export default function Solution_web_application() {
     return (
         <>
     
-            <div className="web">
+        
             <Head/>
         
             <Helmet>
@@ -45,46 +45,49 @@ export default function Solution_web_application() {
                 <meta name="description" content="build web applications with legrowtech" />
             </Helmet>
           
+                    <div className="relative">
+                        <div className="overlay"></div>
                     <div className="legrowtech-services-web">
 
-                                    <ServiceHeader
-                                    
-                                    title="web Application"
-                                    description="We Combine all technologies to build fast and secure App"
-                        
-                                   />
-                                   
-        <div className="services-web-section">
-        
-                <div className="web-section" >
-                    <h3 className="web-title">Web</h3>
-                    <p className="web-bottom-title">Core keys to your Success</p>
-                    <div className="web-section-inside">
-                                <div className="web-inside">
-                                        <h3>Secure</h3>
-                                        <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
-                                </div>
-                                <div className="web-inside">
-                                        <h3>Moderm && Responsive</h3>
-                                        <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
-                                </div>
-                                <div className="web-inside">
-                                        <h3>Fast</h3>
-                                        <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
-                                </div>
-                                <div className="web-inside">
-                                        <h3>Agile</h3>
-                                        <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
-                                </div>
-                    </div>
-                </div>
-        </div>
-                            {/* <MarkDown>
-                                {status()}
-                            </MarkDown> */}
-                    </div>
+<ServiceHeader
 
-        </div>
+title="web Application"
+description="We Combine all technologies to build fast and secure App"
+
+/>
+
+<div className="services-web-section">
+
+<div className="web-section" >
+<h3 className="web-title">Web</h3>
+<p className="web-bottom-title">Core keys to your Success</p>
+<div className="web-section-inside">
+<div className="web-inside">
+    <h3>Secure</h3>
+    <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
+</div>
+<div className="web-inside">
+    <h3>Moderm && Responsive</h3>
+    <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
+</div>
+<div className="web-inside">
+    <h3>Fast</h3>
+    <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
+</div>
+<div className="web-inside">
+    <h3>Agile</h3>
+    <p>because right now you need to secure data we commit to provide the last in ee ofd securoity to satisfy you need</p>
+</div>
+</div>
+</div>
+</div>
+{/* <MarkDown>
+{status()}
+</MarkDown> */}
+</div>
+
+                    </div>
+        
         <Footer/>
         </>
         

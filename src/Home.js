@@ -230,7 +230,8 @@ export default function Home() {
     return (
       <>
         <Head/>
-        <div className="main-body">
+        <div className="main-body relative">
+        <div className="overlay"></div>
         <div className="body-slider">
         <div className="slider">
 

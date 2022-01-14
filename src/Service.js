@@ -5,12 +5,15 @@ import ServiceHeader from './components/ServiceHeader'
 import icon4 from './img/icons/icon_planet.png'
 import icon5 from './img/icons/icon_cloud.png'
 import icon6 from './img/icons/icon_it.png'
+import Footer from './Footer'
 
 export default function Service() {
     return (
-        <div className="services">
+        <>
               <Head/>
-              <div >
+             <div className="relative">
+                 <div className="overlay"></div>
+                 <div >
                         <div className="services-banner">
                               <ServiceHeader
                               title="explore Our Services"
@@ -23,7 +26,7 @@ export default function Service() {
                                 <div className="sfsi-image">
                                         <img src={icon4} alt="icon planet"></img>
                                 </div>
-                                    <h3>Frontend / backend </h3>
+                                    <h3>App Development </h3>
                                   
                                     <p className="legrowtech-description">Make you website flexible and robust</p>
                                 </div>
@@ -109,7 +112,11 @@ export default function Service() {
                         </div>
 
               </div>
+                 
+             </div>
+            <Footer/>
+              </>
               
-        </div>
+       
     )
 }

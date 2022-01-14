@@ -43,13 +43,18 @@ export default class Head extends Component {
                     tag.addEventListener('mouseover',()=>{
                         if(window.innerWidth>600){
                             document.body.style.overflow = 'hidden';
+                            overlay.classList.add('x-active')
                         }
                         
-                        //overlay.classList.add('x-active')
+                       
                     })
                     tag.addEventListener('mouseout',()=>{
-                        document.body.style.overflow = 'visible';
-                        //overlay.classList.remove('x-active')
+                        if(window.innerWidth>600){
+                            document.body.style.overflow = 'visible';
+                                overlay.classList.remove('x-active')
+                        }
+          
+                    
                     })
                 
            
@@ -67,16 +72,27 @@ export default class Head extends Component {
         
     }
     toggleItemStyle=()=>{
-        const menu1=$('.header-item')
-        const menu2=$('.header-option')
+        // const menu1=$('.header-item')
+        // const menu2=$('.header-option')
+        const header=$('.header-container')
+        const overlay=$('.overlay')
         $('.heard-bar').on('click',()=>{
-            if(menu1.hasClass('select')){
-                menu1.removeClass('select')
-                menu2.removeClass('select')
+           
+        
+            if(header.hasClass('select')){
+                header.removeClass('select')
+                overlay.removeClass('x-active')
+                document.body.style.overflow = 'visible';
+             
+               
+             
     
             }else{
-                menu1.addClass('select')
-                menu2.addClass('select')
+                header.addClass('select')
+                 overlay.addClass('x-active')
+                 document.body.style.overflow = 'hidden';
+
+              
 
             }
         })
@@ -88,7 +104,14 @@ export default class Head extends Component {
         var header=document.documentElement.scrollTop||document.body.scrollTop
         var headerHeight=document.querySelector('header').offsetHeight
         const head=document.querySelector('header')
-        if(window.innerWidth>600){
+    
+                if(header>headerHeight+30){
+                
+                const menu1=document.querySelector('.header-item')
+                const menu2=document.querySelector('.header-option')
+                menu1.classList.remove('select')
+                menu2.classList.remove('select')  
+            } 
             if(header>headerHeight){   
               
                 head.classList.add('fixed')
@@ -101,17 +124,8 @@ export default class Head extends Component {
             }else{
                 head.classList.remove('fixed')
             }
-        }
-        if(window.innerWidth<600){
-            if(header>headerHeight+30){
-                console.log('true')
-                const menu1=document.querySelector('.header-item')
-                const menu2=document.querySelector('.header-option')
-                menu1.classList.remove('select')
-                menu2.classList.remove('select')  
-            } 
-         
-        }
+        
+      
       
       
     //    if(window.pageYOffset>200) {
@@ -160,7 +174,9 @@ export default class Head extends Component {
         return(
             <>
             <header >
-            <div >
+           <div className="header-container">
+         
+           <div >
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>
@@ -231,7 +247,7 @@ export default class Head extends Component {
                    </section>
                
             </div>
-            <div className="overlay"></div>
+    
            
                     <ul className="submenu">
                     <Subitem>Sofware integration</Subitem>
@@ -361,6 +377,8 @@ export default class Head extends Component {
 
                 </ul>
             </div>
+
+           </div>
            
     </header>
      
