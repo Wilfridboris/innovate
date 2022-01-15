@@ -305,36 +305,35 @@ export default function Home() {
         <div className="Home-Second-Panel">
           <h4>What industry?</h4>
             <section>
-                  <a href="#">
-                    <img></img>
+                  
                     <h2>E-commerce</h2>
                     <p>Achieve purchase of your product easilty</p>
-                    <p>Lear more</p>
-                  </a>
+                    
+                  
             </section>
             <section>
-                  <a href="#">
-                    <img></img>
+                
+                  
                     <h2>Finance</h2>
                     <p>Achieve purchase of your product easilty</p>
-                    <p>Lear more</p>
-                  </a>
+                   
+                  
             </section>
             <section>
-            <a href="#">
-              <img></img>
+            
+              
               <h2>Learning Platform</h2>
               <p>Achieve purchase of your product easilty</p>
-              <p>Lear more</p>
-            </a>
+          
+            
       </section>
       <section>
-      <a href="#">
-        <img></img>
+     
+        
         <h2>Media & Entertaiment</h2>
         <p>Achieve purchase of your product easilty</p>
-        <p>Lear more</p>
-      </a>
+       
+      
 </section>
         </div>
         <div className="Home-Third-Panel">

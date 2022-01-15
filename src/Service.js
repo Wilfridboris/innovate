@@ -2,6 +2,7 @@ import React from 'react'
 import Head from './Head'
 import './styles/services.css'
 import ServiceHeader from './components/ServiceHeader'
+import {AiOutlineCheckCircle} from "react-icons/ai";
 import icon4 from './img/icons/icon_planet.png'
 import icon5 from './img/icons/icon_cloud.png'
 import icon6 from './img/icons/icon_it.png'
@@ -28,7 +29,7 @@ export default function Service() {
                                 </div>
                                     <h3>App Development </h3>
                                   
-                                    <p className="legrowtech-description">Make you website flexible and robust</p>
+                                    <p className="legrowtech-description"> Digital transformation to Enhances your brand exposure, client engagement, brand popularity and  buyer support </p>
                                 </div>
                                 <div className="services-first-section-items">
                                 <div className="sfsi-image">
@@ -36,7 +37,7 @@ export default function Service() {
                                 </div>
                                     <h3>Cloud Services </h3>
                                 
-                                    <p className="legrowtech-description">Make you website flexible and robust</p>
+                                    <p className="legrowtech-description"> Help you access the latest applications any time without spending your time and money on installations</p>
                                 </div>
                                 <div className="services-first-section-items">
                                 <div className="sfsi-image">
@@ -44,7 +45,7 @@ export default function Service() {
                                 </div>
                                     <h3>IT Solutions </h3>
         
-                                    <p className="legrowtech-description">Make you website flexible and robust</p>
+                                    <p className="legrowtech-description">We Provide hands-off IT management,endless cost-saving benefits, quick fix of  technical issues and outages for organization</p>
                                 </div>
 
                         </div>
@@ -59,49 +60,43 @@ export default function Service() {
                                 
                                     <div className="ssecond-section-flex-item">
                                             <div className="ss-grid-items">
+                                              
                                                 <div className="ss-inline-item">
-                                                    nike
-                                                </div>
-                                                <div className="ss-inline-item">
-                                                    <h3> 10x</h3>
-                                                    <p>faster web project devliveries</p>
+                                                    <h3> 10 x</h3>
+                                                    <p className="legrowtech-description">Faster web project delivries</p>
                                                 </div>
                                             </div>
                                             <div className="ss-grid-items">
-                                                <div className="ss-inline-item">
-                                                    cornestore
-                                                </div>
+                                              
                                                 <div className="ss-inline-item">
                                                 <h3> 90%</h3>
-                                                    <p> better performance</p>
+                                                    <p className="legrowtech-description"> better performance</p>
                                                
                                                 </div>
                                             </div>
                                             <div className="ss-grid-items">
-                                                <div className="ss-inline-item">
-                                                    loblaws
-                                                </div>
+                                              
                                                 <div className="ss-inline-item">
                                                 <h3> 90%</h3>
-                                                    <p> better performance</p>
+                                                    <p className="legrowtech-description"> better performance</p>
                                                 </div>
                                             </div>
                                     </div>
                                     <div className="ssecond-section-flex-item">
                                         <div className="ss-flex-item-title">
                                                       <h3>Delivered at the Edge.Rooted in the Enterprise.</h3>  
-                                                      <p>powers mission-critical web properties for major enterprises
+                                                      <p className="legrowtech-description">powers mission-critical web properties for major enterprises
                                                            like Nike, Citrix, RBI, Verizon, and Trinet. Our Enterprise offerings include:</p>
 
-                                                     <ul>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
-                                                         <li>99.99% uptime SLA</li>
+                                                     <ul className="ss-list-items legrowtech-description ">
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
                                                      </ul>
                                         </div>
                                     </div>
