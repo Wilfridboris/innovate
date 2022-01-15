@@ -20,7 +20,7 @@ export default function Service() {
                               <ServiceHeader
                               title="Explore Our Services"
                               description="Team of experts just waiting to work for you"
-                              size="large"
+                              size="small"
                               />
                         </div>
                         <div className="services-first-section">
@@ -55,7 +55,7 @@ export default function Service() {
                         <ServiceHeader
                               title="Legrowtech"
                               description="what to expects"
-                              size="large"
+                              size="small"
                               />
 
                         <div>

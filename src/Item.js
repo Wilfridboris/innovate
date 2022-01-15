@@ -7,12 +7,12 @@ export default function Item({children}) {
     
 
  
-    const [IsSubmenuToggle,setIsSubmenuToggle]= useState(false)
-    const [state,setState]=useState({
-        mobileView:false,
+    // const [IsSubmenuToggle,setIsSubmenuToggle]= useState(false)
+    // const [state,setState]=useState({
+    //     mobileView:false,
        
-    });
-    const {mobileView}=state;
+    // });
+    // const {mobileView}=state;
     
         // function openSub(e){
         //     if(e.target.classList.contains('dropdown') && e.target.classList.contains('submenu-active') ){
@@ -37,38 +37,38 @@ export default function Item({children}) {
 
     //     )
     // }
-    const plus=()=>{
-        return (  
-            < IoAdd className="Plus" size="1.5em" color="white"/>
-        )
-    }
+    // const plus=()=>{
+    //     return (  
+    //         < IoAdd className="Plus" size="1.5em" color="white"/>
+    //     )
+    // }
  
-    const minus=()=>{
-        return (  
-            < IoRemoveSharp className="Plus" size="1.5em" color="white"/>
-        )
-    }
-    useEffect(()=>{
+    // const minus=()=>{
+    //     return (  
+    //         < IoRemoveSharp className="Plus" size="1.5em" color="white"/>
+    //     )
+    // }
+    // useEffect(()=>{
 
 
 
-        const setResponsiveness=()=>{
-            return window.innerWidth<600?setState((prevState)=>({...prevState,mobileView:true})):setState((prevState)=>({...prevState,mobileView:false}))
-        }
-        setResponsiveness();
-        window.addEventListener("resize",()=>setResponsiveness());
+    //     const setResponsiveness=()=>{
+    //         return window.innerWidth<600?setState((prevState)=>({...prevState,mobileView:true})):setState((prevState)=>({...prevState,mobileView:false}))
+    //     }
+    //     setResponsiveness();
+    //     window.addEventListener("resize",()=>setResponsiveness());
 
-        return()=>{
-            window.removeEventListener("resize",()=>setResponsiveness());
-        }
+    //     return()=>{
+    //         window.removeEventListener("resize",()=>setResponsiveness());
+    //     }
 
-    },[])
+    // },[])
    
     return (
         <>
-        <li className={IsSubmenuToggle?"item dropdown submenu-active":"item dropdown" } onClick={()=>{setIsSubmenuToggle(!IsSubmenuToggle)}}><a tabIndex="0">{children} </a>  {IsSubmenuToggle?minus():plus()}  </li>
+        <li className="item " >{children}    </li>
         </>
-      
+        //   <li className={IsSubmenuToggle?"item dropdown submenu-active":"item dropdown" } onClick={()=>{setIsSubmenuToggle(!IsSubmenuToggle)}}><a tabIndex="0">{children} </a>  {IsSubmenuToggle?minus():plus()}  </li>
      
      
     )

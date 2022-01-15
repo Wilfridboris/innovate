@@ -6,7 +6,7 @@ import Item from './Item'
 import Subitem from './Subitem'
 import logo from './img/logo.png'
 import {Link} from 'react-router-dom'
-import {BsChevronDown} from "react-icons/bs";
+//import {BsChevronDown} from "react-icons/bs";
 
 
 export default class Head extends Component {
@@ -172,7 +172,7 @@ export default class Head extends Component {
         this.toggleItemStyle()
     
        // this.setToggleness();
-        this.toggleScrollBar()
+        //this.toggleScrollBar()
         window.addEventListener('scroll',()=>this.setToggleness());
         window.addEventListener('resize',()=>this.setResponsiveness());
 
@@ -198,33 +198,33 @@ export default class Head extends Component {
             <ul className="header-option">
                     <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>
-                    <Item>Contact us
-                        <ul className="submenu">
+                    <Item><a href="#">Contact us</a>
+                        {/* <ul className="submenu">
                             <Subitem>Contact Form</Subitem>
                             <Subitem>Director</Subitem>
-                        </ul>
+                        </ul> */}
                     </Item>
-                    <Item>Support
-                            <ul className="submenu">
+                    <Item><a href="#">Support</a>
+                            {/* <ul className="submenu">
                                 <Subitem>Technical support 647 </Subitem>
                                 <Subitem>Customer service 402</Subitem>
-                            </ul>
+                            </ul> */}
                     </Item>
-                    <Item>English
-                        <ul className="submenu">
+                    <Item><a href="#">English</a>
+                        {/* <ul className="submenu">
                         <Subitem>French</Subitem>
                         <Subitem>English</Subitem>
-                        </ul>
+                        </ul> */}
                     </Item>
-                    <Item>My Account
-                        <div className="account">
+                    <Item><a href="https://legrowtech.com/login">Portail</a>
+                        {/* <div className="account">
                             <li> Dashboard </li>
                             <li> <a href="https://legrowtech.com/login">Portail</a> </li>
-                        </div>
-                        <ul className="submenu">
+                        </div> */}
+                        {/* <ul className="submenu">
                         <Subitem link="/dashboard"> Dashboard </Subitem>
                        <Subitem ><Link className="link" to="/login" >Portail</Link></Subitem>
-                        </ul>
+                        </ul> */}
                     </Item>
                    
                   
@@ -234,11 +234,11 @@ export default class Head extends Component {
             </div>
             <div>
                 <ul className="header-item">
-                <Item >Services  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
+                <Item ><a href="https://legrowtech.com/services">Services</a>
                     
                     
                     
-                    <div className="Products">
+                    {/* <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">Sofware integration</a></h2>
                         <p>We help you integrate and deploy a wide range of application</p>
@@ -264,9 +264,9 @@ export default class Head extends Component {
                         <p>Help to configure your system to get the most of the cloud</p>
                    </section>
                
-            </div>
+            </div> */}
     
-           
+{/*            
                     <ul className="submenu">
                     <Subitem>Sofware integration</Subitem>
                     <Subitem ><Link className="link" to="/services/web" onClick={this.scrollTop}>Web application</Link></Subitem>
@@ -274,12 +274,12 @@ export default class Head extends Component {
                     <Subitem>Wordpres</Subitem>
                     <Subitem>IT suppor</Subitem>
                     <Subitem>Cloud</Subitem>
-                </ul>
+                </ul> */}
                     
                 </Item>
             
-               <Item>Solution  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
-                    <div className="Products">
+               <Item><a href="#">Solutions</a>
+                    {/* <div className="Products">
                     <section className="Product-section">
                         <h2><a href="">E-commerce API</a></h2>
                         <p>Standard Api e-commerce site already build and waiting for your data</p>
@@ -302,19 +302,19 @@ export default class Head extends Component {
                    </section>
                    
                
-               </div>
+               </div> */}
            
-                <ul className="submenu">
+                {/* <ul className="submenu">
                 <Subitem>E-commerce API</Subitem>
                 <Subitem>2d Game</Subitem>
                 <Subitem>Learning platform</Subitem>
                 <Subitem>Web template</Subitem>
                 <Subitem>Api Template</Subitem>
-                </ul>
+                </ul> */}
 
             </Item>
-                    <Item>Pricing  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
-                        <div className="Products" >
+                    <Item><a href="#">Pricing</a>
+                        {/* <div className="Products" >
                         <section className="Product-section">
                             <h2><a href="">Web package</a></h2>
                             <p>See our offers</p>
@@ -329,18 +329,18 @@ export default class Head extends Component {
                     </section>
                     
                 
-                </div>
-                    <ul className="submenu">
+                </div> */}
+                    {/* <ul className="submenu">
                                             <Subitem>Web package</Subitem>
                                             <Subitem>Mobile package</Subitem>
                                             <Subitem>Training package</Subitem>
                                         
-                                    </ul>
+                                    </ul> */}
                 
                     </Item>
-                    <Item>Learn  < BsChevronDown className="bschevrondown"  size="0.6em" color="white"/>
+                    <Item><a href="#">Learn</a>
                     
-                            <div className="Products">
+                            {/* <div className="Products">
                             <section className="Product-section">
                                 <h2><Link onClick={this.reloadpage} to="/learn/spa">Web developer path</Link></h2>
                                 <p>Learn how to build web application with angular,laravel and node</p>
@@ -355,17 +355,17 @@ export default class Head extends Component {
                         </section>
                         
                     
-            </div>
-                    <ul className="submenu">
+            </div> */}
+                    {/* <ul className="submenu">
                                         <Subitem>Web developer path</Subitem>
                                         <Subitem>Mobile developer path</Subitem>
                                         <Subitem>Tech support path</Subitem>
                                     
-                                </ul>
+                                </ul> */}
                     </Item>
-                    <Item>Opportunity  < BsChevronDown className="bschevrondown"  size="0.8em" color="white"/>
+                    <Item><a href="https://legrowtech.com/jobs">Jobs</a>
 
-                    <div className="Products" >
+                    {/* <div className="Products" >
                             <section className="Product-section">
                                 <h2><a  href="https://legrowtech.com/jobs" onClick={this.scrollTop}>Jobs</a></h2>
                                 <p>Eager to learn?, Join the team to get experience and help us build application.
@@ -382,13 +382,13 @@ export default class Head extends Component {
                         </section>
                         
                     
-                         </div>
-                         <ul className="submenu">
+                         </div> */}
+                         {/* <ul className="submenu">
                          <Subitem><Link className="link" to="/jobs" onClick={this.scrollTop}>Jobs</Link></Subitem> 
                                 <Subitem>Training</Subitem>
                                 <Subitem>Intership</Subitem>
                              
-                         </ul>
+                         </ul> */}
                     </Item>
 
                   

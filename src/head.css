@@ -66,6 +66,11 @@ header {
     
    
 }
+.item a{
+    text-decoration: none;
+    color: white;
+}
+
 .header-container.select{
     position: relative;
     display: block;
@@ -108,10 +113,10 @@ header {
     
 
  }
- .subitem:hover{
+ /* .subitem:hover{
     color: rgb(228, 215, 41);
    cursor: pointer;
- }
+ } */
 .submenu-active .submenu {
    display: block;
 }
@@ -157,7 +162,7 @@ header {
     display: none;
 }
 
-.Products,.Solution{
+/* .Products,.Solution{
     position: fixed;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -171,7 +176,7 @@ header {
     transform: translate(0,-80px);
     visibility: hidden;
 
-}
+} */
 .Product-section{
     width: 250px;
     height: 200px;
@@ -207,7 +212,7 @@ header {
 
 
 @media (min-width:600px) {
-    .dropdown a:hover >.account{
+    /* .dropdown a:hover >.account{
         display: block;
       visibility: visible;
       
@@ -215,8 +220,8 @@ header {
     .dropdown a >.account{
         display: block;
        visibility: hidden;
-    }
-    .dropdown a:hover > .Products  {
+    } */
+    /* .dropdown a:hover > .Products  {
         visibility: visible;
        transition: all 0.3s ease;
        transform: translate(0,0);
@@ -227,7 +232,7 @@ header {
     .dropdown a > .Products {
         visibility: hidden;
     
-   }
+   } */
   
 
    
@@ -245,7 +250,13 @@ header {
           display: block;
           height: 45px;
           padding: 0px 10px;
+        
+         
       }
+      .item a{
+        text-decoration: none;
+        color: white;
+    }
       .header-option .item{
         margin: 20px 2px 0px 0px ;
        
