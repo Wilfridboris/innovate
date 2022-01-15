@@ -88,7 +88,7 @@ description="We Combine all technologies to build fast and secure App"
 
                     </div>
         
-        <Footer/>
+        
         </>
         
     )
