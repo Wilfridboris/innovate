@@ -132,11 +132,67 @@ body{
 }
 .services-third-section {
    text-align: center;
+   padding:50px 0px ;
 }
 .services-third-section img {
     width: 100%;
     height: auto;
  }
+ .services-four-section{
+                  
+    
+    background-image: linear-gradient(to right, rgb(37, 117, 155) , rgb(20, 100, 110));
+}
+
+.services-table {
+   text-align: center;
+   padding: 10px 0px;
+   margin-right: 40px;
+   margin-bottom: 100px;
+ 
+
+  
+}
+li.tbisactive{
+   
+    background-color:rgb(38, 84, 122) ;
+    
+   
+}
+
+.service-tb-list-menu li{
+    display: block;
+    width: 100%;
+   
+    box-shadow: 2px 0px 2px 0px rgb(22, 56, 85);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px 10px;
+    margin: 5px 1px;
+    cursor: pointer;
+    
+}
+.service-tb-list-menu li,.service-tb-content-grid li{
+   list-style-type: none;
+   color: white;
+   font-size: 20px;
+  
+
+}
+
+.services-tab-content {
+    display: flex;
+    
+    justify-content: center;
+    gap: 10%;
+   
+}
+.service-tb-content-grid li{
+    margin: 10px;
+}
+
+
+
 .legrowtech-description{
     font-size: 18px;
     color: #363947;
@@ -194,6 +250,7 @@ body{
     margin: 0px;
     
 }
+
 
 
 /*----------------service pages end*/
@@ -746,6 +803,12 @@ text-align: left;
     margin: 0;
     
 }
+.services-header.white h2{
+    color: white;
+}
+.services-header.white h3{
+    color: white;
+}
 .services-header.large h2{
     
     font-weight: 400;
@@ -815,6 +878,9 @@ text-align: left;
     }
     
 } */
+.service-tab-active[data-tab-content]{
+        display: flex;
+    }
 @media all and (min-width:960px){
    
     .list-items-dek-view,.canbehidde {
@@ -918,6 +984,8 @@ text-align: left;
     .tab-active[data-tab-content]{
         display: flex;
     }
+    
+  
 
         /*new style end*/
 
@@ -935,12 +1003,14 @@ text-align: left;
             width: auto;
             height: auto;
          }
+    
         .services-second-section-flex{
             padding-left: 20%;
             padding-right: 20%;
             flex-direction: row;
-            
+          
         }
+      
         .ss-grid-items{
             width: 300px;
             height: 150px;
@@ -948,6 +1018,14 @@ text-align: left;
             margin: 15px 0px;
        
         }
+
+        .service-tb-list-menu li{
+            padding: 20px 40px;
+            width: unset;
+            margin: 2px 1px;
+         
+        }
+      
 
             /*------------------services page begin end----------*/
 }

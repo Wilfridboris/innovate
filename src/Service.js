@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Head from './Head'
 import './styles/services.css'
 import ServiceHeader from './components/ServiceHeader'
@@ -10,6 +10,30 @@ import map from './img/world_map.png'
 import Footer from './Footer'
 
 export default function Service() {
+    function servicestabSelection(){
+        const tags=document.querySelectorAll('[data-tab-target]');
+        const tabContents=document.querySelectorAll('[data-tab-content]');
+        tags.forEach(tab=>{
+          tab.addEventListener('click',()=>{
+              console.log('git')
+              const target=document.querySelector(tab.dataset.tabTarget)
+              tabContents.forEach(tabContent=>{
+                  tabContent.classList.remove('service-tab-active')
+              })
+              tags.forEach(tab=>{
+                  tab.classList.remove('tbisactive')
+              })
+              tab.classList.add('tbisactive')
+              target.classList.add('service-tab-active')
+          })
+      })
+      }
+      useEffect(() => {
+        servicestabSelection();
+          return () => {
+            
+          }
+      }, [])
     return (
         <>
               <Head/>
@@ -118,6 +142,133 @@ export default function Service() {
                               <div>
                                   <img src={map} alt="legrowtech worlmap"></img>
                               </div>
+                        </div>
+
+                        <div className="services-four-section">
+                        <ServiceHeader 
+                              title="The expertise you need "
+                              description="Our network of technologies and tools"
+                              size="small"
+                              color="white"
+                              />
+
+                              <div className="services-table">
+                                        <div>
+                                        <ul className="service-tb-list-menu">
+                                            <li  className="tbisactive" data-tab-target="#language">Languages</li>
+                                            <li data-tab-target="#Frameworks">Frameworks</li>
+                                            <li data-tab-target="#Databases">Databases</li>
+                                            <li data-tab-target="#IT">IT</li>
+                                            <li data-tab-target="#Cloud">Cloud</li>
+                                            <li data-tab-target="#Others">Others</li>
+                                          
+                                        </ul>
+                                    </div>
+                                    <div id="language" data-tab-content className="services-tab-content service-tab-active">
+                                        <ul className="service-tb-content-grid">
+                                                <li>Python</li>
+                                                <li>java</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li>javascript</li>
+                                                <li>TypeScript</li>
+                                                
+                                        </ul>
+                                     
+                                    </div>
+                                    <div id="Frameworks" data-tab-content className="services-tab-content ">
+                                        <ul className="service-tb-content-grid">
+                                                <li>React</li>
+                                                <li>Angular</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li>Django</li>
+                                                <li>Flutter</li>
+                                                
+                                        </ul>
+                                          <ul className="service-tb-content-grid">
+
+                                                <li>vue</li>
+                                                
+                                                
+                                        </ul>
+                                     
+                                    </div>
+
+                                    <div id="Databases" data-tab-content className="services-tab-content ">
+                                        <ul className="service-tb-content-grid">
+                                                <li>Mysql</li>
+                                                <li>MongoDb</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li>PostgreSql</li>
+                                                <li>Kafga</li>
+                                                
+                                        </ul>
+                                       
+                                     
+                                    </div>
+                                    <div id="IT" data-tab-content className="services-tab-content ">
+                                        <ul className="service-tb-content-grid">
+                                                <li>Cisco</li>
+                                                <li>Mac</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li>Window</li>
+                                                <li>Linux</li>
+                                                
+                                        </ul>
+                                      
+                                       
+                                     
+                                    </div>
+                                    <div id="Cloud" data-tab-content className="services-tab-content ">
+                                        <ul className="service-tb-content-grid">
+                                                <li>Azure</li>
+                                                <li>Aws</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li>Google</li>
+                                                
+                                                
+                                        </ul>
+                                       
+                                     
+                                    </div>
+                                    <div id="Others" data-tab-content className="services-tab-content ">
+                                        <ul className="service-tb-content-grid">
+                                                <li>Premiere pro </li>
+                                                <li> After effect</li>
+                                            
+                                                
+                                        </ul>
+                                        <ul className="service-tb-content-grid">
+
+                                                <li> Photoshop</li>
+                                                <li> Unity</li>
+                                                
+                                                
+                                        </ul>
+                                       
+                                     
+                                    </div>
+                              </div>
+
                         </div>
 
               </div>
