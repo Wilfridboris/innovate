@@ -59,6 +59,7 @@ body{
 }
 .relative{
     position: relative;
+    background-color: white;
 }
 .Home-panel{
     
@@ -103,7 +104,7 @@ body{
   }
 .Home-Second-Panel{
     text-align: center;
-    background-color: #f7f7f7;
+   
 }
 /**---------------------------Services pages begin---------------*/
 .services-first-section{
@@ -129,6 +130,13 @@ body{
     text-align: left;
     font-size:28px;
 }
+.services-third-section {
+   text-align: center;
+}
+.services-third-section img {
+    width: 100%;
+    height: auto;
+ }
 .legrowtech-description{
     font-size: 18px;
     color: #363947;
@@ -328,6 +336,7 @@ text-transform: uppercase;
     transform: translate(-50%,-50%);
 }
 .legrowtech-text-postion.center h3{
+
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: left;
@@ -728,10 +737,23 @@ text-align: left;
 .services-header{
     text-align: center;
 }
-.services-header h1{
-    font-size: 50px;
+.services-header.small h2{
+    
+    font-weight: 400;
+    padding-top: 50px;
+    line-height: 42px;
     margin-bottom: 5px;
     margin: 0;
+    
+}
+.services-header.large h2{
+    
+    font-weight: 400;
+    padding-top: 50px;
+    line-height: 42px;
+    margin-bottom: 5px;
+    margin: 0;
+    
 }
 .services-header h3{
     font-size: 25px;
@@ -863,9 +885,13 @@ text-align: left;
 
     /* services web style begin */
 
-    .services-header h1{
+    .services-header.large h2{
         font-size: 75px;
     }
+    .services-header.small h2{
+        font-size: 40px;
+    }
+
     .web-section img{
         width:initial;
     }
@@ -905,6 +931,10 @@ text-align: left;
           
          
         }
+        .services-third-section img {
+            width: auto;
+            height: auto;
+         }
         .services-second-section-flex{
             padding-left: 20%;
             padding-right: 20%;

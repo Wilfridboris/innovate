@@ -6,6 +6,7 @@ import {AiOutlineCheckCircle} from "react-icons/ai";
 import icon4 from './img/icons/icon_planet.png'
 import icon5 from './img/icons/icon_cloud.png'
 import icon6 from './img/icons/icon_it.png'
+import map from './img/world_map.png'
 import Footer from './Footer'
 
 export default function Service() {
@@ -17,8 +18,9 @@ export default function Service() {
                  <div >
                         <div className="services-banner">
                               <ServiceHeader
-                              title="explore Our Services"
+                              title="Explore Our Services"
                               description="Team of experts just waiting to work for you"
+                              size="large"
                               />
                         </div>
                         <div className="services-first-section">
@@ -53,6 +55,7 @@ export default function Service() {
                         <ServiceHeader
                               title="Legrowtech"
                               description="what to expects"
+                              size="large"
                               />
 
                         <div>
@@ -104,6 +107,17 @@ export default function Service() {
                             </div>
                         </div>
 
+                        </div>
+                        <ServiceHeader
+                              title="Community of expert all at Once  "
+                              description="Team of experts from six continents"
+                              size="small"
+                              />
+                        <div className="services-third-section">
+                      
+                              <div>
+                                  <img src={map} alt="legrowtech worlmap"></img>
+                              </div>
                         </div>
 
               </div>
