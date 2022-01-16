@@ -139,7 +139,8 @@ body{
     height: auto;
  }
  .services-four-section{
-                  
+    height: 600px;      
+    margin-bottom: 100px;          
     
     background-image: linear-gradient(to right, rgb(37, 117, 155) , rgb(20, 100, 110));
 }
@@ -148,7 +149,7 @@ body{
    text-align: center;
    padding: 10px 0px;
    margin-right: 40px;
-   margin-bottom: 100px;
+  
  
 
   
@@ -162,7 +163,7 @@ li.tbisactive{
 
 .service-tb-list-menu li{
     display: block;
-    width: 100%;
+    width: auto;
    
     box-shadow: 2px 0px 2px 0px rgb(22, 56, 85);
     border-radius: 10px;
@@ -182,7 +183,6 @@ li.tbisactive{
 
 .services-tab-content {
     display: flex;
-    
     justify-content: center;
     gap: 10%;
    
@@ -1024,6 +1024,10 @@ text-align: left;
             width: unset;
             margin: 2px 1px;
          
+        }
+        .services-four-section{
+            height: 450px;      
+           
         }
       
 

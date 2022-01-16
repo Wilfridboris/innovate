@@ -339,28 +339,28 @@ export default function Home() {
         <div className="Home-Third-Panel">
           <h1>Complete  Assistance with shopify Setting & development </h1>
             <section>
-              <a href="#">
-                <img></img>
+             
+               
                 <h2>Finance</h2>
                 <p>Achieve purchase of your product easilty</p>
-                <p>Lear more</p>
-              </a>
+               
+            
           </section>
           <section>
-          <a href="#">
-            <img></img>
+     
+            
             <h2>Finance</h2>
             <p>Achieve purchase of your product easilty</p>
-            <p>Lear more</p>
-          </a>
+         
+         
       </section>
       <section>
-          <a href="">
-            <img></img>
+         
+            
             <h2>Finance</h2>
             <p>Achieve purchase of your product easilty</p>
-            <p>Lear more</p>
-          </a>
+         
+         
       </section>
         </div>
 

@@ -167,14 +167,15 @@ export default function Service() {
                                     <div id="language" data-tab-content className="services-tab-content service-tab-active">
                                         <ul className="service-tb-content-grid">
                                                 <li>Python</li>
-                                                <li>java</li>
+                                                <li>Java</li>
                                             
                                                 
                                         </ul>
                                         <ul className="service-tb-content-grid">
 
-                                                <li>javascript</li>
+                                                <li>Javascript</li>
                                                 <li>TypeScript</li>
+                                            
                                                 
                                         </ul>
                                      
@@ -183,6 +184,7 @@ export default function Service() {
                                         <ul className="service-tb-content-grid">
                                                 <li>React</li>
                                                 <li>Angular</li>
+                                                <li>Vue</li>
                                             
                                                 
                                         </ul>
@@ -192,12 +194,7 @@ export default function Service() {
                                                 <li>Flutter</li>
                                                 
                                         </ul>
-                                          <ul className="service-tb-content-grid">
-
-                                                <li>vue</li>
-                                                
-                                                
-                                        </ul>
+               
                                      
                                     </div>
 
