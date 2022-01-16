@@ -1,0 +1,42 @@
+.contact-fist-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+.contact-fist-section-item{
+
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s ease;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%), 0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%), 0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+}
+.contact-fist-section a{
+  text-decoration: none;
+  
+    
+}
+.contact-fist-section-item:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+      
+  }
+.contact-fist-section a h3{
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+.line-blue{
+    border-top: 7px solid rgb(66, 147, 185);
+}
+.line-green{
+    border-top: 7px solid rgb(78, 199, 78);
+}
+
+
