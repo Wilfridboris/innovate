@@ -1,15 +1,104 @@
-import React from "react";
-class ContactForm extends React.Component {
-      render() {
-        return <div id="ff-compose"></div>;
-      }
-      componentDidMount(){
-        var script = document.createElement("script");
-        script.id = "ff-script";
-        script.src = "https://formfacade.com/include/113876169432287821920/form/1FAIpQLSdfg40T_cEjP-sZC_GWXm1ne0eXFWj_rjbhh8TMFqsFgH1PjA/classic.js?div=ff-compose";
-        script.defer = true;
-        script.async = true;
-        document.body.appendChild(script);
-      }
-    }
-    export default ContactForm
+import { Button } from 'bootstrap'
+import React from 'react'
+
+export default function ContactForm() {
+    return (
+        <div className="contact-section">
+            
+            <form className="contact-form">
+            <h3>Leave a Message</h3>
+            <p>Please fill the Document</p>
+            <div className="form-inputs">
+                    <p className="ctc-form-label-text">
+                        <label htmlFor='name'
+                           >
+                                Name *
+                
+                        </label>
+
+                    </p>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        className="ctc-form-input"
+                        
+                    
+                    />
+                   
+                        
+                 
+                  
+            </div>
+            <div className="form-inputs">
+                    <p className="ctc-form-label-text">
+                        <label htmlFor='nameOrg'
+                           >
+                                Name Organisation
+                
+                        </label>
+
+                    </p>
+                    <input
+                        id="nameOrg"
+                        type="text"
+                        name="nameOrg"
+                        className="ctc-form-input"
+                        
+                    
+                    />
+                   
+                        
+                 
+                  
+            </div>
+            <div className="form-inputs">
+                    <p className="ctc-form-label-text">
+                        <label htmlFor='emailg'
+                           >
+                                Email *
+                
+                        </label>
+
+                    </p>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        className="ctc-form-input"
+                        
+                    
+                    />
+                    
+                
+            </div>
+            <div className="form-inputs">
+                    <p className="ctc-form-label-text">
+                        <label htmlFor='message'
+                           >
+                                Message *
+                
+                        </label>
+
+                    </p>
+                    <textarea rows="5"
+                        id="message"
+                        type="text"
+                        name="message"
+                        className="ctc-form-input"
+                        
+                    
+                    />
+                   
+                        
+                 
+                  
+            </div>
+
+            
+
+                <button type="submit" className="btn-contact">Submit</button>
+            </form>
+        </div>
+    )
+}
