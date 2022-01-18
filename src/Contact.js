@@ -2,11 +2,16 @@ import React from 'react'
 import ServiceHeader from './components/ServiceHeader'
 import Head from './Head'
 import './styles/contact.css'
-
+import ContactForm from './components/ContactForm'
+import { Helmet } from 'react-helmet'
 export default function Contact() {
     return (
         <div>
             <Head/>
+            <Helmet>
+                <title>legrowtech Contact Us</title>
+                <meta name="description" content=" Contact legrowtech services " />
+            </Helmet>
           <div className="relative">
               <div className="overlay"></div>
               <ServiceHeader
@@ -14,7 +19,8 @@ export default function Contact() {
                     description="Want to chat with us?We'd love to hear from you"
                     size="small"
                     />
-
+                    < ContactForm/>
+{/* 
                 <div className="contact-contains">
                     <div className="contact-fist-section">
                         <a href="#">
@@ -41,7 +47,9 @@ export default function Contact() {
                          </div>
                       </a>
                     </div>
-                </div>
+                </div> */}
+
+                
           </div>
         </div>
     )

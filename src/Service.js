@@ -8,6 +8,7 @@ import icon5 from './img/icons/icon_cloud.png'
 import icon6 from './img/icons/icon_it.png'
 import map from './img/world_map.png'
 import Footer from './Footer'
+import { Helmet } from 'react-helmet';
 
 export default function Service() {
     function servicestabSelection(){
@@ -37,6 +38,10 @@ export default function Service() {
     return (
         <>
               <Head/>
+              <Helmet>
+                <title>legrowtech Services</title>
+                <meta name="description" content=" At legrowtech, we provide best cost services in an effective way " />
+            </Helmet>
              <div className="relative">
                  <div className="overlay"></div>
                  <div >
