@@ -196,7 +196,7 @@ export default class Head extends Component {
          
            <div >
             <ul className="header-option">
-                    <li className="logo"><a href="/"><img src={logo} alt="logo" width='100px'/></a> </li>
+                    <li className="logo"><a href="/"><img src={logo} alt="logo" width='80px'/></a> </li>
                     <li className="heard-bar" onClick={()=>{this.setState({iconIsToggle:!this.state.iconIsToggle})}}> {this.state.iconIsToggle?<BsGridFill size="1.6em" color="white"/>:<BsGrid size="1.6em" color="white"/>} </li>
                     <Item><a href="https://legrowtech.com/contact-us">Contact us</a>
                         {/* <ul className="submenu">

@@ -1,11 +1,16 @@
 import { Button } from 'bootstrap'
 import React from 'react'
 
-export default function ContactForm() {
+export default function ContactForm({
+    handleChange,
+    values,
+    handleSubmit,
+    errors
+}) {
     return (
         <div className="contact-section">
             
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
             <h3>Leave a Message</h3>
             <p>Please fill the Document</p>
             <div className="form-inputs">
@@ -22,6 +27,8 @@ export default function ContactForm() {
                         type="text"
                         name="name"
                         className="ctc-form-input"
+                        value={values.name}
+                        onChange={handleChange}
                         
                     
                     />
@@ -44,6 +51,8 @@ export default function ContactForm() {
                         type="text"
                         name="nameOrg"
                         className="ctc-form-input"
+                        value={values.nameOrg}
+                        onChange={handleChange}
                         
                     
                     />
@@ -66,6 +75,8 @@ export default function ContactForm() {
                         type="email"
                         name="email"
                         className="ctc-form-input"
+                        value={values.email}
+                        onChange={handleChange}
                         
                     
                     />
@@ -86,6 +97,8 @@ export default function ContactForm() {
                         type="text"
                         name="message"
                         className="ctc-form-input"
+                        value={values.message}
+                        onChange={handleChange}
                         
                     
                     />

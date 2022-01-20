@@ -1,7 +1,13 @@
 import React,{ Component } from "react";
 import validator from "./ValidatorContact";
+import sendContact from "./functions/sendContact";
+import ContactForm from "./components/ContactForm";
+import './styles/contact.css'
+import { Helmet } from 'react-helmet'
+import ServiceHeader from './components/ServiceHeader'
+import Head from './Head'
 export default class useContact extends Component{
-    contructor(props){
+    constructor(props){
         super(props);
         this.state={
             values:{
@@ -31,9 +37,47 @@ export default class useContact extends Component{
         await this.setState({
             errors:validator(this.state.values)
         })
+ 
         if(Object.keys(this.state.errors).length===0){
-
+            const {send}=sendContact(this.state.values)
+            send().then(()=>{
+                this.setState({
+                    isSubmitting:true
+                })
+            },
+            (err)=>{
+                console.log(err)
+            })
         }
         
     }
+
+    render(){
+        return(
+            <>
+               <Head/>
+            <Helmet>
+                <title>legrowtech Contact Us</title>
+                <meta name="description" content=" Contact legrowtech services " />
+            </Helmet>
+                <div className="relative">
+                    <div className="overlay"></div>
+                    <ServiceHeader
+                    title="Schedule a Call or Text Us"
+                    description="Want to chat with us?We'd love to hear from you"
+                    size="small"
+                    />
+          
+            <ContactForm
+
+            handleChange={this.handleChange}
+            values={this.state.values}
+            handleSubmit={this.handleSubmit}
+            errors={this.state.errors}
+            />
+                </div>
+            </>
+        )
+    }
+
 }

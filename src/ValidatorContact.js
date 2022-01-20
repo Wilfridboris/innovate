@@ -11,4 +11,9 @@ export default function validator(values){
     if(!values.nameOrg){
         errors.nameOrg="Name required"
     }
+    if(!values.message){
+        errors.message="Name required"
+    }
+    
+    return errors;
 }

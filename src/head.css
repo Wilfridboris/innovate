@@ -47,7 +47,7 @@ header {
     flex: 4;
     list-style-type: none;
     text-align: right;
-    margin: 20px 20px 0px 20px ;
+    margin: 10px 20px 0px 20px ;
     padding-top: 6px;
     display: block;
     cursor: pointer;
@@ -60,8 +60,8 @@ header {
     font-size: 17px;
     width: 100%;
     border-bottom: 1px solid #d6d4d427;
-    padding:20px;
     display: none;
+    
 
     
    
@@ -69,6 +69,7 @@ header {
 .item a{
     text-decoration: none;
     color: white;
+    padding: 20px;
 }
 
 .header-container.select{
@@ -145,7 +146,7 @@ header {
     
     list-style-type: none; 
     color: #f7f7f7;
-    margin: 5px 0px;
+   
 }
 
 .item:hover{
@@ -248,8 +249,9 @@ header {
       }
       .item a{
           display: block;
-          height: 45px;
-          padding: 0px 10px;
+          padding: 0px 10px 15px 10px ;
+
+     
         
          
       }
