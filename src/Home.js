@@ -30,9 +30,10 @@ export default function Home() {
 
         if(revealtop < windowheight-revealpoint){
           reveals[i].classList.add('isactive');
-        }else{
-          reveals[i].classList.remove('isactive');
         }
+        // else{
+        //   reveals[i].classList.remove('isactive');
+        // }
       }
 
     }
