@@ -5,8 +5,12 @@ export default function ContactForm({
     handleChange,
     values,
     handleSubmit,
-    errors
+    errors,
+    isLoading
 }) {
+   
+ 
+
     return (
         <div className="contact-section">
             
@@ -32,6 +36,7 @@ export default function ContactForm({
                         
                     
                     />
+                                       {errors.name && <p className="error">{errors.name}</p>}   
                    
                         
                  
@@ -80,6 +85,7 @@ export default function ContactForm({
                         
                     
                     />
+                    {errors.email && <p className="error">{errors.email}</p>}   
                     
                 
             </div>
@@ -103,14 +109,14 @@ export default function ContactForm({
                     
                     />
                    
-                        
+                   {errors.message && <p className="error">{errors.message}</p>}     
                  
                   
             </div>
-
+        
             
-
-                <button type="submit" className="btn-contact">Submit</button>
+                
+                <button key='btn'  onClick={e=> { if(isLoading) e.currentTarget.disabled=true}} type="submit" className={isLoading?"btn-contact disabled":"btn-contact"} >{isLoading?"Loading ...":"Submit"}</button>
             </form>
         </div>
     )

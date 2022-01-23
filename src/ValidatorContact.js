@@ -12,7 +12,7 @@ export default function validator(values){
         errors.nameOrg="Name required"
     }
     if(!values.message){
-        errors.message="Name required"
+        errors.message="Message required"
     }
     
     return errors;

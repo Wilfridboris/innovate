@@ -17,6 +17,7 @@ export default class useContact extends Component{
                 message:''
             },
             errors:{},
+            isLoading:false,
             isSubmitting:false
         }
         this.handleChange=this.handleChange.bind(this)
@@ -39,6 +40,9 @@ export default class useContact extends Component{
         })
  
         if(Object.keys(this.state.errors).length===0){
+            this.setState({
+                isLoading:true
+            }) 
             const {send}=sendContact(this.state.values)
             send().then(()=>{
                 this.setState({
@@ -68,13 +72,18 @@ export default class useContact extends Component{
                     size="small"
                     />
           
-            <ContactForm
+          {!this.state.isSubmitting?(
+                <ContactForm
 
-            handleChange={this.handleChange}
-            values={this.state.values}
-            handleSubmit={this.handleSubmit}
-            errors={this.state.errors}
-            />
+                handleChange={this.handleChange}
+                values={this.state.values}
+                handleSubmit={this.handleSubmit}
+                errors={this.state.errors}
+                isLoading={this.state.isLoading}
+                />
+          ):(
+              <h3 className="contact-popup"> Thank you an agent will contact you shortly (:</h3>
+          )}
                 </div>
             </>
         )

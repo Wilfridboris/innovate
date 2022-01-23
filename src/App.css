@@ -9,6 +9,7 @@ body{
    padding:0px;
    margin: 0px;
   
+  
 
    
    
@@ -59,6 +60,7 @@ body{
 }
 .relative{
     position: relative;
+    padding-bottom: 10%;
     background-color: white;
 }
 .Home-panel{

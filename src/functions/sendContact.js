@@ -8,10 +8,12 @@ export default function sendContact(values) {
                     var data=values
                     const response = await axios({
                         method:"POST",
-                        url:"htpp://localhost:8080",
-                        data:data
+                        data:data,
+                        url:"http://localhost:8080/v1/mail",
+                        
                     })
-                    if(response.data.sent){
+                    console.log(response)
+                    if(response.status===201){
                         res()
                     }else{
                         reject('something went wrong')

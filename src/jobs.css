@@ -88,6 +88,10 @@
   margin: 0px 10px;
  
 }
+.l-container-jbd h2{
+    margin: 0px;
+    padding-top: 50px;
+}
 
 
 @media (min-width:950px) {

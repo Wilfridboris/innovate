@@ -44,15 +44,16 @@ export default function JobDetails({match}) {
        <div>No job found with this id sorry!</div>
        
        ):(
-            <div>
+            <>
             <Head/>
             <Helmet>
                 <title>legrowtech Jobs</title>
                 <meta name="description" content="legrowtech help you find your next jobs, canada and cameroon jobs |" />
             </Helmet>
-           <div className="l-container-jbd">
-           <p>Jobs</p>
-            <h1>{jb.title}</h1>
+            <div className="relative">
+            <div className="overlay"></div>
+            <div className="l-container-jbd">
+            <h2>{jb.title}</h2>
         
             <div className="l-container-flex-jbd">
                 <div className="l-right-content-jbd">
@@ -85,14 +86,16 @@ export default function JobDetails({match}) {
 
                
                 <Link to={"/apply/"+match.params.id}>
-                    <button  className="l-btn" onClick={scrollTop}>Apply</button>
+                    <button  className="btn-contact" onClick={scrollTop}>Apply</button>
                 </Link>
                 </div>
                 
                 
             </div>
             </div>
-        </div>
+            </div>
+            </>
+        
        )}
        </>
     )
