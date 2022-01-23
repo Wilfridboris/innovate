@@ -35,7 +35,7 @@ function App() {
                   <Route path="/apply/:id" component={useFormApply}/>
                   <Route  path="/learn" exact component={Learn}/>
                   <Route  path="/learn/spa"  component={Learn_spa}/>
-                  <Route  path="/services/web" component={Solution_web_application}/>    
+                  {/* <Route  path="/services/web" component={Solution_web_application}/>     */}
                 
               
             

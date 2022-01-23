@@ -20,7 +20,7 @@ import axios from "axios";
             data:data,
     
             withCredentials: true,
-            url: "http://localhost:8080/login",
+            url: "https://api.legrowtech.com/login",
           });
           console.log(response);
           if (response.data.connexion){
@@ -36,7 +36,7 @@ import axios from "axios";
             const response= await axios({
                 method: "POST",
                 withCredentials: true,
-                url: "http://localhost:8080/login",
+                url: "https://api.legrowtech.com/login",
               });
               console.log(response);
               if (response.data.connexion){
@@ -52,7 +52,7 @@ import axios from "axios";
                  await axios({
                     method: "DELETE",
                     withCredentials: true,
-                    url: "http://localhost:8080/logout",
+                    url: "https://api.legrowtech.com/logout",
                   });
                   res('you logout') 
             }catch(err){
@@ -67,7 +67,7 @@ import axios from "axios";
             const response= await axios({
                 method: "POST",
                 withCredentials: true,
-                url: "http://localhost:8080/login",
+                url: "https://api.legrowtech.com/login",
               }); 
               console.log(response);
               if (response.data.connexion){

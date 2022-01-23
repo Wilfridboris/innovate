@@ -9,7 +9,7 @@ export default function sendContact(values) {
                     const response = await axios({
                         method:"POST",
                         data:data,
-                        url:"http://localhost:8080/v1/mail",
+                        url:"https://api.legrowtech.com/v1/mail",
                         
                     })
                     console.log(response)
