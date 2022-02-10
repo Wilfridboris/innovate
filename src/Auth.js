@@ -13,7 +13,7 @@ import axios from "axios";
      val, log(){
         return new Promise(async(res,reject)=>{
             var data=values;
-            console.log(values);
+        
           
         const response= await axios({
             method: "POST",
@@ -21,8 +21,9 @@ import axios from "axios";
     
             withCredentials: true,
             url: "https://api.legrowtech.com/login",
+            //url: "http://localhost:8080/login",
           });
-          console.log(response);
+     
           if (response.data.connexion){
               res()
           }else{
@@ -37,8 +38,9 @@ import axios from "axios";
                 method: "POST",
                 withCredentials: true,
                 url: "https://api.legrowtech.com/login",
+                //url: "http://localhost:8080/login",
               });
-              console.log(response);
+          
               if (response.data.connexion){
                 res()
             }else{
@@ -53,6 +55,7 @@ import axios from "axios";
                     method: "DELETE",
                     withCredentials: true,
                     url: "https://api.legrowtech.com/logout",
+                    //url: "http://localhost:8080/logout",
                   });
                   res('you logout') 
             }catch(err){
@@ -68,8 +71,9 @@ import axios from "axios";
                 method: "POST",
                 withCredentials: true,
                 url: "https://api.legrowtech.com/login",
+                //url: "http://localhost:8080/login",
               }); 
-              console.log(response);
+          
               if (response.data.connexion){
                 res(response.data.user)
             }else{

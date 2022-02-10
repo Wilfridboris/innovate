@@ -5,10 +5,16 @@ import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 import { BsStopwatch,BsClipboard,BsGeoAlt} from "react-icons/bs";
 import job from './jobs/job';
+import getLocation from './functions/getLocation';
 
 export default function JobDetails({match}) {
     const [jb,setJob]=useState({});
     const[error,setError]=useState(false);
+    const [description,setDescription]=useState([]);
+    const [responsability,setResponsability]=useState([]);
+    const [profil,setProfil]=useState([]);
+    const [skill,setSkill]=useState([]);
+    const [geoInfo,setgeoInfo]=useState({})
 
        function  scrollTop(){
         document.body.scrollTop = 0;
@@ -19,6 +25,10 @@ export default function JobDetails({match}) {
         getJObDetails().then((res)=>{
          
             setJob(res[0]);
+            setDescription(res[0].description.split("."));
+            setResponsability(res[0].responsability.split("."));
+            setProfil(res[0].profil.split("."));
+            setSkill(res[0].skill.split("."));
           
 
         },(err)=>{
@@ -27,10 +37,20 @@ export default function JobDetails({match}) {
            
         })
     }
+
+    function getGeoInfos(){
+        getLocation().then((res)=>{
+            setgeoInfo(res)
+        }).catch((err)=>{
+            console.log(err)
+        })
+    }
     useEffect(() => {
         getJobDetail();
+        getGeoInfos();
         return () => {
             getJobDetail();
+            getGeoInfos();
         }
     }, [])
     
@@ -57,17 +77,19 @@ export default function JobDetails({match}) {
         
             <div className="l-container-flex-jbd">
                 <div className="l-right-content-jbd">
-               
-                        <p>{jb.description}</p>
+              
+                        {description.map(des=>{
+                            return <p key={des.substring(0,1)}>{des}</p>
+                        })}
                         <h2>Your responsibilities</h2>
-                        <p>{jb.responsability}</p>
+                        {responsability.map(res=>{
+                            return <p key={res.substring(0,2)}><span className="dot"></span> {res}</p>
+                        })}
 
                         <h2>Ton Profil</h2>
-                        <p>
-                            
-                        {jb.profil}
-
-                        </p>
+                        {profil.map(pro=>{
+                            return <p key={pro.substring(0,2)}><span className="dot"></span>{pro}</p>
+                        })}
                         <p>
                         Notre objectif est de continuer à faire grandir cette communauté,
                         en phase avec nos valeurs : Humain, Proximité, Transparence,
@@ -75,7 +97,9 @@ export default function JobDetails({match}) {
 
                         </p>
                         <h2>Skills</h2>
-                        <p>{jb.skill}</p>
+                        {skill.map(skl=>{
+                            return <p key={skl.substring(0,2)}><span className="dot"></span>{skl}</p>
+                        })}
                     
                         <div className="l-space-jbd"></div>
                     </div>

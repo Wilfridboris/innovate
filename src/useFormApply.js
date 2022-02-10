@@ -93,27 +93,38 @@ export default class useFormApply extends Component{
     }
  
     render(){
+        let prop;
+        if(this.state.error){
+            prop=  <div>
+            <p>Sorry no jobs found with this id </p>
+            <p>Thank you  </p>
+            
+                 </div>
+
+            
+        }else if (this.state.isSubmit){
+            prop= <div>
+            <p>thank you successfully submit you application an agent will call you shortly </p>
+            <p>thank you </p>
+            
+             </div>
+        }else{
+            prop=     <FormApply
+            handleChange={this.handleChange}
+            values={this.state.values}
+            handleSubmit={this.handleSubmit}
+            errors={this.state.errors}
+            handleFile={this.handleFile}
+            jb={this.state.jb}
+          
+          />
+        }
        
         return(
             <>
+          
                   {
-                      this.state.isSubmit?(
-                        <div>
-                            <p>thank you successfully submit you application an agent will call you shortly </p>
-                            <p>thank you </p>
-                            
-                        </div>
-                      ):(
-                        <FormApply
-                        handleChange={this.handleChange}
-                        values={this.state.values}
-                        handleSubmit={this.handleSubmit}
-                        errors={this.state.errors}
-                        handleFile={this.handleFile}
-                        jb={this.state.jb}
-                      
-                      />
-                      )
+                     prop
                   }
 
             </>

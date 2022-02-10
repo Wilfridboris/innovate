@@ -246,8 +246,8 @@ export default function Home() {
               <div className="slide first desc-1">
                   <div className="carossel-item-text">
                     <h1>Increase your business productivity</h1>
-                    <p>We help you build your presence onlie by using 
-                    the latest technolgies of the cloud and applications</p>
+                    <p>We help you grow your online presence by implementing
+                       the latest cloud system and applications</p>
                   </div>
                   <div className="carossel-item-img">
                       <img src={kbstatlogo} alt="logo statistic on screen"></img>
@@ -256,7 +256,7 @@ export default function Home() {
               <div className="slide desc-2">
                       <div className="carossel-item-text">
                       <h1>Integrate popular app to your system to increase your productivity</h1>
-                      <p>we integrate application like Brightspace, wordpress, office, topdesk</p>
+                      <p>We integrate application like Brightspace, Google, Office and more</p>
                     </div>
                     <div className="carossel-item-img">
                     
@@ -266,7 +266,7 @@ export default function Home() {
               <div className="slide desc-3">
                       <div className="carossel-item-text">
                       <h1>Learn and pratice</h1>
-                      <p>We want to give you the opportunity have access to plenty of contents and get assist by professional</p>
+                      <p>We want to give you the opportunity to have access to plenty of contents and get assist by professional</p>
                     </div>
                     <div className="carossel-item-img">
                     
@@ -316,7 +316,7 @@ export default function Home() {
                 
                   
                     <h2>Finance</h2>
-                    <p>Achieve purchase of your product easilty</p>
+                    <p>Organize your finances efficiently and meet your financial goals</p>
                    
                   
             </section>
@@ -324,7 +324,7 @@ export default function Home() {
             
               
               <h2>Learning Platform</h2>
-              <p>Achieve purchase of your product easilty</p>
+              <p>support the learning process away from the classroom</p>
           
             
       </section>
@@ -332,34 +332,34 @@ export default function Home() {
      
         
         <h2>Media & Entertaiment</h2>
-        <p>Achieve purchase of your product easilty</p>
+        <p>brings innovation thinks, and technologists on your small screen</p>
        
       
 </section>
         </div>
         <div className="Home-Third-Panel">
-          <h1>Complete  Assistance with shopify Setting & development </h1>
+          <h1>Complete  Assistance with app development </h1>
             <section>
              
                
-                <h2>Finance</h2>
-                <p>Achieve purchase of your product easilty</p>
+                <h2>Design</h2>
+                <p>Get a Minimum viable product (MVP)</p>
                
             
           </section>
           <section>
      
             
-            <h2>Finance</h2>
-            <p>Achieve purchase of your product easilty</p>
+            <h2>Implementing</h2>
+            <p>All the features of your application ready</p>
          
          
       </section>
       <section>
          
             
-            <h2>Finance</h2>
-            <p>Achieve purchase of your product easilty</p>
+            <h2>Optimization</h2>
+            <p>We save you from many headaches in the future</p>
          
          
       </section>
@@ -378,27 +378,30 @@ export default function Home() {
                       <div className="grid-img">
                         <img src={icon1} alt ="legrowtech icon deploy"/>
                       </div>
-                      <h3>Extensive list of Technical Services</h3>
-                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
-                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                      <h3>Remote Team Force collaboration</h3>
+                      <p className="legrowtech-description">Whether you need an expert to work with you or our expertise to successfully
+                       manage your project in network, cloud and development, we have the engineering talent in place across a wide variety
+                        of technical stacks and services to meet the needs of your organization.</p>
                   </div>
 
                   <div className="service-grid-item">
                       <div className="grid-img">
                         <img src={icon2} alt ="legrowtech icon ideas"/>
                       </div>
-                      <h3>Extensive list of Technical Services</h3>
-                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
-                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                      <h3>Quick builds ready to be integrate</h3>
+                      <p className="legrowtech-description">If you have any concerns about the time your project would take or the resources
+                       needed to complete it, we already have pre-built applications waiting to be built or integrated into your system,
+                        all you need to do is to provide your data and we take care of the rest.</p>
                   </div>
 
                   <div className="service-grid-item">
                       <div className="grid-img">
                        <img src={icon3} alt ="legrowtech icon protytpe"/>
                       </div>
-                      <h3>Extensive list of Technical Services</h3>
-                      <p className="legrowtech-description">Whether you need to hire a software engineer with expertise in React, Golang, DevOps, or Salesforce, we have the engineering talent in place across
-                         a wide variety of technical stacks and services to meet your organization’s needs.</p>
+                      <h3>Save money while enjoying quality IT Service </h3>
+                      <p className="legrowtech-description">If you are looking for a way to have excellent IT service without wasting your
+                       money on a very expensive solution, we provide you with many affordable plans to suit your budget, which gives you
+                        an application that meets the specifications and allows you to achieve exactly your goal </p>
                   </div>
             </div>
 
@@ -418,8 +421,8 @@ export default function Home() {
                           <h3>Real expert </h3>
                       </div>
                       <div className="paragraph-text">
-                        <h3>The most professional tech exprert </h3>
-                        <p>personlaise your website</p>
+                        <h3>The most professional tech exprert</h3>
+                        <p>Team collaboration</p>
                         
                       </div>
                     </a>
@@ -432,8 +435,8 @@ export default function Home() {
                           <h3>Enhance your skills</h3>
                       </div>
                       <div className="paragraph-text">
-                        <h3>Personlise</h3>
-                        <p>personlaise your website</p>
+                        <h3>Learn and Grow</h3>
+                        <p>Free courses and formations</p>
                         
                       </div>
                     </a>
@@ -446,7 +449,7 @@ export default function Home() {
                       </div>
                       <div className="paragraph-text">
                         <h3>2d/3d game in vision</h3>
-                        <p>personlaise your website</p>
+                        <p>Create your first game</p>
                         
                       </div>
                     </a>
@@ -471,7 +474,8 @@ export default function Home() {
                   </div>
                   <div>
                         <h3>Manufacture </h3>
-                        <p>sdsd</p>
+                        <p className="legrowtech-description white-mobile-description">With new technology, it is possible to lessen mistakes and errors. In effect, it can lessen the number of products returned to your company. 
+                          It also makes the customers happy, improving the overall reputation of the company.</p>
                 </div>
                         
             </div>
@@ -485,17 +489,36 @@ export default function Home() {
                 </div>
                 <div>
                     <h3>Finance </h3>
-                      <p>sdsd</p>
+                    <p className="legrowtech-description white-mobile-description">Customer data has always been a central decision-making factor for financial institutions,
+                    we automate manual processes that are currently very resource intensive. 
+                    </p>
                 </div>
            </div></li>
             <DivItem>  Entertainment</DivItem>
             <li className="lb-container ">
               <div className="container-wrapper-noflex">
+       
                 <img src={entertainment} alt="legrowtech entertainment"></img>
-                <h3>Passionate about create game and learn? get the tool you need</h3>
+                <a href="/services">  
+                <h3 className="legrowtech-description white-mobile-description">Are youn an Artist ? need of Visual and audio integration?</h3>
                 <p>Learn more</p>
+               </a>
             </div>
             </li>
+            <DivItem>  Game
+            </DivItem>
+            <li className="lb-container "><div className="container-wrapper">
+            <div>
+              
+                <img src={game} alt="legrowtech game"></img>
+              </div>
+              <div>
+              <a href="/services">  
+              <h3 className="legrowtech-description white-mobile-description">Passionate about create game and learn? get the tool you need</h3>
+              <p>Learn more</p>
+              </a>
+              </div>
+            </div></li>
             
             <DivItem>  Online Store
             </DivItem>
@@ -504,10 +527,12 @@ export default function Home() {
                 <img src={store} alt="legrowtech store"></img>
               </div>
               <div>
-                  <h3>Finance </h3>
-                    <p>sdsd</p>
+                  <h3>Retail</h3>
+                  <p className="legrowtech-description white-mobile-description">Speed, agility and efficiency are expected of today’s retail businesses. To achieve this, retailers should invest in an electronic inventory control system, a central database, a point of sales system and an automated statistical forecasting system.</p>
               </div>
             </div></li>
+
+            
             
           </ul>
           <ul className="list-items-dek-view">
@@ -524,7 +549,8 @@ export default function Home() {
               </div>
               <div>
                 <h3>Manufacture </h3>
-                <p>sdsd</p>
+                <p className="legrowtech-description">With new technology, it is possible to lessen mistakes and errors. In effect, it can lessen the number of products returned to your company. 
+                          It also makes the customers happy, improving the overall reputation of the company.</p>
             </div>
    
 
@@ -535,7 +561,9 @@ export default function Home() {
               </div>
               <div>
                   <h3>Finance </h3>
-                    <p>sdsd</p>
+                    <p className="legrowtech-description">Customer data has always been a central decision-making factor for financial institutions,
+                    we automate manual processes that are currently very resource intensive. 
+                    </p>
               </div>
 
          </div>
@@ -551,7 +579,7 @@ export default function Home() {
          </div>
          <div id='entertaiment' data-tab-content className="item-solution-noflex">
          <img src={entertainment} alt="legrowtech entertainment"></img>
-        <a href="/service">
+        <a href="/services">
             <div>
               <h3>Are youn an Artist ? need of Visual and audio integration?</h3>
               <p>Learn more</p>
@@ -568,8 +596,8 @@ export default function Home() {
                 <img src={store} alt="legrowtech store"></img>
               </div>
               <div>
-                  <h3>Finance </h3>
-                    <p>sdsd</p>
+                  <h3>Retail </h3>
+                    <p className="legrowtech-description">Speed, agility and efficiency are expected of today’s retail businesses. To achieve this, retailers should invest in an electronic inventory control system, a central database, a point of sales system and an automated statistical forecasting system.</p>
               </div>
          </div>
       

@@ -9,9 +9,8 @@ export default function Footer() {
               <div className="footer-item">
                     <ul>
                         <li className="bold-text">Legrowtech</li>
+                        <li ><a href="https://cws.legrowtech.com/">CWS</a></li>
                         <li >About us</li>
-                        <li>Careers</li>
-                        <li>Blog</li>
                         <li>Guides</li>
                         <li>Community</li>
                     </ul>
@@ -21,7 +20,6 @@ export default function Footer() {
                         <li className="bold-text">solutions</li>
                         <li>Cloud</li>
                         <li>Web app</li>
-                        <li>Maintenance</li>
                         <li>Network</li>
                         <li>Game</li>
                     </ul>
@@ -29,7 +27,6 @@ export default function Footer() {
               <div className="footer-item">
                     <ul>
                         <li className="bold-text">support</li>
-                        <li>Contact us</li>
                         <li>Help center</li>
                         <li>site map</li>
                         <li>locations</li>
@@ -38,7 +35,7 @@ export default function Footer() {
               </div>
               <div className="footer-item">
                     <ul>
-                        <li className="bold-text">language</li>
+                        <li className="bold-text">Social</li>
                         <li>facebook</li>
                         <li>app store</li>
                      

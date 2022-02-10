@@ -95,7 +95,7 @@ export default function Service() {
                                               
                                                 <div className="ss-inline-item">
                                                     <h3> 10 x</h3>
-                                                    <p className="legrowtech-description">Faster web project delivries</p>
+                                                    <p className="legrowtech-description">Faster web project deliveries</p>
                                                 </div>
                                             </div>
                                             <div className="ss-grid-items">
@@ -109,26 +109,26 @@ export default function Service() {
                                             <div className="ss-grid-items">
                                               
                                                 <div className="ss-inline-item">
-                                                <h3> 90%</h3>
-                                                    <p className="legrowtech-description"> better performance</p>
+                                                <h3> 95%</h3>
+                                                    <p className="legrowtech-description"> better security</p>
                                                 </div>
                                             </div>
                                     </div>
                                     <div className="ssecond-section-flex-item">
                                         <div className="ss-flex-item-title">
-                                                      <h3>Delivered at the Edge.Rooted in the Enterprise.</h3>  
-                                                      <p className="legrowtech-description">powers mission-critical web properties for major enterprises
-                                                           like Nike, Citrix, RBI, Verizon, and Trinet. Our Enterprise offerings include:</p>
+                                                      <h3>Delivered at the Edge Rooted in the Enterprise.</h3>  
+                                                      <p className="legrowtech-description">Powers mission-critical web projects for major enterprises
+                                                           in tech and many others. Our Enterprise offerings include:</p>
 
                                                      <ul className="ss-list-items legrowtech-description ">
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
-                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% uptime SLA</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% network</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% cloud </li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% development</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% system support</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% community</li>
+                                                         <li> <AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% security</li>
+                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% gaming </li>
+                                                         <li><AiOutlineCheckCircle size="0.8em" color="green"/> 99.99% video production</li>
                                                      </ul>
                                         </div>
                                     </div>

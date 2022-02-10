@@ -522,6 +522,17 @@ text-align: left;
 } .lb-container{
      display: none;
  }
+.white-mobile-description{
+    color: #ffffff;
+    padding: 0px 10px;
+}
+.lb-container a,.lb-container h3 {
+    text-decoration: none;
+    color: #ffffff;
+   
+ 
+
+}
  
  .lb-trigger div{
     flex: 1;
@@ -598,6 +609,11 @@ text-align: left;
 
 .item-solution div{
     margin: 0px 100px auto 0px;
+  
+ }
+ .item-solution div:last-child{
+    max-width: 300px;
+    text-align: left;
   
  }
 .list-items-dek-view,.canbehidde {
@@ -822,6 +838,7 @@ text-align: left;
 }
 .services-header h3{
     font-size: 25px;
+    margin: 0px 5px;
    
     color: rgb(73, 73, 73);
 }
@@ -958,6 +975,10 @@ text-align: left;
     }
     .services-header.small h2{
         font-size: 40px;
+    }
+    .services-header h3{
+        margin: 0px;
+        
     }
 
     .web-section img{

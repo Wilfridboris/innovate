@@ -92,7 +92,80 @@
     margin: 0px;
     padding-top: 50px;
 }
+.dot{
+    height: 5px;
+    width: 5px;
+    margin-bottom: 2px;
+    margin-right:4px ;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
 
+.custom-select-input{
+    border-radius: 4px;
+    padding-left: 20px;
+    font-size: .9rem;
+    box-shadow: 0 0 3px 0 rgb(53 49 46 / 20%);
+  
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem 1rem;
+    border-color: #fff;
+    color: #35312e;
+    background-color: transparent;
+    margin: 0px 5px;
+}
+
+
+.jbs-dropdown-menu{
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #35312e;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+.custom-select-input:focus+.jbs-dropdown-menu{
+    display: block;
+    
+}
+.jbs-dropdown-menu:hover{
+    display: block;
+}
+
+.jbs-dropdown-menu button{
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.jbs-relative-groups{
+    display: inline-block;
+    position: relative;
+    
+    
+}
+.jbs-dropdown{
+    text-align: center;
+}
 
 @media (min-width:950px) {
   
@@ -110,6 +183,12 @@
     .jb-item{
     
         margin: 20px;
+    }
+    .custom-select-input{
+        padding: .375rem 2rem;
+    }
+    .jbs-dropdown{
+        text-align: left;
     }
 
 }

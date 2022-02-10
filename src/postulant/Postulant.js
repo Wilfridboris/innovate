@@ -11,7 +11,8 @@ return {
               const response= await axios({
                   method: "GET",
                   withCredentials: true,
-                  url: "https://api.legrowtech.com/postulants",
+                  //url: "https://api.legrowtech.com/postulants",
+                  url: "http://localhost:8080/postulants",
                 });
                 res(response.data)
                 console.log(response)

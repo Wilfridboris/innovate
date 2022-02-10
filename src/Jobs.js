@@ -10,6 +10,18 @@ import Footer from './Footer';
 
 export default function Jobs() {
     const [jobs,setJobs]=useState([]);
+    const [contracts,setContract]=useState([]);
+    const [professions,setprofession]=useState([])
+    const [selectedCt,setSelectedCt]=useState("Contrat");
+    const [selectedJt,setSelectedJt]=useState("Profession");
+    const [filteredJobs,setFilteredJobs]=useState([]);
+
+    const CtselectHandler=(e)=>{
+        setSelectedCt(e.currentTarget.textContent)
+    }
+    const JtselectHandler=(e)=>{
+        setSelectedJt(e.currentTarget.textContent)
+    }
     function  scrollTop(){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -23,12 +35,47 @@ export default function Jobs() {
             console.log(err);
         })
     }
+    function getContract(){
+        const {getJobContracts}=job();
+        getJobContracts().then((result)=>{
+                setContract(result);
+        },(err)=>{
+            console.log(err);
+        })
+    }
+    function getprofession(){
+        const { getJobProfessions}=job();
+        getJobProfessions().then((result)=>{
+                setprofession(result);
+        },(err)=>{
+            console.log(err);
+        })
+    }
     useEffect(() => {
         getJobs();
-        return () => {
-            getJobs();
-        }
+        getContract();
+        getprofession();
+      
     }, [])
+    useEffect(() => {
+        const filterHandler=()=>{
+            
+            if(selectedCt==="Contrat" && selectedJt==="Profession"){
+                setFilteredJobs(jobs)
+            }else if(selectedCt==="Contrat" && selectedJt!=="Profession"){
+                setFilteredJobs(jobs.filter(job=>(job.jt_title===selectedJt )))
+                
+            }else if(selectedCt!=="Contrat" && selectedJt==="Profession"){
+                setFilteredJobs(jobs.filter(job=>(job.ct_title===selectedCt )));
+            }
+            
+            else{
+                setFilteredJobs(jobs.filter(job=>(job.ct_title===selectedCt && job.jt_title===selectedJt )));
+            }
+        }
+        filterHandler()
+     
+    }, [jobs, selectedCt,selectedJt])
     return (
         <>
         
@@ -71,23 +118,77 @@ export default function Jobs() {
                            
 
                     </div>
-                    <h2>Our Jobs</h2>
-                    <div className="l-content-list-jb">
-                      {jobs.map(job=>{
-                          return(
-                              <>
-                                      <div key={job.id} className="jb-items">
-                                        <Link to={"/jobs/"+job.id} onClick={scrollTop}>
-                                        <BsFillBookmarkFill size="5em" color="darkcyan"/>
-                                        <h3>{job.title}</h3>
-                                        <p>{job.location}</p>
+                    <h2>Our jobs </h2>
+                    <div className="jbs-dropdown">
+                      <div className="jbs-relative-groups">
 
-                                        </Link>
+                      <button className=" custom-select-input">Yaounde</button>
+                        {/* <div className="jbs-dropdown-menu">
+                            <button>Yaounde</button>
+                      
+                        </div> */}
+                      </div>
+
+
+                       <div className="jbs-relative-groups">
+                       <button className="custom-select-input">{selectedCt}</button>
+                        <div className="jbs-dropdown-menu">
+                        <button onClick={CtselectHandler}>Contrat</button>
+                        {contracts.map(contract=>{
+                                return (
+                                    <button key={"C"+contract.ct_id} onClick={CtselectHandler}>{contract.ct_title}</button>
+                                )
+
+                            })}
                         </div>
-                              
-                              </>
-                          )
-                      })}
+
+                       </div>
+                      
+                      <div className= "jbs-relative-groups">
+
+                      <button className=" custom-select-input">{selectedJt}</button>
+                        <div className="jbs-dropdown-menu ">
+                            <button onClick={JtselectHandler}>Profession</button>
+                            {professions.map(profession=>{
+                                return (
+                                    <button key={"P"+profession.jt_id} onClick={JtselectHandler}>{profession.jt_title}</button>
+                                )
+
+                            })}
+                           
+                          
+                        </div>
+                      </div>
+                        
+                    </div>
+                    <div className="l-content-list-jb">
+                        {
+                            filteredJobs.length===0 && 
+                        
+                            <p>Desole! Nous avons trouver aucun job correspondant {selectedCt} | {selectedJt}</p>
+                          
+                            
+                        }
+                   
+                        {filteredJobs.map(job=>{
+                        
+                        return(
+                            
+                                    <div key={"J"+job.id} className="jb-items">
+                                      <Link to={"/jobs/"+job.id} onClick={scrollTop}>
+                                      <BsFillBookmarkFill size="5em" color="darkcyan"/>
+                                      <h3>{job.title}</h3>
+                                      <p>{job.location}</p>
+
+                                      </Link>
+                                    </div>
+                     
+                            
+                            
+                        )
+                    })}
+                       
+                    
 
                    
                     </div>

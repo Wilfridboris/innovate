@@ -1,6 +1,7 @@
 /*Dashboard style begin*/
 body{
     background: rgb(238, 238, 238);
+    overflow-x: hidden;
 }
 .dashboard-header{
     background-color: black;
@@ -90,7 +91,7 @@ body{
 /*main dashboard begin*/
 .dashboard-main{
     display: grid;
-    grid-template-columns: 5% 20% 85%;
+    grid-template-columns:  20% 80%;
     gap: 10px;
 
 }
@@ -122,18 +123,17 @@ padding: 0px 5px;
 .legrowtech-gras{
     font-weight: bolder;
 }
-.ecran{
-    width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 50%;
-}
+
 .talent-lists{
     padding: 0px;
     margin: 0px;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 650px
     
 }
-.talent-lists li{
+.talent-item{
     list-style-type: none;
     background-color: rgb(246, 246, 246);
     padding: 10px;
@@ -152,3 +152,59 @@ padding: 0px 5px;
 /*talent style end*/
 /*main dashboard end*/
 /*Dashboard style end*/
+
+/*filter begin*/
+.ecran-filter button{
+   float: right;
+   margin:10px;
+   border: none;
+   font-size: 15px;
+   font-weight: 300;
+   cursor: pointer;
+   text-decoration: none;
+   
+ 
+}
+.ecran-filter{
+  
+    position: relative;
+   
+    
+   
+}
+.ecran-filter ul{
+   position: absolute;
+   left: 150px;
+   top: 28px;
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   list-style-type: none;
+   border-radius: 5px;
+  display: none;
+   background-color: #fff;
+
+
+}
+.ecran-filter ul li{
+
+ padding: 10px;
+ width: 120px;
+ cursor: pointer;
+ 
+ }
+ .ecran-filter ul li:hover{
+   background: rgb(241, 241, 241);
+    
+    }
+
+ .ecran-filter button:focus + ul{
+    display: flex;
+    
+  
+ }
+
+/*filter end*/

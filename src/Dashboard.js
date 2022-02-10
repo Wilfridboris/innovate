@@ -3,6 +3,7 @@ import Auth from './Auth'
 import './styles/dashboard.css'
 import Postulant from './postulant/Postulant';
 import { Redirect } from 'react-router-dom';
+import { Button } from 'bootstrap';
  class Dashboard extends React.Component {
      constructor(props){
          super(props);
@@ -150,9 +151,7 @@ import { Redirect } from 'react-router-dom';
                 <p>Annuler</p>
         </div>
         <div className="dashboard-main">
-                <div className="dashboard-logo-item">
-                        <p></p>
-                </div>
+             
                 <div className="dashboard-list-menu">
                     <div className="simple-options">
                         <ul>
@@ -176,13 +175,29 @@ import { Redirect } from 'react-router-dom';
                                
                         </div>
                         <div className="ecran" data-tab-content id="talent">
+                         
                             <ul className="talent-lists">
+                            <div className="ecran-filter">
+                               
+                                 <button>Filter</button>
+                                    <ul>
+                                        <li>plus recents</li>
+                                        <li>moins recents</li>
+                                   
+                                    </ul>
+                              
+                             
+                            </div>
+                                            
                                     {
                                         this.state.talent.map(talent=>{
                                             return (
+                                                
                                             
-                                                <li key={talent.postulant_id}>
+                                                <li className="talent-item" key={talent.postulant_id}>
+                                                 
                                                     <p><span className="talent-cerlce">{talent.name.substring(0,2).toUpperCase()}</span>{talent.name} {talent.lastname}</p>
+                                                    <p>{talent.m_date}</p>
                                                     <p><span className="legrowtech-gras"> Location: </span>{talent.city} {talent.street}  </p>
                                                     <p><span className="legrowtech-gras"> Email: </span> {talent.email}  </p>
                                                     <p><span className="legrowtech-gras"> Tel: </span>{talent.tel}  </p>

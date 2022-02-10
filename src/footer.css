@@ -17,6 +17,10 @@
     margin: 10px;
     color: white;
 }
+.footer-item ul li a{
+   text-decoration: none;
+    color: white;
+}
 .footer-item{
     margin: auto;
 }
