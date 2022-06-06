@@ -11,7 +11,7 @@ import { Button } from 'bootstrap';
              user:{},
              userSub:'',
              talent:[],
-             url:"https://api.legrowtech.com/postulants/resume/",
+             url:"https://docs.google.com/document/d/",
              authed:false
          }
          this.getPostulant=this.getPostulant.bind(this)

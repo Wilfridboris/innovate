@@ -5,23 +5,22 @@ import Service from './Service'
 import useContact from './useContact'
 import Home from './Home'
 import Solution from './Solution'
-import Solution_web_application from './solution_web_application'
 import Learn from './Learn'
-import Learn_spa from './Learn_spa'
 import useForm from './useForm'
 import Jobs from './Jobs'
 import JobDetails from './JobDetails'
 import useFormApply from './useFormApply'
 import Dashboard from './Dashboard'
 import HttpsRedirect from 'react-https-redirect';
-
+import LearnDetails from './LearnDetails'
+import Field from './Field'
 function App() {
   
   return (
     <HttpsRedirect>
       
         <Router>
-        <main className="container">
+        <main >
         
             <Switch>
                   <Route path="/" exact component={Home}/>
@@ -33,9 +32,10 @@ function App() {
                   <Route path="/contact-us" exact component={useContact}/>
                   <Route path="/jobs/:id" component={JobDetails}/>
                   <Route path="/apply/:id" component={useFormApply}/>
-                  <Route  path="/learn" exact component={Learn}/>
-                  <Route  path="/learn/spa"  component={Learn_spa}/>
-                  {/* <Route  path="/services/web" component={Solution_web_application}/>     */}
+                  {/* <Route  path="/learn" exact component={Learn}/>
+                  <Route  path="/learn/:Field" exact  component={Field}/>
+                  <Route  path="/learn/:Field/:Clip" exact  component={LearnDetails}/> */}
+               
                 
               
             

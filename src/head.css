@@ -71,6 +71,9 @@ header {
     color: white;
     padding: 20px;
 }
+.item a:hover{
+    color: #e7e7e7;
+}
 
 .header-container.select{
     position: relative;

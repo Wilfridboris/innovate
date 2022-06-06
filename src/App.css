@@ -258,7 +258,7 @@ li.tbisactive{
 /*----------------service pages end*/
  section{
     display: inline-block;
-    width: 250px;
+    width: 270px;
     height: 150px;
     text-align: center;
     padding: 10px;
@@ -455,7 +455,7 @@ text-align: left;
 }
 .service-grid-item{
     display: inline-block;
-    height: 400px;
+    height: 440px;
     width: 300px;
     padding: 25px;
     margin: 10px 15px;

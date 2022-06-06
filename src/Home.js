@@ -177,7 +177,7 @@ export default function Home() {
             counter=1
           }
           document.getElementById('radio' + counter).checked=true;
-          autoplay()
+          
          
         }
     
@@ -189,7 +189,7 @@ export default function Home() {
             counter=1
           }
           document.getElementById('radio' + counter).checked=true;
-          autoplay()
+        
           
         }
     
@@ -244,7 +244,7 @@ export default function Home() {
 
 
               <div className="slide first desc-1">
-                  <div className="carossel-item-text">
+                  <div className="carossel-item-text pt-3">
                     <h1>Increase your business productivity</h1>
                     <p>We help you grow your online presence by implementing
                        the latest cloud system and applications</p>
@@ -254,7 +254,7 @@ export default function Home() {
                   </div>
               </div>
               <div className="slide desc-2">
-                      <div className="carossel-item-text">
+                      <div className="carossel-item-text pt-3">
                       <h1>Integrate popular app to your system to increase your productivity</h1>
                       <p>We integrate application like Brightspace, Google, Office and more</p>
                     </div>
@@ -264,7 +264,7 @@ export default function Home() {
 
               </div>
               <div className="slide desc-3">
-                      <div className="carossel-item-text">
+                      <div className="carossel-item-text pt-3">
                       <h1>Learn and pratice</h1>
                       <p>We want to give you the opportunity to have access to plenty of contents and get assist by professional</p>
                     </div>
@@ -304,7 +304,7 @@ export default function Home() {
        
 
         <div className="Home-Second-Panel">
-          <h4>What industry?</h4>
+          <h4 className="mt-5 mb-5">What industry?</h4>
             <section>
                   
                     <h2>E-commerce</h2>

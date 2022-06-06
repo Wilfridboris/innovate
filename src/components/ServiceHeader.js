@@ -6,7 +6,7 @@ export default function ServiceHeader({title, description, size,color}) {
           <React.StrictMode>
         <div  className={`services-header ${size} ${color} `}>
             <h2>{title}</h2>
-            <h3>{description}</h3>
+            <h3 className="pt-2 pb-3">{description}</h3>
         
         </div>
      
