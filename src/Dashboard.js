@@ -201,7 +201,7 @@ import { Button } from 'bootstrap';
                                                     <p><span className="legrowtech-gras"> Location: </span>{talent.city} {talent.street}  </p>
                                                     <p><span className="legrowtech-gras"> Email: </span> {talent.email}  </p>
                                                     <p><span className="legrowtech-gras"> Tel: </span>{talent.tel}  </p>
-                                                    <p><span className="legrowtech-gras"> Link CV: </span> <a href={this.state.url+talent.resume}>{talent.resume}</a>  </p>
+                                                    <p><span className="legrowtech-gras"> Link CV: </span> <a href={this.state.url+talent.resume} target="_blank" rel="noreferrer">{talent.resume}</a>  </p>
                                                 </li>
                                             
                         
