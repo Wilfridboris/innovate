@@ -32,12 +32,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "server/index.js",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start",
-    "ssr": "server/index.js"
+    "dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
