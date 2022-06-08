@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/register": "^7.17.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -10,6 +13,7 @@
     "bootstrap": "^5.0.2",
     "express": "^4.17.2",
     "express-favicon": "^2.0.1",
+    "ignore-styles": "^5.0.1",
     "jquery": "^3.6.0",
     "markdown-to-jsx": "^7.1.3",
     "media-query-react": "^1.0.4",
@@ -28,11 +32,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start"
+    "dev": "react-scripts start",
+    "ssr": "server/index.js"
   },
   "eslintConfig": {
     "extends": [
