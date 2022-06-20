@@ -17,7 +17,7 @@ import Field from './Field'
 function App() {
   
   return (
-    <HttpsRedirect>
+  
       
         <Router>
         <main >
@@ -47,7 +47,7 @@ function App() {
         </main>
         </Router>
 
-    </HttpsRedirect>
+
           
   );
 }
