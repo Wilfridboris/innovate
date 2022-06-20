@@ -15,6 +15,7 @@ import store from './img/store.png'
 import icon1 from './img/icons/icon_deploy.png'
 import icon2 from './img/icons/icon_ideas.png'
 import icon3 from './img/icons/icon_prototype.png'
+import { Helmet } from 'react-helmet';
 
 
 
@@ -231,6 +232,24 @@ export default function Home() {
     return (
       <>
         <Head/>
+        <Helmet>
+                <title>Freelance IT services with Legrowtech</title>
+                <link rel="canonical" href="https://legrowtech.com"/>
+                <meta property="og:title" content="Freelance IT services with Legrowtech"/>
+                <meta property="og:description" content="Computer support and IT services in Yaounde,Cameroon that Build amazing web solution that supports your business, makes a difference with legrowtech."/>
+                <meta property="og:url" content="https://legrowtech.com"/>
+                <meta property="og:site_name" content="legrowtech"/>
+                <meta property="og:image" content="https://api.legrowtech.com/img/legrowtech_small.png"/>
+                <meta property="og:kind" content material="web site"/>
+                <meta name="twitter:description" content="Computer support and IT services in Yaounde,Cameroon that Build amazing web solution that supports your business, makes a difference with legrowtech."/>
+                <meta name="twitter:image" content="https://api.legrowtech.com/img/legrowtech_small.png"/>
+                <meta name="content-type" content="Page"/>
+                <meta name="categories" content="page"/>
+                <meta name="keywords"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:site" content="@legrowtech"/>
+    
+        </Helmet>
         <div className="relative main-body">
         <div className="overlay"></div>
         <div className="body-slider">
